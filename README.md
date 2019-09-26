@@ -39,11 +39,47 @@ Oh, but I hear you saying to yourself, "But what about just plain ol' columns?!"
 </div>
 ```
 
+So, if you were paying attention, that give you up to seven columns across.  If you need more, well, you will have to build your own.  Instructions on making that super-duper easy coming soon!
+
+## "But What About Breakpoints, Gah?!" ##
+
+Not a problem.  Segments provides the following breakpoints:
+
+- Full size (default)
+- Large (lg)
+- Medium (md)
+- Tablet (tablet)
+- Small (sm)
+- Extra Small (xs)
+
+And here's how you use it:
+
 ```
-&lt;segment-item&gt;
-  &lt;x-minor&gt;&lt;/x-minor&gt;
-  &lt;x-major&gt;&lt;/x-major&gt;
-&lt;/segment-item&gt;
+<div class="segment thirds tablet-stack">
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+</div>
+
+<div class="segment fifths lg-thirds md-half tablet-stack">
+  <div class="minor"></div>
+  <div class="major"></div>
+</div>
+```
+
+Web components style:
+
+```
+<segment-item class="thirds tablet-stack">
+  <x-cell></x-cell>
+  <x-cell></x-cell>
+  <x-cell></x-cell>
+</segment-item>
+
+<segment-item class="fifths lg-thirds md-half tablet-stack">
+  <x-minor></x-minor>
+  <x-major></x-major>
+</segment-item>
 ```
 
 
