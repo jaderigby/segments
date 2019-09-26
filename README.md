@@ -9,7 +9,7 @@ Let's face it: Humans don't pay attention to grids.  So why should our website l
 
 Most pages are broken up into something more akin to portions rather than grids.  For example, take a very common layout pattern: image on the left (or right) and title with content below, right next to it.  Now, normally you would break this out to, say, five columns for the image, and then seven columns for the title and content.  But that's just weird!
 
-But with segments, you simply add children as "minor" and "major", like below:
+With segments, you simply describe the section in terms of portions.  For example, if you wanted the image to take up a third as much space as the content, you would simply use the class of "thirds". Then, the children are simply given the class of "minor" and "major", respectively.  Observe:
 
 ```
 <div class="segment thirds">
@@ -17,7 +17,8 @@ But with segments, you simply add children as "minor" and "major", like below:
   <div class="major"></div>
 </div>
 ```
-You can also utilize Segment's web component tags:
+
+You can also utilize Segment's web component tags, and write like so:
 
 ```
 <segment-item class="thirds">
