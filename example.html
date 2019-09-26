@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!-- <link rel="stylesheet" type="text/css" href="your/filepath/here" /> -->
+		<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
+		<script src="segments.lib.js"></script>
+		<link rel="stylesheet" type="text/css" href="segments.lib.css" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-size: 100%;
+			}
+			h1 {
+				font-size: 3.2rem;
+			}
+			h2 {
+				font-size: 2.8rem;
+			}
+			h3 {
+				font-size: 2.4rem;
+			}
+			h4 {
+				font-size: 2rem
+			}
+			h5 {
+				font-size: 1.6rem;
+			}
+			h6 {
+				font-size: 1.2rem;
+			}
+			body {
+				background-color: #444;
+			}
+			#container {
+				margin: 0 auto 30px;
+				padding: 20px 30px 30px;
+				width: 960px;
+				min-height: 500px;
+				background-color: #fff;
+				border-radius: 0 0 8px 8px;
+				box-shadow: 0 0 35px rgba(0,0,0,0.5);
+				font-family: arial, verdana, sans-serif;
+			}
+			.centerize {
+				position: absolute;
+				margin: auto;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0
+			}
+			.cf:after {
+				content: " ";
+				display: table;
+				clear: both;
+			}
+      .grid-wrapper {
+        margin-top: 30px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        background-color: rgba(0,0,0,0.2);
+        padding: 20px;
+        height: 200px;
+      }
+      .item {
+        background-color: rgba(0,0,0,0.2);
+        padding: 10px;
+        width: 400px;
+      }
+      .img-elem {
+        color: white;
+        height: 100px;
+        background-color: skyblue;
+      }
+      .title-elem {
+        color: white;
+        background-color: slategrey;
+      }
+			segment-item {
+				height: 100px;
+				background-color: skyblue;
+			}
+			x-minor, x-cell {
+				min-height: 50px;
+				background-color: rgba(255,0,0,0.25);
+			}
+			x-major {
+				background-color: rgba(0,0,0,0.25);
+			}
+			panel-wrapper {
+				background-color: white;
+			}
+			panel-wrapper panel-inner {
+				display: block;
+			  margin: 0 auto;
+			  padding: 60px 0;
+			  width: 960px;
+				background-color: rgba(0,0,0,0.1);
+			}
+			.top-whitespace {
+				margin-top: 60px !important;
+			}
+		</style>
+		<script>
+		/*
+			jQuishy
+			----------------------
+			Author: Jade C. Rigby
+			Date: 6/28/2019
+			Version: 1.4.0
+			License: MIT
+			----------------------
+			*/
+			[Element.prototype,CharacterData.prototype,DocumentType.prototype].forEach(function(t){t.hasOwnProperty("remove")||Object.defineProperty(t,"remove",{configurable:!0,enumerable:!0,writable:!0,value:function(){null!==this.parentNode&&this.parentNode.removeChild(this)}})}),Array.prototype.forEach||(Array.prototype.forEach=function(t){var e,i;if(null==this)throw new TypeError("this is null or not defined");var s=Object(this),n=s.length>>>0;if("function"!=typeof t)throw new TypeError(t+" is not a function");for(arguments.length>1&&(e=arguments[1]),i=0;i<n;){var o;i in s&&(o=s[i],t.call(e,o,i,s)),i++}}),window.NodeList&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=function(t,e){e=e||window;for(var i=0;i<this.length;i++)t.call(e,this[i],i,this)});var jQuishy=function(t){this.t,"string"==typeof t?this.t=document.querySelectorAll(t):t instanceof HTMLCollection?this.t=[].slice.call(t):void 0!==t&&(this.t=[t]),this.items=this.t,this.item=this.t[0],this.vanilla=1===this.t.length?this.t[0]:this.t,this.asString=this.vanilla.innerHTML};function paPos(t,e,i){t.forEach(function(t){t.insertAdjacentHTML(e,i)})}function _$(t){return t?new jQuishy(t):"1.4.0"}jQuishy.prototype.first=function(){return this.t=[this.item],this},jQuishy.prototype.attr=function(t,e){var i=[];return this.t.forEach(function(s){if(void 0===e){var n=s.getAttribute(t);i.push(n)}else s.setAttribute(t,e)}),1===i.length?i[0]:i},jQuishy.prototype.css=function(t,e){return this.t.forEach(function(i){var s=[];if(s.push(t),e&&s.push(e),2===s.length)i.style.cssText=s[0]+" : "+s[1];else if(s[0]){var n="";for(var o in s[0]){n+=o.replace(/([a-z])([A-Z])/g,"$1-$2").toLowerCase()+":"+s[0][o]+";"}i.style.cssText=n}}),this},jQuishy.prototype.hasClass=function(t){return this.t[0].classList?this.t[0].classList.contains(t):new RegExp("(^| )"+className+"( |$)","gi").test(this.t[0].className)},jQuishy.prototype.addClass=function(t){return this.t.forEach(function(e){e.classList?e.classList.add(t):e.className+=" "+t}),this},jQuishy.prototype.removeClass=function(t){return this.t.forEach(function(e){e.classList?e.classList.remove(t):e.className=e.className.replace(new RegExp("(^|\\b)"+t.split(" ").join("|")+"(\\b|$)","gi")," ")}),this},jQuishy.prototype.toggleClass=function(t){return this.t.forEach(function(e){if(e.classList)e.classList.toggle(t);else{var i=e.className.split(" "),s=i.indexOf(t);s>=0?i.splice(s,1):i.push(t),e.className=i.join(" ")}}),this},jQuishy.prototype.prepend=function(t){return paPos(this.t,"afterbegin",t),this},jQuishy.prototype.append=function(t){return paPos(this.t,"beforeend",t),this},jQuishy.prototype.click=function(t){return this.t.forEach(function(e){e.addEventListener("click",function(e){t(e)})}),this},jQuishy.prototype.delegate=function(t,e,i){return this.t[0].addEventListener(e,function(e){e.target&&e.target.matches(t)&&i(e)}),this};
+
+		</script>
+		<title>My Site</title>
+	</head>
+	<body>
+		<panel-wrapper>
+			<panel-inner>
+				<segment-item class="thirds">
+					<x-minor></x-minor>
+					<x-major></x-major>
+				</segment-item>
+			</panel-inner>
+		</panel-wrapper>
+		<div class="top-whitespace"></div>
+		<panel-wrapper>
+			<panel-inner>
+				<segment-item class="thirds md-stack">
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+				</segment-item>
+			</panel-inner>
+		</panel-wrapper>
+	</body>
+</html>
