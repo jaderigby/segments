@@ -4,6 +4,12 @@
 
 Let's face it: Humans don't pay attention to grids.  So why should our website layouts?  Introducing Segments!
 
+## It All Starts With Panels ##
+
+The first element that you need is called a "segment".  This is the container for your segments.  It is similar to how many libraries use a "container".  What makes it unique, though, is that fact that it facilitates some modern web design paradigms. "Huh"?  
+
+Take for example, a webpage that has a section with a background color that extends the length of the site, but the content is obviously limited to the center &ndash; expanding only so far.  This is easily.
+
 
 ## We Don't Need No Stinking Grids &ndash; The Basics ##
 
@@ -81,6 +87,3 @@ Web components style:
   <x-major></x-major>
 </segment-item>
 ```
-
-
-## It All Starts With Panels ##
