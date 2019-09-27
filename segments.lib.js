@@ -4,8 +4,8 @@ window.customElements.define('panel-wrapper', panelWrapper);
 class panelInner extends HTMLElement {}
 window.customElements.define('panel-inner', panelInner);
 
-class segmentWrapper extends HTMLElement {}
-window.customElements.define('segment-wrapper', segmentWrapper);
+class segmentElem extends HTMLElement {}
+window.customElements.define('segment-elem', segmentElem);
 
 class segMajor extends HTMLElement {}
 window.customElements.define('x-major', segMajor);

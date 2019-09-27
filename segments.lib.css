@@ -14,7 +14,7 @@ panel-wrapper panel-inner {
 }
 
 .segment,
-segment-item {
+segment-elem {
   display: flex;
   flex-flow: row wrap;
 }

@@ -45,10 +45,10 @@ With segments, you simply describe the section in terms of portions.  For exampl
 Web components style:
 
 ```
-<segment-wrapper class="thirds">
+<segment-elem class="thirds">
   <x-minor></x-minor>
   <x-major></x-major>
-</segment-wrapper>
+</segment-elem>
 ```
 
 From there, you may decide that you would rather give the image more space, maybe making the image portion 2/5 that of the content.  For this, your class would be "fifths".  The next down is "sevenths".  Sevenths is very close to the golden ratio, FYI.  Below is a diagram of the three classes (thirds, fifths, sevenths):
@@ -76,7 +76,7 @@ Not a problem.  Segments provides the following breakpoints:
 - Small (sm)
 - Extra Small (xs)
 
-And here's how you use it:
+And here's how you use them:
 
 ```
 <div class="segment thirds tablet-stack">
@@ -94,14 +94,14 @@ And here's how you use it:
 Web components style:
 
 ```
-<segment-wrapper class="thirds tablet-stack">
+<segment-elem class="thirds tablet-stack">
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
-</segment-wrapper>
+</segment-elem>
 
-<segment-wrapper class="fifths lg-thirds md-half tablet-stack">
+<segment-elem class="fifths lg-thirds md-half tablet-stack">
   <x-minor></x-minor>
   <x-major></x-major>
-</segment-wrapper>
+</segment-elem>
 ```
