@@ -15,7 +15,15 @@ Take for example, a webpage that has a section with a background color that exte
   <div class="panel">
   </div>
 </div>
+```
 
+Or, you can utilize Segment's web component tags, and write it like so:
+
+```
+<panel-wrapper>
+  <panel-inner>
+  </panel-inner>
+</panel-wrapper>
 ```
 
 Then from there, the rest of your segments go inside the panel class.
@@ -34,7 +42,7 @@ With segments, you simply describe the section in terms of portions.  For exampl
 </div>
 ```
 
-Or, you can utilize Segment's web component tags, and write it like so:
+Web components style:
 
 ```
 <segment-wrapper class="thirds">
