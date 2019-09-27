@@ -6,9 +6,17 @@ Let's face it: Humans don't pay attention to grids.  So why should our website l
 
 ## It All Starts With Panels ##
 
-The first element that you need is called a "segment".  This is the container for your segments.  It is similar to how many libraries use a "container".  What makes it unique, though, is that fact that it facilitates some modern web design paradigms. "Huh"?  
+The first element that you need is called a "panel".  This is the container for your segments.  It is similar to how many libraries use a "container".  What makes it unique, though, is the fact that it facilitates some modern web design paradigms. "Huh"?  
 
-Take for example, a webpage that has a section with a background color that extends the length of the site, but the content is obviously limited to the center &ndash; expanding only so far.  This is easily.
+Take for example, a webpage that has a section with a background color that extends the length of the site, but the content is obviously limited to the center &ndash; expanding only so far.  Or what about paralax? Both of these are easily accomplished with panels.  Panels are made up of two components: A wrapper and then the panel itself. Check it out:
+
+```
+<div class="panel-wrapper">
+  <div class="panel">
+  </div>
+</div>
+
+```
 
 
 ## We Don't Need No Stinking Grids &ndash; The Basics ##
