@@ -27,10 +27,10 @@ With segments, you simply describe the section in terms of portions.  For exampl
 Or, you can utilize Segment's web component tags, and write it like so:
 
 ```
-<segment-item class="thirds">
+<segment-wrapper class="thirds">
   <x-minor></x-minor>
   <x-major></x-major>
-</segment-item>
+</segment-wrapper>
 ```
 
 From there, you may decide that you would rather give the image more space, maybe making the image portion 2/5 that of the content.  For this, your class would be "fifths".  The next down is "sevenths".  Sevenths is very close to the golden ratio, FYI.  Below is a diagram of the three classes (thirds, fifths, sevenths):
@@ -76,14 +76,14 @@ And here's how you use it:
 Web components style:
 
 ```
-<segment-item class="thirds tablet-stack">
+<segment-wrapper class="thirds tablet-stack">
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
-</segment-item>
+</segment-wrapper>
 
-<segment-item class="fifths lg-thirds md-half tablet-stack">
+<segment-wrapper class="fifths lg-thirds md-half tablet-stack">
   <x-minor></x-minor>
   <x-major></x-major>
-</segment-item>
+</segment-wrapper>
 ```

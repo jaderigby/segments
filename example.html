@@ -33,7 +33,7 @@
 			body {
 				background-color: #444;
 			}
-			segment-item {
+			segment-wrapper {
 				height: 100px;
 				background-color: skyblue;
 			}
@@ -63,19 +63,19 @@
 	<body>
 		<panel-wrapper>
 			<panel-inner>
-				<segment-item class="thirds">
+				<segment-wrapper class="thirds">
 					<x-minor></x-minor>
 					<x-major></x-major>
-				</segment-item>
+				</segment-wrapper>
 			</panel-inner>
 		</panel-wrapper>
 		<panel-wrapper class="top-whitespace">
 			<panel-inner>
-				<segment-item class="thirds md-stack">
+				<segment-wrapper class="thirds md-stack">
 					<x-cell></x-cell>
 					<x-cell></x-cell>
 					<x-cell></x-cell>
-				</segment-item>
+				</segment-wrapper>
 			</panel-inner>
 		</panel-wrapper>
 	</body>
