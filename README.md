@@ -18,8 +18,10 @@ Take for example, a webpage that has a section with a background color that exte
 
 ```
 
+Then from there, the rest of your segments go inside the panel class.
 
-## We Don't Need No Stinking Grids &ndash; The Basics ##
+
+## We Don't Need No Stinking Grids &ndash; Introducing Segments! ##
 
 Most pages are broken up into something more akin to portions rather than grids.  For example, take a very common layout pattern: image on the left (or right) and title with content, right next to it.  Now, normally you would break this out into, say, five columns for the image, and then seven columns for the title and content.  But that's just weird!
 
