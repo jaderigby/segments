@@ -4,6 +4,8 @@
 
 Let's face it: Humans don't pay attention to grids.  So why should our website layouts?  Introducing Segments!
 
+"So what is a segment?", you ask.  I'm glad you asked!  A segment is a way of breaking a design down to portions, as opposed to a layout of imaginary grids, and where a design falls within that grid. Instead, you describe what your layout is doing, and NOT where it fits in some contrived grid system.
+
 ## It All Starts With Panels ##
 
 The first element that you need is called a "panel".  This is the container for your segments.  It is similar to how many libraries use a "container".  What makes it unique, though, is the fact that it facilitates some modern web design paradigms. "Huh"?  
