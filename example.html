@@ -5,7 +5,7 @@
 		<!-- <link rel="stylesheet" type="text/css" href="your/filepath/here" /> -->
 		<!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
 		<script src="segments.lib.js"></script>
-		<link rel="stylesheet" type="text/css" href="wc-segments.lib.min.css" />
+		<link rel="stylesheet" type="text/css" href="wc-segments.lib.css" />
 		<style type="text/css">
 			* {
 				margin: 0;
@@ -34,7 +34,7 @@
 				background-color: #444;
 			}
 			segment-elem {
-				height: 100px;
+				min-height: 100px;
 				background-color: skyblue;
 			}
 			x-minor, x-cell {
@@ -47,15 +47,24 @@
 			panel-wrapper {
 				background-color: white;
 			}
+			panel-wrapper.dark {
+				background-color: rgb(221, 235, 239);
+			}
 			panel-wrapper panel-inner {
 				display: block;
 			  margin: 0 auto;
-			  padding: 60px 0;
+				padding: 10px 0;
 			  width: 960px;
 				background-color: rgba(0,0,0,0.1);
 			}
 			.top-whitespace {
 				margin-top: 25px;
+			}
+			html {
+				font-family: arial, verdana, sans-serif;
+			}
+			.center-justify {
+				text-align: center;
 			}
 		</style>
 		<title>Segments Example</title>
@@ -69,9 +78,87 @@
 				</segment-elem>
 			</panel-inner>
 		</panel-wrapper>
-		<panel-wrapper class="top-whitespace">
+		<panel-wrapper class="dark">
 			<panel-inner>
-				<segment-elem class="thirds md-stack">
+				<segment-elem class="fifths">
+					<x-minor></x-minor>
+					<x-major></x-major>
+				</segment-elem>
+			</panel-inner>
+		</panel-wrapper>
+		<panel-wrapper>
+			<panel-inner>
+				<segment-elem class="sevenths">
+					<x-minor></x-minor>
+					<x-major></x-major>
+				</segment-elem>
+			</panel-inner>
+		</panel-wrapper>
+		<panel-wrapper class="dark">
+			<panel-inner>
+				<segment-elem class="half">
+					<x-minor></x-minor>
+					<x-major></x-major>
+				</segment-elem>
+			</panel-inner>
+		</panel-wrapper>
+		<panel-wrapper>
+			<panel-inner>
+				<segment-elem class="half">
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+				</segment-elem>
+			</panel-inner>
+		</panel-wrapper>
+		<panel-wrapper>
+			<panel-inner>
+				<segment-elem class="thirds">
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+				</segment-elem>
+			</panel-inner>
+		</panel-wrapper>
+		<panel-wrapper>
+			<panel-inner>
+				<segment-elem class="fourths">
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+				</segment-elem>
+			</panel-inner>
+		</panel-wrapper>
+		<panel-wrapper>
+			<panel-inner>
+				<segment-elem class="fifths">
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+				</segment-elem>
+			</panel-inner>
+		</panel-wrapper>
+		<panel-wrapper>
+			<panel-inner>
+				<segment-elem class="sixths">
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+				</segment-elem>
+			</panel-inner>
+		</panel-wrapper>
+		<panel-wrapper>
+			<panel-inner>
+				<segment-elem class="sevenths">
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+					<x-cell></x-cell>
+					<x-cell></x-cell>
 					<x-cell></x-cell>
 					<x-cell></x-cell>
 					<x-cell></x-cell>

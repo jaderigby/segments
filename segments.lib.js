@@ -1,7 +1,16 @@
 class panelWrapper extends HTMLElement {}
 window.customElements.define('panel-wrapper', panelWrapper);
 
-class panelInner extends HTMLElement {}
+class panelInner extends HTMLElement {
+  connectedCallback() {
+    if (this.hasAttribute('whitespace')) {
+      var VAL = this.getAttribute('whitespace');
+      // console.log(this.children[0]);
+      this.style.paddingTop = VAL + "px";
+      this.style.paddingBottom = VAL + "px";
+    }
+  }
+}
 window.customElements.define('panel-inner', panelInner);
 
 class segmentElem extends HTMLElement {}
