@@ -1,64 +1,35 @@
-.panel-wrapper,
-.panel-inner,
-.minor,
-.major,
-.cell {
-  display: block;
-}
-
 .panel-wrapper .panel-inner {
   margin: 0 auto;
   padding: 60px 0;
   width: 1200px;
 }
 
-segment-elem {
+.segment {
   display: flex;
   flex-flow: row wrap;
 }
 
-prime-segment {
+.prime-segment {
   display: flex;
   flex-flow: row nowrap;
 }
 
-prime-segment > aside {
+.prime-segment > aside {
   flex-shrink: 0;
 }
 
-prime-segment > article {
+.prime-segment > article {
   flex-grow: 1;
 }
 
-.stack > .minor,
-.stack > .major,
-.stack > .cell,
-.half > .minor,
-.half > .major,
-.half > .cell,
-.thirds > .minor,
-.thirds > .major,
-.thirds > .cell,
-.fourths > .minor,
-.fourths > .major,
-.fourths > .cell,
-.fourths.major-in-the-middle > .minor,
-.fourths.major-in-the-middle > .major,
-.fifths > .minor,
-.fifths > .major,
-.fifths > .cell,
-.fifths-single > .minor,
-.fifths-single > .major,
-.sixths > .cell,
-.sevenths > .minor,
-.sevenths > .major,
-.sevenths > .cell {
+.minor,
+.major,
+.cell
+ {
   flex-grow: 0;
   flex-shrink: 0;
 }
 
-.prime-segment > aside:nth-child(1n),
-.prime-segment > article:nth-child(1n),
 .stack > .minor:nth-child(1n),
 .stack > .major:nth-child(1n),
 .stack > .cell:nth-child(1n),
@@ -79,18 +50,18 @@ prime-segment > article {
 .fifths > .minor:nth-child(1n),
 .fifths > .major:nth-child(1n),
 .fifths > .cell:nth-child(1n),
+.fifths.major-in-the-middle > .minor:nth-child(1n),
+.fifths.major-in-the-middle > .major:nth-child(1n),
 .sixths > .cell:nth-child(1n),
 .sevenths > .minor:nth-child(1n),
 .sevenths > .major:nth-child(1n),
 .sevenths > .cell:nth-child(1n),
-prime-segment > aside:nth-child(1n),
-prime-segment > article:nth-child(1n) {
+.prime-segment > aside:nth-child(1n),
+.prime-segment > article:nth-child(1n) {
   margin-right: 15px;
   margin-left: 0;
 }
 
-.prime-segment > aside:last-child,
-.prime-segment > article:last-child,
 .stack > .minor:last-child,
 .stack > .major:last-child,
 .stack > .cell:last-child,
@@ -108,19 +79,17 @@ prime-segment > article:nth-child(1n) {
 .fifths > .minor:last-child,
 .fifths > .major:last-child,
 .fifths > .cell:last-child,
+.fifths.major-in-the-middle > .minor:last-child,
+.fifths.major-in-the-middle > .major:last-child,
 .sixths > .cell:last-child,
 .sevenths > .minor:last-child,
 .sevenths > .major:last-child,
 .sevenths > .cell:last-child,
 .prime-segment > aside:last-child,
-.prime-segment > article:last-child,
-prime-segment > aside:last-child,
-prime-segment > article:last-child {
+.prime-segment > article:last-child {
   margin-right: 0;
 }
 
-.prime-segment > aside:nth-child(2n),
-.prime-segment > article:nth-child(2n),
 .stack > .minor:nth-child(1n),
 .stack > .major:nth-child(1n),
 .stack > .cell:nth-child(1n),
@@ -138,12 +107,14 @@ prime-segment > article:last-child {
 .fifths > .minor:nth-child(5n),
 .fifths > .major:nth-child(5n),
 .fifths > .cell:nth-child(5n),
+.fifths.major-in-the-middle > .minor:nth-child(5n),
+.fifths.major-in-the-middle > .major:nth-child(5n),
 .sixths > .cell:nth-child(6n),
 .sevenths > .minor:nth-child(7n),
 .sevenths > .major:nth-child(7n),
 .sevenths > .cell:nth-child(7n),
-prime-segment > aside:nth-child(2n),
-prime-segment > article:nth-child(2n) {
+.prime-segment > aside:nth-child(2n),
+.prime-segment > article:nth-child(2n) {
   margin-right: 0;
   margin-left: auto;
 }
@@ -166,7 +137,9 @@ prime-segment > article:nth-child(2n) {
 }
 
 .thirds > .minor,
-.thirds > .cell {
+.thirds > .cell,
+.thirds.major-in-the-middle > .minor,
+.thirds.major-in-the-middle > .major {
   flex-basis: calc(99.9% * 1/3 - (15px - 15px * 1/3));
   max-width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
   width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
@@ -203,13 +176,15 @@ prime-segment > article:nth-child(2n) {
   width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
 }
 
-.fifths.true > .major {
+.fifths.true > .major,
+.fifths.major-in-the-middle > .major {
   flex-basis: calc(99.9% * 3/5 - (15px - 15px * 3/5));
   max-width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
   width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
 }
 
-.fifths > .cell {
+.fifths > .cell,
+.fifths.major-in-the-middle > .minor {
   flex-basis: calc(99.9% * 1/5 - (15px - 15px * 1/5));
   max-width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
   width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
@@ -253,7 +228,7 @@ prime-segment > article:nth-child(2n) {
 
 @media only screen and (max-width: calc(1200px + 50px)) {
 
-  .panel-wrapper panel-innner {
+  .panel-wrapper .panel-inner {
     padding: 60px 25px;
     width: calc(100% - 50px);
   }
@@ -261,28 +236,6 @@ prime-segment > article:nth-child(2n) {
 }
 
 @media only screen and (max-width: 1199px) {
-
-  .lg-half > .minor,
-  .lg-half > .major,
-  .lg-half > .cell,
-  .lg-thirds > .minor,
-  .lg-thirds > .major,
-  .lg-thirds > .cell,
-  .lg-fourths > .minor,
-  .lg-fourths > .major,
-  .lg-fourths > .cell,
-  .lg-fourths.major-in-the-middle > .minor,
-  .lg-fourths.major-in-the-middle > .major,
-  .lg-fifths > .minor,
-  .lg-fifths > .major,
-  .lg-fifths > .cell,
-  .lg-sixths > .cell,
-  .lg-sevenths > .minor,
-  .lg-sevenths > .major,
-  .lg-sevenths > .cell {
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
 
   .lg-half > .minor:nth-child(1n),
   .lg-half > .major:nth-child(1n),
@@ -362,14 +315,17 @@ prime-segment > article:nth-child(2n) {
 
   .lg-half > .minor,
   .lg-half > .major,
-  .lg-half > .cell {
+  .lg-half > .cell,
+  .lg-fourths.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 1/2 - (15px - 15px * 1/2));
     max-width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
     width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
   }
 
   .lg-thirds > .minor,
-  .lg-thirds > .cell {
+  .lg-thirds > .cell,
+  .lg-thirds.major-in-the-middle > .minor,
+  .lg-thirds.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 1/3 - (15px - 15px * 1/3));
     max-width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
     width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
@@ -381,7 +337,8 @@ prime-segment > article:nth-child(2n) {
     width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
   }
 
-  .lg-fourths > .cell {
+  .lg-fourths > .cell,
+  .lg-fourths.major-in-the-middle > .minor {
     flex-basis: calc(99.9% * 1/4 - (15px - 15px * 1/4));
     max-width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
     width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
@@ -405,13 +362,15 @@ prime-segment > article:nth-child(2n) {
     width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
   }
 
-  .lg-fifths.true > .major {
+  .lg-fifths.true > .major,
+  .lg-fifths.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 3/5 - (15px - 15px * 3/5));
     max-width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
     width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
   }
 
-  .lg-fifths > .cell {
+  .lg-fifths > .cell,
+  .lg-fifths.major-in-the-middle > .minor {
     flex-basis: calc(99.9% * 1/5 - (15px - 15px * 1/5));
     max-width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
     width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
@@ -456,28 +415,6 @@ prime-segment > article:nth-child(2n) {
 }
 
 @media only screen and (max-width: 960px) {
-
-  .md-half > .minor,
-  .md-half > .major,
-  .md-half > .cell,
-  .md-thirds > .minor,
-  .md-thirds > .major,
-  .md-thirds > .cell,
-  .md-fourths > .minor,
-  .md-fourths > .major,
-  .md-fourths > .cell,
-  .md-fourths.major-in-the-middle > .minor,
-  .md-fourths.major-in-the-middle > .major,
-  .md-fifths > .minor,
-  .md-fifths > .major,
-  .md-fifths > .cell,
-  .md-sixths > .cell,
-  .md-sevenths > .minor,
-  .md-sevenths > .major,
-  .md-sevenths > .cell {
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
 
   .md-half > .minor:nth-child(1n),
   .md-half > .major:nth-child(1n),
@@ -557,14 +494,17 @@ prime-segment > article:nth-child(2n) {
 
   .md-half > .minor,
   .md-half > .major,
-  .md-half > .cell {
+  .md-half > .cell,
+  .md-fourths.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 1/2 - (15px - 15px * 1/2));
     max-width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
     width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
   }
 
   .md-thirds > .minor,
-  .md-thirds > .cell {
+  .md-thirds > .cell,
+  .md-thirds.major-in-the-middle > .minor,
+  .md-thirds.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 1/3 - (15px - 15px * 1/3));
     max-width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
     width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
@@ -576,7 +516,8 @@ prime-segment > article:nth-child(2n) {
     width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
   }
 
-  .md-fourths > .cell {
+  .md-fourths > .cell,
+  .md-fourths.major-in-the-middle > .minor {
     flex-basis: calc(99.9% * 1/4 - (15px - 15px * 1/4));
     max-width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
     width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
@@ -600,13 +541,15 @@ prime-segment > article:nth-child(2n) {
     width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
   }
 
-  .md-fifths.true > .major {
+  .md-fifths.true > .major,
+  .md-fifths.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 3/5 - (15px - 15px * 3/5));
     max-width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
     width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
   }
 
-  .md-fifths > .cell {
+  .md-fifths > .cell,
+  .md-fifths.major-in-the-middle > .minor {
     flex-basis: calc(99.9% * 1/5 - (15px - 15px * 1/5));
     max-width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
     width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
@@ -651,28 +594,6 @@ prime-segment > article:nth-child(2n) {
 }
 
 @media only screen and (max-width: 768px) {
-
-  .tablet-half > .minor,
-  .tablet-half > .major,
-  .tablet-half > .cell,
-  .tablet-thirds > .minor,
-  .tablet-thirds > .major,
-  .tablet-thirds > .cell,
-  .tablet-fourths > .minor,
-  .tablet-fourths > .major,
-  .tablet-fourths > .cell,
-  .tablet-fourths.major-in-the-middle > .minor,
-  .tablet-fourths.major-in-the-middle > .major,
-  .tablet-fifths > .minor,
-  .tablet-fifths > .major,
-  .tablet-fifths > .cell,
-  .tablet-sixths > .cell,
-  .tablet-sevenths > .minor,
-  .tablet-sevenths > .major,
-  .tablet-sevenths > .cell {
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
 
   .tablet-half > .minor:nth-child(1n),
   .tablet-half > .major:nth-child(1n),
@@ -752,14 +673,17 @@ prime-segment > article:nth-child(2n) {
 
   .tablet-half > .minor,
   .tablet-half > .major,
-  .tablet-half > .cell {
+  .tablet-half > .cell,
+  .tablet-fourths.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 1/2 - (15px - 15px * 1/2));
     max-width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
     width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
   }
 
   .tablet-thirds > .minor,
-  .tablet-thirds > .cell {
+  .tablet-thirds > .cell,
+  .tablet-thirds.major-in-the-middle > .minor,
+  .tablet-thirds.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 1/3 - (15px - 15px * 1/3));
     max-width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
     width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
@@ -771,7 +695,8 @@ prime-segment > article:nth-child(2n) {
     width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
   }
 
-  .tablet-fourths > .cell {
+  .tablet-fourths > .cell,
+  .tablet-fourths.major-in-the-middle > .minor {
     flex-basis: calc(99.9% * 1/4 - (15px - 15px * 1/4));
     max-width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
     width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
@@ -795,13 +720,15 @@ prime-segment > article:nth-child(2n) {
     width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
   }
 
-  .tablet-fifths.true > .major {
+  .tablet-fifths.true > .major,
+  .tablet-fifths.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 3/5 - (15px - 15px * 3/5));
     max-width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
     width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
   }
 
-  .tablet-fifths > .cell {
+  .tablet-fifths > .cell,
+  .tablet-fifths.major-in-the-middle > .minor {
     flex-basis: calc(99.9% * 1/5 - (15px - 15px * 1/5));
     max-width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
     width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
@@ -846,28 +773,6 @@ prime-segment > article:nth-child(2n) {
 }
 
 @media screen and (max-width: 640px) {
-
-  .sm-half > .minor,
-  .sm-half > .major,
-  .sm-half > .cell,
-  .sm-thirds > .minor,
-  .sm-thirds > .major,
-  .sm-thirds > .cell,
-  .sm-fourths > .minor,
-  .sm-fourths > .major,
-  .sm-fourths > .cell,
-  .sm-fourths.major-in-the-middle > .minor,
-  .sm-fourths.major-in-the-middle > .major,
-  .sm-fifths > .minor,
-  .sm-fifths > .major,
-  .sm-fifths > .cell,
-  .sm-sixths > .cell,
-  .sm-sevenths > .minor,
-  .sm-sevenths > .major,
-  .sm-sevenths > .cell {
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
 
   .sm-half > .minor:nth-child(1n),
   .sm-half > .major:nth-child(1n),
@@ -947,14 +852,17 @@ prime-segment > article:nth-child(2n) {
 
   .sm-half > .minor,
   .sm-half > .major,
-  .sm-half > .cell {
+  .sm-half > .cell,
+  .sm-fourths.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 1/2 - (15px - 15px * 1/2));
     max-width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
     width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
   }
 
   .sm-thirds > .minor,
-  .sm-thirds > .cell {
+  .sm-thirds > .cell,
+  .sm-thirds.major-in-the-middle > .minor,
+  .sm-thirds.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 1/3 - (15px - 15px * 1/3));
     max-width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
     width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
@@ -966,7 +874,8 @@ prime-segment > article:nth-child(2n) {
     width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
   }
 
-  .sm-fourths > .cell {
+  .sm-fourths > .cell,
+  .sm-fourths.major-in-the-middle > .minor {
     flex-basis: calc(99.9% * 1/4 - (15px - 15px * 1/4));
     max-width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
     width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
@@ -990,13 +899,15 @@ prime-segment > article:nth-child(2n) {
     width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
   }
 
-  .sm-fifths.true > .major {
+  .sm-fifths.true > .major,
+  .sm-fifths.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 3/5 - (15px - 15px * 3/5));
     max-width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
     width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
   }
 
-  .sm-fifths > .cell {
+  .sm-fifths > .cell,
+  .sm-fifths.major-in-the-middle > .minor {
     flex-basis: calc(99.9% * 1/5 - (15px - 15px * 1/5));
     max-width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
     width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
@@ -1041,28 +952,6 @@ prime-segment > article:nth-child(2n) {
 }
 
 @media screen and (max-width: 420px) {
-
-  .xs-half > .minor,
-  .xs-half > .major,
-  .xs-half > .cell,
-  .xs-thirds > .minor,
-  .xs-thirds > .major,
-  .xs-thirds > .cell,
-  .xs-fourths > .minor,
-  .xs-fourths > .major,
-  .xs-fourths > .cell,
-  .xs-fourths.major-in-the-middle > .minor,
-  .xs-fourths.major-in-the-middle > .major,
-  .xs-fifths > .minor,
-  .xs-fifths > .major,
-  .xs-fifths > .cell,
-  .xs-sixths > .cell,
-  .xs-sevenths > .minor,
-  .xs-sevenths > .major,
-  .xs-sevenths > .cell {
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
 
   .xs-half > .minor:nth-child(1n),
   .xs-half > .major:nth-child(1n),
@@ -1142,14 +1031,17 @@ prime-segment > article:nth-child(2n) {
 
   .xs-half > .minor,
   .xs-half > .major,
-  .xs-half > .cell {
+  .xs-half > .cell,
+  .xs-fourths.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 1/2 - (15px - 15px * 1/2));
     max-width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
     width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
   }
 
   .xs-thirds > .minor,
-  .xs-thirds > .cell {
+  .xs-thirds > .cell,
+  .xs-thirds.major-in-the-middle > .minor,
+  .xs-thirds.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 1/3 - (15px - 15px * 1/3));
     max-width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
     width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
@@ -1161,7 +1053,8 @@ prime-segment > article:nth-child(2n) {
     width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
   }
 
-  .xs-fourths > .cell {
+  .xs-fourths > .cell,
+  .xs-fourths.major-in-the-middle > .minor {
     flex-basis: calc(99.9% * 1/4 - (15px - 15px * 1/4));
     max-width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
     width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
@@ -1185,13 +1078,15 @@ prime-segment > article:nth-child(2n) {
     width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
   }
 
-  .xs-fifths.true > .major {
+  .xs-fifths.true > .major,
+  .xs-fifths.major-in-the-middle > .major {
     flex-basis: calc(99.9% * 3/5 - (15px - 15px * 3/5));
     max-width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
     width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
   }
 
-  .xs-fifths > .cell {
+  .xs-fifths > .cell,
+  .xs-fifths.major-in-the-middle > .minor {
     flex-basis: calc(99.9% * 1/5 - (15px - 15px * 1/5));
     max-width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
     width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
