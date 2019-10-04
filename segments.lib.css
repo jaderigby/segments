@@ -122,108 +122,108 @@
 .stack > .minor,
 .stack > .major,
 .stack > .cell {
-  flex-basis: calc(99.9% * 1/1 - (15px - 15px * 1/1));
-  max-width: calc(99.9% * 1/1 - (15px - 15px * 1/1));
-  width: calc(99.9% * 1/1 - (15px - 15px * 1/1));
+  flex-basis: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+  max-width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+  width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
 }
 
 .half > .minor,
 .half > .major,
 .half > .cell,
 .fourths.major-in-the-middle > .major {
-  flex-basis: calc(99.9% * 1/2 - (15px - 15px * 1/2));
-  max-width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
-  width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
+  flex-basis: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+  max-width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+  width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
 }
 
 .thirds > .minor,
 .thirds > .cell,
 .thirds.major-in-the-middle > .minor,
 .thirds.major-in-the-middle > .major {
-  flex-basis: calc(99.9% * 1/3 - (15px - 15px * 1/3));
-  max-width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
-  width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
+  flex-basis: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+  max-width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+  width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
 }
 
 .thirds > .major {
-  flex-basis: calc(99.9% * 2/3 - (15px - 15px * 2/3));
-  max-width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
-  width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
+  flex-basis: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+  max-width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+  width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
 }
 
 .fourths > .cell,
 .fourths.major-in-the-middle > .minor {
-  flex-basis: calc(99.9% * 1/4 - (15px - 15px * 1/4));
-  max-width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
-  width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
+  flex-basis: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+  max-width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+  width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
 }
 
 .fifths > .minor {
-  flex-basis: calc(99.9% * 5/13 - (15px - 15px * 5/13));
-  max-width: calc(99.9% * 5/13 - (15px - 15px * 5/13));
-  width: calc(99.9% * 5/13 - (15px - 15px * 5/13));
+  flex-basis: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+  max-width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+  width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
 }
 
 .fifths > .major {
-  flex-basis: calc(99.9% * 8/13 - (15px - 15px * 8/13));
-  max-width: calc(99.9% * 8/13 - (15px - 15px * 8/13));
-  width: calc(99.9% * 8/13 - (15px - 15px * 8/13));
+  flex-basis: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+  max-width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+  width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
 }
 
 .fifths.true > .minor {
-  flex-basis: calc(99.9% * 2/5 - (15px - 15px * 2/5));
-  max-width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
-  width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
+  flex-basis: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+  max-width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+  width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
 }
 
 .fifths.true > .major,
 .fifths.major-in-the-middle > .major {
-  flex-basis: calc(99.9% * 3/5 - (15px - 15px * 3/5));
-  max-width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
-  width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
+  flex-basis: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+  max-width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+  width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
 }
 
 .fifths > .cell,
 .fifths.major-in-the-middle > .minor {
-  flex-basis: calc(99.9% * 1/5 - (15px - 15px * 1/5));
-  max-width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
-  width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
+  flex-basis: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+  max-width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+  width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
 }
 
 .sixths > .cell {
-  flex-basis: calc(99.9% * 1/6 - (15px - 15px * 1/6));
-  max-width: calc(99.9% * 1/6 - (15px - 15px * 1/6));
-  width: calc(99.9% * 1/6 - (15px - 15px * 1/6));
+  flex-basis: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+  max-width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+  width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
 }
 
 .sevenths > .minor {
-  flex-basis: calc(99.9% * 10/23 - (15px - 15px * 10/23));
-  max-width: calc(99.9% * 10/23 - (15px - 15px * 10/23));
-  width: calc(99.9% * 10/23 - (15px - 15px * 10/23));
+  flex-basis: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+  max-width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+  width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
 }
 
 .sevenths > .major {
-  flex-basis: calc(99.9% * 13/23 - (15px - 15px * 13/23));
-  max-width: calc(99.9% * 13/23 - (15px - 15px * 13/23));
-  width: calc(99.9% * 13/23 - (15px - 15px * 13/23));
+  flex-basis: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+  max-width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+  width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
 }
 
 .sevenths.true > .minor {
-  flex-basis: calc(99.9% * 3/7 - (15px - 15px * 3/7));
-  max-width: calc(99.9% * 3/7 - (15px - 15px * 3/7));
-  width: calc(99.9% * 3/7 - (15px - 15px * 3/7));
+  flex-basis: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+  max-width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+  width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
 }
 
 .sevenths.true > .major {
-  flex-basis: calc(99.9% * 4/7 - (15px - 15px * 4/7));
-  max-width: calc(99.9% * 4/7 - (15px - 15px * 4/7));
-  width: calc(99.9% * 4/7 - (15px - 15px * 4/7));
+  flex-basis: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+  max-width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+  width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
 }
 
 .sevenths > .cell {
-  flex-basis: calc(99.9% * 1/7 - (15px - 15px * 1/7));
-  max-width: calc(99.9% * 1/7 - (15px - 15px * 1/7));
-  width: calc(99.9% * 1/7 - (15px - 15px * 1/7));
+  flex-basis: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+  max-width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+  width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
 }
 
 @media only screen and (max-width: calc(1200px + 50px)) {
@@ -308,108 +308,108 @@
   .lg-stack > .minor,
   .lg-stack > .major,
   .lg-stack > .cell {
-    flex-basis: calc(99.9% * 1/1 - (15px - 15px * 1/1));
-    max-width: calc(99.9% * 1/1 - (15px - 15px * 1/1));
-    width: calc(99.9% * 1/1 - (15px - 15px * 1/1));
+    flex-basis: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    max-width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
   }
 
   .lg-half > .minor,
   .lg-half > .major,
   .lg-half > .cell,
   .lg-fourths.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 1/2 - (15px - 15px * 1/2));
-    max-width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
-    width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
+    flex-basis: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    max-width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
   }
 
   .lg-thirds > .minor,
   .lg-thirds > .cell,
   .lg-thirds.major-in-the-middle > .minor,
   .lg-thirds.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 1/3 - (15px - 15px * 1/3));
-    max-width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
-    width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
+    flex-basis: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    max-width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
   }
 
   .lg-thirds > .major {
-    flex-basis: calc(99.9% * 2/3 - (15px - 15px * 2/3));
-    max-width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
-    width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
+    flex-basis: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    max-width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
   }
 
   .lg-fourths > .cell,
   .lg-fourths.major-in-the-middle > .minor {
-    flex-basis: calc(99.9% * 1/4 - (15px - 15px * 1/4));
-    max-width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
-    width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
+    flex-basis: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    max-width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
   }
 
   .lg-fifths > .minor {
-    flex-basis: calc(99.9% * 5/13 - (15px - 15px * 5/13));
-    max-width: calc(99.9% * 5/13 - (15px - 15px * 5/13));
-    width: calc(99.9% * 5/13 - (15px - 15px * 5/13));
+    flex-basis: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    max-width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
   }
 
   .lg-fifths > .major {
-    flex-basis: calc(99.9% * 8/13 - (15px - 15px * 8/13));
-    max-width: calc(99.9% * 8/13 - (15px - 15px * 8/13));
-    width: calc(99.9% * 8/13 - (15px - 15px * 8/13));
+    flex-basis: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    max-width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
   }
 
   .lg-fifths.true > .minor {
-    flex-basis: calc(99.9% * 2/5 - (15px - 15px * 2/5));
-    max-width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
-    width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
+    flex-basis: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    max-width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
   }
 
   .lg-fifths.true > .major,
   .lg-fifths.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 3/5 - (15px - 15px * 3/5));
-    max-width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
-    width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
+    flex-basis: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    max-width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
   }
 
   .lg-fifths > .cell,
   .lg-fifths.major-in-the-middle > .minor {
-    flex-basis: calc(99.9% * 1/5 - (15px - 15px * 1/5));
-    max-width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
-    width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
+    flex-basis: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    max-width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
   }
 
   .lg-sixths > .cell {
-    flex-basis: calc(99.9% * 1/6 - (15px - 15px * 1/6));
-    max-width: calc(99.9% * 1/6 - (15px - 15px * 1/6));
-    width: calc(99.9% * 1/6 - (15px - 15px * 1/6));
+    flex-basis: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    max-width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
   }
 
   .lg-sevenths > .minor {
-    flex-basis: calc(99.9% * 10/23 - (15px - 15px * 10/23));
-    max-width: calc(99.9% * 10/23 - (15px - 15px * 10/23));
-    width: calc(99.9% * 10/23 - (15px - 15px * 10/23));
+    flex-basis: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    max-width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
   }
 
   .lg-sevenths > .major {
-    flex-basis: calc(99.9% * 13/23 - (15px - 15px * 13/23));
-    max-width: calc(99.9% * 13/23 - (15px - 15px * 13/23));
-    width: calc(99.9% * 13/23 - (15px - 15px * 13/23));
+    flex-basis: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    max-width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
   }
 
   .lg-sevenths.true > .minor {
-    flex-basis: calc(99.9% * 3/7 - (15px - 15px * 3/7));
-    max-width: calc(99.9% * 3/7 - (15px - 15px * 3/7));
-    width: calc(99.9% * 3/7 - (15px - 15px * 3/7));
+    flex-basis: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    max-width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
   }
 
   .lg-sevenths.true > .major {
-    flex-basis: calc(99.9% * 4/7 - (15px - 15px * 4/7));
-    max-width: calc(99.9% * 4/7 - (15px - 15px * 4/7));
-    width: calc(99.9% * 4/7 - (15px - 15px * 4/7));
+    flex-basis: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    max-width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
   }
 
   .lg-sevenths > .cell {
-    flex-basis: calc(99.9% * 1/7 - (15px - 15px * 1/7));
-    max-width: calc(99.9% * 1/7 - (15px - 15px * 1/7));
-    width: calc(99.9% * 1/7 - (15px - 15px * 1/7));
+    flex-basis: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    max-width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
   }
 
 }
@@ -487,108 +487,108 @@
   .md-stack > .minor,
   .md-stack > .major,
   .md-stack > .cell {
-    flex-basis: calc(99.9% * 1/1 - (15px - 15px * 1/1));
-    max-width: calc(99.9% * 1/1 - (15px - 15px * 1/1));
-    width: calc(99.9% * 1/1 - (15px - 15px * 1/1));
+    flex-basis: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    max-width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
   }
 
   .md-half > .minor,
   .md-half > .major,
   .md-half > .cell,
   .md-fourths.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 1/2 - (15px - 15px * 1/2));
-    max-width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
-    width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
+    flex-basis: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    max-width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
   }
 
   .md-thirds > .minor,
   .md-thirds > .cell,
   .md-thirds.major-in-the-middle > .minor,
   .md-thirds.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 1/3 - (15px - 15px * 1/3));
-    max-width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
-    width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
+    flex-basis: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    max-width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
   }
 
   .md-thirds > .major {
-    flex-basis: calc(99.9% * 2/3 - (15px - 15px * 2/3));
-    max-width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
-    width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
+    flex-basis: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    max-width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
   }
 
   .md-fourths > .cell,
   .md-fourths.major-in-the-middle > .minor {
-    flex-basis: calc(99.9% * 1/4 - (15px - 15px * 1/4));
-    max-width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
-    width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
+    flex-basis: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    max-width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
   }
 
   .md-fifths > .minor {
-    flex-basis: calc(99.9% * 5/13 - (15px - 15px * 5/13));
-    max-width: calc(99.9% * 5/13 - (15px - 15px * 5/13));
-    width: calc(99.9% * 5/13 - (15px - 15px * 5/13));
+    flex-basis: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    max-width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
   }
 
   .md-fifths > .major {
-    flex-basis: calc(99.9% * 8/13 - (15px - 15px * 8/13));
-    max-width: calc(99.9% * 8/13 - (15px - 15px * 8/13));
-    width: calc(99.9% * 8/13 - (15px - 15px * 8/13));
+    flex-basis: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    max-width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
   }
 
   .md-fifths.true > .minor {
-    flex-basis: calc(99.9% * 2/5 - (15px - 15px * 2/5));
-    max-width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
-    width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
+    flex-basis: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    max-width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
   }
 
   .md-fifths.true > .major,
   .md-fifths.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 3/5 - (15px - 15px * 3/5));
-    max-width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
-    width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
+    flex-basis: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    max-width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
   }
 
   .md-fifths > .cell,
   .md-fifths.major-in-the-middle > .minor {
-    flex-basis: calc(99.9% * 1/5 - (15px - 15px * 1/5));
-    max-width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
-    width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
+    flex-basis: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    max-width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
   }
 
   .md-sixths > .cell {
-    flex-basis: calc(99.9% * 1/6 - (15px - 15px * 1/6));
-    max-width: calc(99.9% * 1/6 - (15px - 15px * 1/6));
-    width: calc(99.9% * 1/6 - (15px - 15px * 1/6));
+    flex-basis: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    max-width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
   }
 
   .md-sevenths > .minor {
-    flex-basis: calc(99.9% * 10/23 - (15px - 15px * 10/23));
-    max-width: calc(99.9% * 10/23 - (15px - 15px * 10/23));
-    width: calc(99.9% * 10/23 - (15px - 15px * 10/23));
+    flex-basis: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    max-width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
   }
 
   .md-sevenths > .major {
-    flex-basis: calc(99.9% * 13/23 - (15px - 15px * 13/23));
-    max-width: calc(99.9% * 13/23 - (15px - 15px * 13/23));
-    width: calc(99.9% * 13/23 - (15px - 15px * 13/23));
+    flex-basis: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    max-width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
   }
 
   .md-sevenths.true > .minor {
-    flex-basis: calc(99.9% * 3/7 - (15px - 15px * 3/7));
-    max-width: calc(99.9% * 3/7 - (15px - 15px * 3/7));
-    width: calc(99.9% * 3/7 - (15px - 15px * 3/7));
+    flex-basis: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    max-width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
   }
 
   .md-sevenths.true > .major {
-    flex-basis: calc(99.9% * 4/7 - (15px - 15px * 4/7));
-    max-width: calc(99.9% * 4/7 - (15px - 15px * 4/7));
-    width: calc(99.9% * 4/7 - (15px - 15px * 4/7));
+    flex-basis: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    max-width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
   }
 
   .md-sevenths > .cell {
-    flex-basis: calc(99.9% * 1/7 - (15px - 15px * 1/7));
-    max-width: calc(99.9% * 1/7 - (15px - 15px * 1/7));
-    width: calc(99.9% * 1/7 - (15px - 15px * 1/7));
+    flex-basis: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    max-width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
   }
 
 }
@@ -666,108 +666,108 @@
   .tablet-stack > .minor,
   .tablet-stack > .major,
   .tablet-stack > .cell {
-    flex-basis: calc(99.9% * 1/1 - (15px - 15px * 1/1));
-    max-width: calc(99.9% * 1/1 - (15px - 15px * 1/1));
-    width: calc(99.9% * 1/1 - (15px - 15px * 1/1));
+    flex-basis: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    max-width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
   }
 
   .tablet-half > .minor,
   .tablet-half > .major,
   .tablet-half > .cell,
   .tablet-fourths.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 1/2 - (15px - 15px * 1/2));
-    max-width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
-    width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
+    flex-basis: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    max-width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
   }
 
   .tablet-thirds > .minor,
   .tablet-thirds > .cell,
   .tablet-thirds.major-in-the-middle > .minor,
   .tablet-thirds.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 1/3 - (15px - 15px * 1/3));
-    max-width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
-    width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
+    flex-basis: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    max-width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
   }
 
   .tablet-thirds > .major {
-    flex-basis: calc(99.9% * 2/3 - (15px - 15px * 2/3));
-    max-width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
-    width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
+    flex-basis: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    max-width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
   }
 
   .tablet-fourths > .cell,
   .tablet-fourths.major-in-the-middle > .minor {
-    flex-basis: calc(99.9% * 1/4 - (15px - 15px * 1/4));
-    max-width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
-    width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
+    flex-basis: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    max-width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
   }
 
   .tablet-fifths > .minor {
-    flex-basis: calc(99.9% * 5/13 - (15px - 15px * 5/13));
-    max-width: calc(99.9% * 5/13 - (15px - 15px * 5/13));
-    width: calc(99.9% * 5/13 - (15px - 15px * 5/13));
+    flex-basis: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    max-width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
   }
 
   .tablet-fifths > .major {
-    flex-basis: calc(99.9% * 8/13 - (15px - 15px * 8/13));
-    max-width: calc(99.9% * 8/13 - (15px - 15px * 8/13));
-    width: calc(99.9% * 8/13 - (15px - 15px * 8/13));
+    flex-basis: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    max-width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
   }
 
   .tablet-fifths.true > .minor {
-    flex-basis: calc(99.9% * 2/5 - (15px - 15px * 2/5));
-    max-width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
-    width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
+    flex-basis: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    max-width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
   }
 
   .tablet-fifths.true > .major,
   .tablet-fifths.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 3/5 - (15px - 15px * 3/5));
-    max-width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
-    width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
+    flex-basis: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    max-width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
   }
 
   .tablet-fifths > .cell,
   .tablet-fifths.major-in-the-middle > .minor {
-    flex-basis: calc(99.9% * 1/5 - (15px - 15px * 1/5));
-    max-width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
-    width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
+    flex-basis: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    max-width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
   }
 
   .tablet-sixths > .cell {
-    flex-basis: calc(99.9% * 1/6 - (15px - 15px * 1/6));
-    max-width: calc(99.9% * 1/6 - (15px - 15px * 1/6));
-    width: calc(99.9% * 1/6 - (15px - 15px * 1/6));
+    flex-basis: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    max-width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
   }
 
   .tablet-sevenths > .minor {
-    flex-basis: calc(99.9% * 10/23 - (15px - 15px * 10/23));
-    max-width: calc(99.9% * 10/23 - (15px - 15px * 10/23));
-    width: calc(99.9% * 10/23 - (15px - 15px * 10/23));
+    flex-basis: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    max-width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
   }
 
   .tablet-sevenths > .major {
-    flex-basis: calc(99.9% * 13/23 - (15px - 15px * 13/23));
-    max-width: calc(99.9% * 13/23 - (15px - 15px * 13/23));
-    width: calc(99.9% * 13/23 - (15px - 15px * 13/23));
+    flex-basis: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    max-width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
   }
 
   .tablet-sevenths.true > .minor {
-    flex-basis: calc(99.9% * 3/7 - (15px - 15px * 3/7));
-    max-width: calc(99.9% * 3/7 - (15px - 15px * 3/7));
-    width: calc(99.9% * 3/7 - (15px - 15px * 3/7));
+    flex-basis: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    max-width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
   }
 
   .tablet-sevenths.true > .major {
-    flex-basis: calc(99.9% * 4/7 - (15px - 15px * 4/7));
-    max-width: calc(99.9% * 4/7 - (15px - 15px * 4/7));
-    width: calc(99.9% * 4/7 - (15px - 15px * 4/7));
+    flex-basis: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    max-width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
   }
 
   .tablet-sevenths > .cell {
-    flex-basis: calc(99.9% * 1/7 - (15px - 15px * 1/7));
-    max-width: calc(99.9% * 1/7 - (15px - 15px * 1/7));
-    width: calc(99.9% * 1/7 - (15px - 15px * 1/7));
+    flex-basis: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    max-width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
   }
 
 }
@@ -845,108 +845,108 @@
   .sm-stack > .minor,
   .sm-stack > .major,
   .sm-stack > .cell {
-    flex-basis: calc(99.9% * 1/1 - (15px - 15px * 1/1));
-    max-width: calc(99.9% * 1/1 - (15px - 15px * 1/1));
-    width: calc(99.9% * 1/1 - (15px - 15px * 1/1));
+    flex-basis: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    max-width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
   }
 
   .sm-half > .minor,
   .sm-half > .major,
   .sm-half > .cell,
   .sm-fourths.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 1/2 - (15px - 15px * 1/2));
-    max-width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
-    width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
+    flex-basis: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    max-width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
   }
 
   .sm-thirds > .minor,
   .sm-thirds > .cell,
   .sm-thirds.major-in-the-middle > .minor,
   .sm-thirds.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 1/3 - (15px - 15px * 1/3));
-    max-width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
-    width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
+    flex-basis: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    max-width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
   }
 
   .sm-thirds > .major {
-    flex-basis: calc(99.9% * 2/3 - (15px - 15px * 2/3));
-    max-width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
-    width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
+    flex-basis: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    max-width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
   }
 
   .sm-fourths > .cell,
   .sm-fourths.major-in-the-middle > .minor {
-    flex-basis: calc(99.9% * 1/4 - (15px - 15px * 1/4));
-    max-width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
-    width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
+    flex-basis: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    max-width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
   }
 
   .sm-fifths > .minor {
-    flex-basis: calc(99.9% * 5/13 - (15px - 15px * 5/13));
-    max-width: calc(99.9% * 5/13 - (15px - 15px * 5/13));
-    width: calc(99.9% * 5/13 - (15px - 15px * 5/13));
+    flex-basis: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    max-width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
   }
 
   .sm-fifths > .major {
-    flex-basis: calc(99.9% * 8/13 - (15px - 15px * 8/13));
-    max-width: calc(99.9% * 8/13 - (15px - 15px * 8/13));
-    width: calc(99.9% * 8/13 - (15px - 15px * 8/13));
+    flex-basis: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    max-width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
   }
 
   .sm-fifths.true > .minor {
-    flex-basis: calc(99.9% * 2/5 - (15px - 15px * 2/5));
-    max-width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
-    width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
+    flex-basis: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    max-width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
   }
 
   .sm-fifths.true > .major,
   .sm-fifths.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 3/5 - (15px - 15px * 3/5));
-    max-width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
-    width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
+    flex-basis: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    max-width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
   }
 
   .sm-fifths > .cell,
   .sm-fifths.major-in-the-middle > .minor {
-    flex-basis: calc(99.9% * 1/5 - (15px - 15px * 1/5));
-    max-width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
-    width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
+    flex-basis: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    max-width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
   }
 
   .sm-sixths > .cell {
-    flex-basis: calc(99.9% * 1/6 - (15px - 15px * 1/6));
-    max-width: calc(99.9% * 1/6 - (15px - 15px * 1/6));
-    width: calc(99.9% * 1/6 - (15px - 15px * 1/6));
+    flex-basis: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    max-width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
   }
 
   .sm-sevenths > .minor {
-    flex-basis: calc(99.9% * 10/23 - (15px - 15px * 10/23));
-    max-width: calc(99.9% * 10/23 - (15px - 15px * 10/23));
-    width: calc(99.9% * 10/23 - (15px - 15px * 10/23));
+    flex-basis: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    max-width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
   }
 
   .sm-sevenths > .major {
-    flex-basis: calc(99.9% * 13/23 - (15px - 15px * 13/23));
-    max-width: calc(99.9% * 13/23 - (15px - 15px * 13/23));
-    width: calc(99.9% * 13/23 - (15px - 15px * 13/23));
+    flex-basis: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    max-width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
   }
 
   .sm-sevenths.true > .minor {
-    flex-basis: calc(99.9% * 3/7 - (15px - 15px * 3/7));
-    max-width: calc(99.9% * 3/7 - (15px - 15px * 3/7));
-    width: calc(99.9% * 3/7 - (15px - 15px * 3/7));
+    flex-basis: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    max-width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
   }
 
   .sm-sevenths.true > .major {
-    flex-basis: calc(99.9% * 4/7 - (15px - 15px * 4/7));
-    max-width: calc(99.9% * 4/7 - (15px - 15px * 4/7));
-    width: calc(99.9% * 4/7 - (15px - 15px * 4/7));
+    flex-basis: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    max-width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
   }
 
   .sm-sevenths > .cell {
-    flex-basis: calc(99.9% * 1/7 - (15px - 15px * 1/7));
-    max-width: calc(99.9% * 1/7 - (15px - 15px * 1/7));
-    width: calc(99.9% * 1/7 - (15px - 15px * 1/7));
+    flex-basis: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    max-width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
   }
 
 }
@@ -1024,108 +1024,108 @@
   .xs-stack > .minor,
   .xs-stack > .major,
   .xs-stack > .cell {
-    flex-basis: calc(99.9% * 1/1 - (15px - 15px * 1/1));
-    max-width: calc(99.9% * 1/1 - (15px - 15px * 1/1));
-    width: calc(99.9% * 1/1 - (15px - 15px * 1/1));
+    flex-basis: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    max-width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
   }
 
   .xs-half > .minor,
   .xs-half > .major,
   .xs-half > .cell,
   .xs-fourths.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 1/2 - (15px - 15px * 1/2));
-    max-width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
-    width: calc(99.9% * 1/2 - (15px - 15px * 1/2));
+    flex-basis: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    max-width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
   }
 
   .xs-thirds > .minor,
   .xs-thirds > .cell,
   .xs-thirds.major-in-the-middle > .minor,
   .xs-thirds.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 1/3 - (15px - 15px * 1/3));
-    max-width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
-    width: calc(99.9% * 1/3 - (15px - 15px * 1/3));
+    flex-basis: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    max-width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
   }
 
   .xs-thirds > .major {
-    flex-basis: calc(99.9% * 2/3 - (15px - 15px * 2/3));
-    max-width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
-    width: calc(99.9% * 2/3 - (15px - 15px * 2/3));
+    flex-basis: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    max-width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
   }
 
   .xs-fourths > .cell,
   .xs-fourths.major-in-the-middle > .minor {
-    flex-basis: calc(99.9% * 1/4 - (15px - 15px * 1/4));
-    max-width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
-    width: calc(99.9% * 1/4 - (15px - 15px * 1/4));
+    flex-basis: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    max-width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
   }
 
   .xs-fifths > .minor {
-    flex-basis: calc(99.9% * 5/13 - (15px - 15px * 5/13));
-    max-width: calc(99.9% * 5/13 - (15px - 15px * 5/13));
-    width: calc(99.9% * 5/13 - (15px - 15px * 5/13));
+    flex-basis: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    max-width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
   }
 
   .xs-fifths > .major {
-    flex-basis: calc(99.9% * 8/13 - (15px - 15px * 8/13));
-    max-width: calc(99.9% * 8/13 - (15px - 15px * 8/13));
-    width: calc(99.9% * 8/13 - (15px - 15px * 8/13));
+    flex-basis: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    max-width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
   }
 
   .xs-fifths.true > .minor {
-    flex-basis: calc(99.9% * 2/5 - (15px - 15px * 2/5));
-    max-width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
-    width: calc(99.9% * 2/5 - (15px - 15px * 2/5));
+    flex-basis: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    max-width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
   }
 
   .xs-fifths.true > .major,
   .xs-fifths.major-in-the-middle > .major {
-    flex-basis: calc(99.9% * 3/5 - (15px - 15px * 3/5));
-    max-width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
-    width: calc(99.9% * 3/5 - (15px - 15px * 3/5));
+    flex-basis: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    max-width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
   }
 
   .xs-fifths > .cell,
   .xs-fifths.major-in-the-middle > .minor {
-    flex-basis: calc(99.9% * 1/5 - (15px - 15px * 1/5));
-    max-width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
-    width: calc(99.9% * 1/5 - (15px - 15px * 1/5));
+    flex-basis: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    max-width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
   }
 
   .xs-sixths > .cell {
-    flex-basis: calc(99.9% * 1/6 - (15px - 15px * 1/6));
-    max-width: calc(99.9% * 1/6 - (15px - 15px * 1/6));
-    width: calc(99.9% * 1/6 - (15px - 15px * 1/6));
+    flex-basis: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    max-width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
   }
 
   .xs-sevenths > .minor {
-    flex-basis: calc(99.9% * 10/23 - (15px - 15px * 10/23));
-    max-width: calc(99.9% * 10/23 - (15px - 15px * 10/23));
-    width: calc(99.9% * 10/23 - (15px - 15px * 10/23));
+    flex-basis: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    max-width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
   }
 
   .xs-sevenths > .major {
-    flex-basis: calc(99.9% * 13/23 - (15px - 15px * 13/23));
-    max-width: calc(99.9% * 13/23 - (15px - 15px * 13/23));
-    width: calc(99.9% * 13/23 - (15px - 15px * 13/23));
+    flex-basis: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    max-width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
   }
 
   .xs-sevenths.true > .minor {
-    flex-basis: calc(99.9% * 3/7 - (15px - 15px * 3/7));
-    max-width: calc(99.9% * 3/7 - (15px - 15px * 3/7));
-    width: calc(99.9% * 3/7 - (15px - 15px * 3/7));
+    flex-basis: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    max-width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
   }
 
   .xs-sevenths.true > .major {
-    flex-basis: calc(99.9% * 4/7 - (15px - 15px * 4/7));
-    max-width: calc(99.9% * 4/7 - (15px - 15px * 4/7));
-    width: calc(99.9% * 4/7 - (15px - 15px * 4/7));
+    flex-basis: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    max-width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
   }
 
   .xs-sevenths > .cell {
-    flex-basis: calc(99.9% * 1/7 - (15px - 15px * 1/7));
-    max-width: calc(99.9% * 1/7 - (15px - 15px * 1/7));
-    width: calc(99.9% * 1/7 - (15px - 15px * 1/7));
+    flex-basis: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    max-width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
   }
 
 }
