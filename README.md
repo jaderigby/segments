@@ -109,3 +109,15 @@ Web components style:
   <x-major></x-major>
 </segment-elem>
 ```
+
+## Web Components ##
+
+Here's a full list of web components:
+
+- panel-wrapper
+- panel-inner
+- segment-elem
+- x-minor
+- x-major
+- x-cell
+- prime-segment
