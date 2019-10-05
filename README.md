@@ -121,3 +121,14 @@ Here's a full list of web components:
 - x-major
 - x-cell
 - prime-segment
+
+All of these act like divs with no special sauce, really.  Except for `panel-inner` which has an optional "whitespace" attribute.  This has been added to facilitate on-the-fly reassigning of the default whitespace which panels provide:
+
+```
+<panel-wrapper>
+  <panel-inner whitespace="20">
+  </panel-inner>
+</panel-wrapper>
+```
+
+If you would like to change the whitespace value (top and bottom padding) of ALL panels, you may do so by changing the value in the `segments.styl` file located in the `stylus` folder.  Then, run the command `grunt create` (this, of course, is assuming that you have installed the Grunt CLI, NodeJS, and have run `npm install` already).
