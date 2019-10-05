@@ -1,11 +1,11 @@
 .panel-wrapper,
-.panel-inner,
+.panel,
 .minor,
 .major,
 .cell {
   display: block;
 }
-.panel-wrapper .panel-inner {
+.panel-wrapper .panel {
   margin: 0 auto;
   padding: 60px 0;
   width: 1200px;
@@ -208,7 +208,7 @@
   width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
 }
 @media only screen and (max-width: calc(1200px + 50px)) {
-  .panel-wrapper .panel-inner {
+  .panel-wrapper .panel {
     padding: 60px 25px;
     width: calc(100% - 50px);
   }
