@@ -1,0 +1,1093 @@
+full_size = 1200px
+gutter = 15px
+
+full_site_spread = calc(1200px + 50px)
+percentage_calc = 99.98%
+
+lg = 1199px
+md = 960px
+tablet = 768px
+sm = 640px
+xs = 420px
+
+if (classes = true)
+  panel-wrapper = ".panel-wrapper"
+  panel-inner = ".panel-inner"
+  segment-elem = ".segment"
+  x-minor = ".minor"
+  x-major = ".major"
+  x-cell = ".cell"
+  prime-segment = ".prime-segment"
+
+if (classes = false)
+  panel-wrapper = "panel-wrapper"
+  panel-inner = "panel-inner"
+  segment-elem = "segment-elem"
+  x-minor = "x-minor"
+  x-major = "x-major"
+  x-cell = "x-cell"
+  prime-segment = "prime-segment"
+
+{panel-wrapper},
+{panel-inner},
+{x-minor},
+{x-major},
+{x-cell}
+  display: block
+
+{panel-wrapper} {panel-inner}
+  margin: 0 auto
+  padding: 60px 0
+  width: full_size
+
+{segment-elem}
+  display: flex
+  flex-flow: row wrap
+
+{prime-segment}
+  display: flex
+  flex-flow: row nowrap
+
+{prime-segment} > aside
+  flex-shrink: 0
+
+{prime-segment} > article
+  flex-grow: 1
+
+{x-minor},
+{x-major},
+{x-cell}
+  flex-grow: 0
+  flex-shrink: 0
+
+.stack > {x-minor}:nth-child(1n),
+.stack > {x-major}:nth-child(1n),
+.stack > {x-cell}:nth-child(1n),
+.half > {x-minor}:nth-child(1n),
+.half > {x-major}:nth-child(1n),
+.half > {x-cell}:nth-child(1n),
+.half > {x-minor}:nth-child(2n),
+.half > {x-major}:nth-child(2n),
+.half > {x-cell}:nth-child(2n),
+.thirds > {x-minor}:nth-child(1n),
+.thirds > {x-major}:nth-child(1n),
+.thirds > {x-cell}:nth-child(1n),
+.fourths > {x-minor}:nth-child(1n),
+.fourths > {x-major}:nth-child(1n),
+.fourths > {x-cell}:nth-child(1n),
+.fourths.major-in-the-middle > {x-minor}:nth-child(1n),
+.fourths.major-in-the-middle > {x-major}:nth-child(1n),
+.fifths > {x-minor}:nth-child(1n),
+.fifths > {x-major}:nth-child(1n),
+.fifths > {x-cell}:nth-child(1n),
+.fifths.major-in-the-middle > {x-minor}:nth-child(1n),
+.fifths.major-in-the-middle > {x-major}:nth-child(1n),
+.sixths > {x-cell}:nth-child(1n),
+.sevenths > {x-minor}:nth-child(1n),
+.sevenths > {x-major}:nth-child(1n),
+.sevenths > {x-cell}:nth-child(1n),
+{prime-segment} > aside:nth-child(1n),
+{prime-segment} > article:nth-child(1n)
+  margin-right: gutter
+  margin-left: 0
+
+.stack > {x-minor}:last-child,
+.stack > {x-major}:last-child,
+.stack > {x-cell}:last-child,
+.half > {x-minor}:last-child,
+.half > {x-major}:last-child,
+.half > {x-cell}:last-child,
+.thirds > {x-minor}:last-child,
+.thirds > {x-major}:last-child,
+.thirds > {x-cell}:last-child,
+.fourths > {x-minor}:last-child,
+.fourths > {x-major}:last-child,
+.fourths > {x-cell}:last-child,
+.fourths.major-in-the-middle > {x-minor}:last-child,
+.fourths.major-in-the-middle > {x-major}:last-child,
+.fifths > {x-minor}:last-child,
+.fifths > {x-major}:last-child,
+.fifths > {x-cell}:last-child,
+.fifths.major-in-the-middle > {x-minor}:last-child,
+.fifths.major-in-the-middle > {x-major}:last-child,
+.sixths > {x-cell}:last-child,
+.sevenths > {x-minor}:last-child,
+.sevenths > {x-major}:last-child,
+.sevenths > .cell:last-child,
+{prime-segment} > aside:last-child,
+{prime-segment} > article:last-child
+  margin-right: 0
+
+.stack > {x-minor}:nth-child(1n),
+.stack > {x-major}:nth-child(1n),
+.stack > {x-cell}:nth-child(1n),
+.half > {x-minor}:nth-child(2n),
+.half > {x-major}:nth-child(2n),
+.half > {x-cell}:nth-child(2n),
+.thirds > {x-minor}:nth-child(3n),
+.thirds > {x-major}:nth-child(3n),
+.thirds > {x-cell}:nth-child(3n),
+.fourths > {x-minor}:nth-child(4n),
+.fourths > {x-major}:nth-child(4n),
+.fourths > {x-cell}:nth-child(4n),
+.fourths.major-in-the-middle > {x-minor}:nth-child(4n),
+.fourths.major-in-the-middle > {x-major}:nth-child(4n),
+.fifths > {x-minor}:nth-child(5n),
+.fifths > {x-major}:nth-child(5n),
+.fifths > {x-cell}:nth-child(5n),
+.fifths.major-in-the-middle > {x-minor}:nth-child(5n),
+.fifths.major-in-the-middle > {x-major}:nth-child(5n),
+.sixths > {x-cell}:nth-child(6n),
+.sevenths > {x-minor}:nth-child(7n),
+.sevenths > {x-major}:nth-child(7n),
+.sevenths > {x-cell}:nth-child(7n),
+{prime-segment} > aside:nth-child(2n),
+{prime-segment} > article:nth-child(2n)
+  margin-right: 0
+  margin-left: auto
+
+.stack > {x-minor},
+.stack > {x-major},
+.stack > {x-cell}
+  flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+
+.half > {x-minor},
+.half > {x-major},
+.half > {x-cell},
+.fourths.major-in-the-middle > {x-major}
+  flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+
+.thirds > {x-minor},
+.thirds > {x-cell},
+.thirds.major-in-the-middle > {x-minor},
+.thirds.major-in-the-middle > {x-major}
+  flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+
+.thirds > {x-major}
+  flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+
+.fourths > {x-cell},
+.fourths.major-in-the-middle > {x-minor}
+  flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+
+.fifths > {x-minor}
+  flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+
+.fifths > {x-major}
+  flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+
+.fifths.true > {x-minor}
+  flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+
+.fifths.true > {x-major},
+.fifths.major-in-the-middle > {x-major}
+  flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+
+.fifths > {x-cell},
+.fifths.major-in-the-middle > {x-minor}
+  flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+
+.sixths > {x-cell}
+  flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+
+.sevenths > {x-minor}
+  flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+
+.sevenths > {x-major}
+  flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+
+.sevenths.true > {x-minor}
+  flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+
+.sevenths.true > {x-major}
+  flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+
+.sevenths > {x-cell}
+  flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+  max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+  width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+
+@media only screen and (max-width: full_site_spread)
+
+  {panel-wrapper} {panel-inner}
+    padding: 60px 25px
+    width: calc(100% - 50px)
+
+
+@media only screen and (max-width: lg)
+
+  .lg-half > {x-minor}:nth-child(1n),
+  .lg-half > {x-major}:nth-child(1n),
+  .lg-half > {x-cell}:nth-child(1n),
+  .lg-half > {x-minor}:nth-child(2n),
+  .lg-half > {x-major}:nth-child(2n),
+  .lg-half > {x-cell}:nth-child(2n),
+  .lg-thirds > {x-minor}:nth-child(1n),
+  .lg-thirds > {x-major}:nth-child(1n),
+  .lg-thirds > {x-cell}:nth-child(1n),
+  .lg-fourths > {x-minor}:nth-child(1n),
+  .lg-fourths > {x-major}:nth-child(1n),
+  .lg-fourths > {x-cell}:nth-child(1n),
+  .lg-fourths.major-in-the-middle > {x-minor}:nth-child(1n),
+  .lg-fourths.major-in-the-middle > {x-major}:nth-child(1n),
+  .lg-fifths > {x-minor}:nth-child(1n),
+  .lg-fifths > {x-major}:nth-child(1n),
+  .lg-fifths > {x-cell}:nth-child(1n),
+  .lg-sixths > {x-cell}:nth-child(1n),
+  .lg-sevenths > {x-minor}:nth-child(1n),
+  .lg-sevenths > {x-major}:nth-child(1n),
+  .lg-sevenths > {x-cell}:nth-child(1n)
+    margin-right: gutter
+    margin-left: 0
+
+  .lg-half > {x-minor}:last-child,
+  .lg-half > {x-major}:last-child,
+  .lg-half > {x-cell}:last-child,
+  .lg-thirds > {x-minor}:last-child,
+  .lg-thirds > {x-major}:last-child,
+  .lg-thirds > {x-cell}:last-child,
+  .lg-fourths > {x-minor}:last-child,
+  .lg-fourths > {x-major}:last-child,
+  .lg-fourths > {x-cell}:last-child,
+  .lg-fourths.major-in-the-middle > {x-minor}:last-child,
+  .lg-fourths.major-in-the-middle > {x-major}:last-child,
+  .lg-fifths > {x-minor}:last-child,
+  .lg-fifths > {x-major}:last-child,
+  .lg-fifths > {x-cell}:last-child,
+  .lg-sixths > {x-cell}:last-child,
+  .lg-sevenths > {x-minor}:last-child,
+  .lg-sevenths > {x-major}:last-child,
+  .lg-sevenths > {x-cell}:last-child
+    margin-right: 0
+
+  .lg-half > {x-minor}:nth-child(2n),
+  .lg-half > {x-major}:nth-child(2n),
+  .lg-half > {x-cell}:nth-child(2n),
+  .lg-thirds > {x-minor}:nth-child(3n),
+  .lg-thirds > {x-major}:nth-child(3n),
+  .lg-thirds > {x-cell}:nth-child(3n),
+  .lg-fourths > {x-minor}:nth-child(4n),
+  .lg-fourths > {x-major}:nth-child(4n),
+  .lg-fourths > {x-cell}:nth-child(4n),
+  .lg-fourths.major-in-the-middle > {x-minor}:nth-child(4n),
+  .lg-fourths.major-in-the-middle > {x-major}:nth-child(4n),
+  .lg-fifths > {x-minor}:nth-child(5n),
+  .lg-fifths > {x-major}:nth-child(5n),
+  .lg-fifths > {x-cell}:nth-child(5n),
+  .lg-sixths > {x-cell}:nth-child(6n),
+  .lg-sevenths > {x-minor}:nth-child(7n),
+  .lg-sevenths > {x-major}:nth-child(7n),
+  .lg-sevenths > {x-cell}:nth-child(7n)
+    margin-right: 0
+    margin-left: auto
+
+  .lg-stack > {x-minor},
+  .lg-stack > {x-major},
+  .lg-stack > {x-cell}
+    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+
+  .lg-half > {x-minor},
+  .lg-half > {x-major},
+  .lg-half > {x-cell},
+  .lg-fourths.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+
+  .lg-thirds > {x-minor},
+  .lg-thirds > {x-cell},
+  .lg-thirds.major-in-the-middle > {x-minor},
+  .lg-thirds.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+
+  .lg-thirds > {x-major}
+    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+
+  .lg-fourths > {x-cell},
+  .lg-fourths.major-in-the-middle > {x-minor}
+    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+
+  .lg-fifths > {x-minor}
+    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+
+  .lg-fifths > {x-major}
+    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+
+  .lg-fifths.true > {x-minor}
+    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+
+  .lg-fifths.true > {x-major},
+  .lg-fifths.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+
+  .lg-fifths > {x-cell},
+  .lg-fifths.major-in-the-middle > {x-minor}
+    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+
+  .lg-sixths > {x-cell}
+    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+
+  .lg-sevenths > {x-minor}
+    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+
+  .lg-sevenths > {x-major}
+    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+
+  .lg-sevenths.true > {x-minor}
+    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+
+  .lg-sevenths.true > {x-major}
+    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+
+  .lg-sevenths > {x-cell}
+    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+
+
+@media only screen and (max-width: md)
+
+  .md-half > {x-minor}:nth-child(1n),
+  .md-half > {x-major}:nth-child(1n),
+  .md-half > {x-cell}:nth-child(1n),
+  .md-half > {x-minor}:nth-child(2n),
+  .md-half > {x-major}:nth-child(2n),
+  .md-half > {x-cell}:nth-child(2n),
+  .md-thirds > {x-minor}:nth-child(1n),
+  .md-thirds > {x-major}:nth-child(1n),
+  .md-thirds > {x-cell}:nth-child(1n),
+  .md-fourths > {x-minor}:nth-child(1n),
+  .md-fourths > {x-major}:nth-child(1n),
+  .md-fourths > {x-cell}:nth-child(1n),
+  .md-fourths.major-in-the-middle > {x-minor}:nth-child(1n),
+  .md-fourths.major-in-the-middle > {x-major}:nth-child(1n),
+  .md-fifths > {x-minor}:nth-child(1n),
+  .md-fifths > {x-major}:nth-child(1n),
+  .md-fifths > {x-cell}:nth-child(1n),
+  .md-sixths > {x-cell}:nth-child(1n),
+  .md-sevenths > {x-minor}:nth-child(1n),
+  .md-sevenths > {x-major}:nth-child(1n),
+  .md-sevenths > {x-cell}:nth-child(1n)
+    margin-right: gutter
+    margin-left: 0
+
+  .md-half > {x-minor}:last-child,
+  .md-half > {x-major}:last-child,
+  .md-half > {x-cell}:last-child,
+  .md-thirds > {x-minor}:last-child,
+  .md-thirds > {x-major}:last-child,
+  .md-thirds > {x-cell}:last-child,
+  .md-fourths > {x-minor}:last-child,
+  .md-fourths > {x-major}:last-child,
+  .md-fourths > {x-cell}:last-child,
+  .md-fourths.major-in-the-middle > {x-minor}:last-child,
+  .md-fourths.major-in-the-middle > {x-major}:last-child,
+  .md-fifths > {x-minor}:last-child,
+  .md-fifths > {x-major}:last-child,
+  .md-fifths > {x-cell}:last-child,
+  .md-sixths > {x-cell}:last-child,
+  .md-sevenths > {x-minor}:last-child,
+  .md-sevenths > {x-major}:last-child,
+  .md-sevenths > {x-cell}:last-child
+    margin-right: 0
+
+  .md-half > {x-minor}:nth-child(2n),
+  .md-half > {x-major}:nth-child(2n),
+  .md-half > {x-cell}:nth-child(2n),
+  .md-thirds > {x-minor}:nth-child(3n),
+  .md-thirds > {x-major}:nth-child(3n),
+  .md-thirds > {x-cell}:nth-child(3n),
+  .md-fourths > {x-minor}:nth-child(4n),
+  .md-fourths > {x-major}:nth-child(4n),
+  .md-fourths > {x-cell}:nth-child(4n),
+  .md-fourths.major-in-the-middle > {x-minor}:nth-child(4n),
+  .md-fourths.major-in-the-middle > {x-major}:nth-child(4n),
+  .md-fifths > {x-minor}:nth-child(5n),
+  .md-fifths > {x-major}:nth-child(5n),
+  .md-fifths > {x-cell}:nth-child(5n),
+  .md-sixths > {x-cell}:nth-child(6n),
+  .md-sevenths > {x-minor}:nth-child(7n),
+  .md-sevenths > {x-major}:nth-child(7n),
+  .md-sevenths > {x-cell}:nth-child(7n)
+    margin-right: 0
+    margin-left: auto
+
+  .md-stack > {x-minor},
+  .md-stack > {x-major},
+  .md-stack > {x-cell}
+    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+
+  .md-half > {x-minor},
+  .md-half > {x-major},
+  .md-half > {x-cell},
+  .md-fourths.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+
+  .md-thirds > {x-minor},
+  .md-thirds > {x-cell},
+  .md-thirds.major-in-the-middle > {x-minor},
+  .md-thirds.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+
+  .md-thirds > {x-major}
+    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+
+  .md-fourths > {x-cell},
+  .md-fourths.major-in-the-middle > {x-minor}
+    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+
+  .md-fifths > {x-minor}
+    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+
+  .md-fifths > {x-major}
+    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+
+  .md-fifths.true > {x-minor}
+    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+
+  .md-fifths.true > {x-major},
+  .md-fifths.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+
+  .md-fifths > {x-cell},
+  .md-fifths.major-in-the-middle > {x-minor}
+    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+
+  .md-sixths > {x-cell}
+    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+
+  .md-sevenths > {x-minor}
+    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+
+  .md-sevenths > {x-major}
+    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+
+  .md-sevenths.true > {x-minor}
+    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+
+  .md-sevenths.true > {x-major}
+    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+
+  .md-sevenths > {x-cell}
+    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+
+
+@media only screen and (max-width: tablet)
+
+  .tablet-half > {x-minor}:nth-child(1n),
+  .tablet-half > {x-major}:nth-child(1n),
+  .tablet-half > {x-cell}:nth-child(1n),
+  .tablet-half > {x-minor}:nth-child(2n),
+  .tablet-half > {x-major}:nth-child(2n),
+  .tablet-half > {x-cell}:nth-child(2n),
+  .tablet-thirds > {x-minor}:nth-child(1n),
+  .tablet-thirds > {x-major}:nth-child(1n),
+  .tablet-thirds > {x-cell}:nth-child(1n),
+  .tablet-fourths > {x-minor}:nth-child(1n),
+  .tablet-fourths > {x-major}:nth-child(1n),
+  .tablet-fourths > {x-cell}:nth-child(1n),
+  .tablet-fourths.major-in-the-middle > {x-minor}:nth-child(1n),
+  .tablet-fourths.major-in-the-middle > {x-major}:nth-child(1n),
+  .tablet-fifths > {x-minor}:nth-child(1n),
+  .tablet-fifths > {x-major}:nth-child(1n),
+  .tablet-fifths > {x-cell}:nth-child(1n),
+  .tablet-sixths > {x-cell}:nth-child(1n),
+  .tablet-sevenths > {x-minor}:nth-child(1n),
+  .tablet-sevenths > {x-major}:nth-child(1n),
+  .tablet-sevenths > {x-cell}:nth-child(1n)
+    margin-right: gutter
+    margin-left: 0
+
+  .tablet-half > {x-minor}:last-child,
+  .tablet-half > {x-major}:last-child,
+  .tablet-half > {x-cell}:last-child,
+  .tablet-thirds > {x-minor}:last-child,
+  .tablet-thirds > {x-major}:last-child,
+  .tablet-thirds > {x-cell}:last-child,
+  .tablet-fourths > {x-minor}:last-child,
+  .tablet-fourths > {x-major}:last-child,
+  .tablet-fourths > {x-cell}:last-child,
+  .tablet-fourths.major-in-the-middle > {x-minor}:last-child,
+  .tablet-fourths.major-in-the-middle > {x-major}:last-child,
+  .tablet-fifths > {x-minor}:last-child,
+  .tablet-fifths > {x-major}:last-child,
+  .tablet-fifths > {x-cell}:last-child,
+  .tablet-sixths > {x-cell}:last-child,
+  .tablet-sevenths > {x-minor}:last-child,
+  .tablet-sevenths > {x-major}:last-child,
+  .tablet-sevenths > {x-cell}:last-child
+    margin-right: 0
+
+  .tablet-half > {x-minor}:nth-child(2n),
+  .tablet-half > {x-major}:nth-child(2n),
+  .tablet-half > {x-cell}:nth-child(2n),
+  .tablet-thirds > {x-minor}:nth-child(3n),
+  .tablet-thirds > {x-major}:nth-child(3n),
+  .tablet-thirds > {x-cell}:nth-child(3n),
+  .tablet-fourths > {x-minor}:nth-child(4n),
+  .tablet-fourths > {x-major}:nth-child(4n),
+  .tablet-fourths > {x-cell}:nth-child(4n),
+  .tablet-fourths.major-in-the-middle > {x-minor}:nth-child(4n),
+  .tablet-fourths.major-in-the-middle > {x-major}:nth-child(4n),
+  .tablet-fifths > {x-minor}:nth-child(5n),
+  .tablet-fifths > {x-major}:nth-child(5n),
+  .tablet-fifths > {x-cell}:nth-child(5n),
+  .tablet-sixths > {x-cell}:nth-child(6n),
+  .tablet-sevenths > {x-minor}:nth-child(7n),
+  .tablet-sevenths > {x-major}:nth-child(7n),
+  .tablet-sevenths > {x-cell}:nth-child(7n)
+    margin-right: 0
+    margin-left: auto
+
+  .tablet-stack > {x-minor},
+  .tablet-stack > {x-major},
+  .tablet-stack > {x-cell}
+    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+
+  .tablet-half > {x-minor},
+  .tablet-half > {x-major},
+  .tablet-half > {x-cell},
+  .tablet-fourths.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+
+  .tablet-thirds > {x-minor},
+  .tablet-thirds > {x-cell},
+  .tablet-thirds.major-in-the-middle > {x-minor},
+  .tablet-thirds.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+
+  .tablet-thirds > {x-major}
+    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+
+  .tablet-fourths > {x-cell},
+  .tablet-fourths.major-in-the-middle > {x-minor}
+    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+
+  .tablet-fifths > {x-minor}
+    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+
+  .tablet-fifths > {x-major}
+    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+
+  .tablet-fifths.true > {x-minor}
+    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+
+  .tablet-fifths.true > {x-major},
+  .tablet-fifths.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+
+  .tablet-fifths > {x-cell},
+  .tablet-fifths.major-in-the-middle > {x-minor}
+    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+
+  .tablet-sixths > {x-cell}
+    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+
+  .tablet-sevenths > {x-minor}
+    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+
+  .tablet-sevenths > {x-major}
+    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+
+  .tablet-sevenths.true > {x-minor}
+    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+
+  .tablet-sevenths.true > {x-major}
+    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+
+  .tablet-sevenths > {x-cell}
+    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+
+
+@media screen and (max-width: sm)
+
+  .sm-half > {x-minor}:nth-child(1n),
+  .sm-half > {x-major}:nth-child(1n),
+  .sm-half > {x-cell}:nth-child(1n),
+  .sm-half > {x-minor}:nth-child(2n),
+  .sm-half > {x-major}:nth-child(2n),
+  .sm-half > {x-cell}:nth-child(2n),
+  .sm-thirds > {x-minor}:nth-child(1n),
+  .sm-thirds > {x-major}:nth-child(1n),
+  .sm-thirds > {x-cell}:nth-child(1n),
+  .sm-fourths > {x-minor}:nth-child(1n),
+  .sm-fourths > {x-major}:nth-child(1n),
+  .sm-fourths > {x-cell}:nth-child(1n),
+  .sm-fourths.major-in-the-middle > {x-minor}:nth-child(1n),
+  .sm-fourths.major-in-the-middle > {x-major}:nth-child(1n),
+  .sm-fifths > {x-minor}:nth-child(1n),
+  .sm-fifths > {x-major}:nth-child(1n),
+  .sm-fifths > {x-cell}:nth-child(1n),
+  .sm-sixths > {x-cell}:nth-child(1n),
+  .sm-sevenths > {x-minor}:nth-child(1n),
+  .sm-sevenths > {x-major}:nth-child(1n),
+  .sm-sevenths > {x-cell}:nth-child(1n)
+    margin-right: gutter
+    margin-left: 0
+
+  .sm-half > {x-minor}:last-child,
+  .sm-half > {x-major}:last-child,
+  .sm-half > {x-cell}:last-child,
+  .sm-thirds > {x-minor}:last-child,
+  .sm-thirds > {x-major}:last-child,
+  .sm-thirds > {x-cell}:last-child,
+  .sm-fourths > {x-minor}:last-child,
+  .sm-fourths > {x-major}:last-child,
+  .sm-fourths > {x-cell}:last-child,
+  .sm-fourths.major-in-the-middle > {x-minor}:last-child,
+  .sm-fourths.major-in-the-middle > {x-major}:last-child,
+  .sm-fifths > {x-minor}:last-child,
+  .sm-fifths > {x-major}:last-child,
+  .sm-fifths > {x-cell}:last-child,
+  .sm-sixths > {x-cell}:last-child,
+  .sm-sevenths > {x-minor}:last-child,
+  .sm-sevenths > {x-major}:last-child,
+  .sm-sevenths > {x-cell}:last-child
+    margin-right: 0
+
+  .sm-half > {x-minor}:nth-child(2n),
+  .sm-half > {x-major}:nth-child(2n),
+  .sm-half > {x-cell}:nth-child(2n),
+  .sm-thirds > {x-minor}:nth-child(3n),
+  .sm-thirds > {x-major}:nth-child(3n),
+  .sm-thirds > {x-cell}:nth-child(3n),
+  .sm-fourths > {x-minor}:nth-child(4n),
+  .sm-fourths > {x-major}:nth-child(4n),
+  .sm-fourths > {x-cell}:nth-child(4n),
+  .sm-fourths.major-in-the-middle > {x-minor}:nth-child(4n),
+  .sm-fourths.major-in-the-middle > {x-major}:nth-child(4n),
+  .sm-fifths > {x-minor}:nth-child(5n),
+  .sm-fifths > {x-major}:nth-child(5n),
+  .sm-fifths > {x-cell}:nth-child(5n),
+  .sm-sixths > {x-cell}:nth-child(6n),
+  .sm-sevenths > {x-minor}:nth-child(7n),
+  .sm-sevenths > {x-major}:nth-child(7n),
+  .sm-sevenths > {x-cell}:nth-child(7n)
+    margin-right: 0
+    margin-left: auto
+
+  .sm-stack > {x-minor},
+  .sm-stack > {x-major},
+  .sm-stack > {x-cell}
+    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+
+  .sm-half > {x-minor},
+  .sm-half > {x-major},
+  .sm-half > {x-cell},
+  .sm-fourths.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+
+  .sm-thirds > {x-minor},
+  .sm-thirds > {x-cell},
+  .sm-thirds.major-in-the-middle > {x-minor},
+  .sm-thirds.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+
+  .sm-thirds > {x-major}
+    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+
+  .sm-fourths > {x-cell},
+  .sm-fourths.major-in-the-middle > {x-minor}
+    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+
+  .sm-fifths > {x-minor}
+    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+
+  .sm-fifths > {x-major}
+    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+
+  .sm-fifths.true > {x-minor}
+    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+
+  .sm-fifths.true > {x-major},
+  .sm-fifths.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+
+  .sm-fifths > {x-cell},
+  .sm-fifths.major-in-the-middle > {x-minor}
+    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+
+  .sm-sixths > {x-cell}
+    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+
+  .sm-sevenths > {x-minor}
+    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+
+  .sm-sevenths > {x-major}
+    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+
+  .sm-sevenths.true > {x-minor}
+    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+
+  .sm-sevenths.true > {x-major}
+    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+
+  .sm-sevenths > {x-cell}
+    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+
+
+@media screen and (max-width: xs)
+
+  .xs-half > {x-minor}:nth-child(1n),
+  .xs-half > {x-major}:nth-child(1n),
+  .xs-half > {x-cell}:nth-child(1n),
+  .xs-half > {x-minor}:nth-child(2n),
+  .xs-half > {x-major}:nth-child(2n),
+  .xs-half > {x-cell}:nth-child(2n),
+  .xs-thirds > {x-minor}:nth-child(1n),
+  .xs-thirds > {x-major}:nth-child(1n),
+  .xs-thirds > {x-cell}:nth-child(1n),
+  .xs-fourths > {x-minor}:nth-child(1n),
+  .xs-fourths > {x-major}:nth-child(1n),
+  .xs-fourths > {x-cell}:nth-child(1n),
+  .xs-fourths.major-in-the-middle > {x-minor}:nth-child(1n),
+  .xs-fourths.major-in-the-middle > {x-major}:nth-child(1n),
+  .xs-fifths > {x-minor}:nth-child(1n),
+  .xs-fifths > {x-major}:nth-child(1n),
+  .xs-fifths > {x-cell}:nth-child(1n),
+  .xs-sixths > {x-cell}:nth-child(1n),
+  .xs-sevenths > {x-minor}:nth-child(1n),
+  .xs-sevenths > {x-major}:nth-child(1n),
+  .xs-sevenths > {x-cell}:nth-child(1n)
+    margin-right: gutter
+    margin-left: 0
+
+  .xs-half > {x-minor}:last-child,
+  .xs-half > {x-major}:last-child,
+  .xs-half > {x-cell}:last-child,
+  .xs-thirds > {x-minor}:last-child,
+  .xs-thirds > {x-major}:last-child,
+  .xs-thirds > {x-cell}:last-child,
+  .xs-fourths > {x-minor}:last-child,
+  .xs-fourths > {x-major}:last-child,
+  .xs-fourths > {x-cell}:last-child,
+  .xs-fourths.major-in-the-middle > {x-minor}:last-child,
+  .xs-fourths.major-in-the-middle > {x-major}:last-child,
+  .xs-fifths > {x-minor}:last-child,
+  .xs-fifths > {x-major}:last-child,
+  .xs-fifths > {x-cell}:last-child,
+  .xs-sixths > {x-cell}:last-child,
+  .xs-sevenths > {x-minor}:last-child,
+  .xs-sevenths > {x-major}:last-child,
+  .xs-sevenths > {x-cell}:last-child
+    margin-right: 0
+
+  .xs-half > {x-minor}:nth-child(2n),
+  .xs-half > {x-major}:nth-child(2n),
+  .xs-half > {x-cell}:nth-child(2n),
+  .xs-thirds > {x-minor}:nth-child(3n),
+  .xs-thirds > {x-major}:nth-child(3n),
+  .xs-thirds > {x-cell}:nth-child(3n),
+  .xs-fourths > {x-minor}:nth-child(4n),
+  .xs-fourths > {x-major}:nth-child(4n),
+  .xs-fourths > {x-cell}:nth-child(4n),
+  .xs-fourths.major-in-the-middle > {x-minor}:nth-child(4n),
+  .xs-fourths.major-in-the-middle > {x-major}:nth-child(4n),
+  .xs-fifths > {x-minor}:nth-child(5n),
+  .xs-fifths > {x-major}:nth-child(5n),
+  .xs-fifths > {x-cell}:nth-child(5n),
+  .xs-sixths > {x-cell}:nth-child(6n),
+  .xs-sevenths > {x-minor}:nth-child(7n),
+  .xs-sevenths > {x-major}:nth-child(7n),
+  .xs-sevenths > {x-cell}:nth-child(7n)
+    margin-right: 0
+    margin-left: auto
+
+  .xs-stack > {x-minor},
+  .xs-stack > {x-major},
+  .xs-stack > {x-cell}
+    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+
+  .xs-half > {x-minor},
+  .xs-half > {x-major},
+  .xs-half > {x-cell},
+  .xs-fourths.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+
+  .xs-thirds > {x-minor},
+  .xs-thirds > {x-cell},
+  .xs-thirds.major-in-the-middle > {x-minor},
+  .xs-thirds.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+
+  .xs-thirds > {x-major}
+    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+
+  .xs-fourths > {x-cell},
+  .xs-fourths.major-in-the-middle > {x-minor}
+    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+
+  .xs-fifths > {x-minor}
+    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+
+  .xs-fifths > {x-major}
+    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+
+  .xs-fifths.true > {x-minor}
+    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+
+  .xs-fifths.true > {x-major},
+  .xs-fifths.major-in-the-middle > {x-major}
+    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+
+  .xs-fifths > {x-cell},
+  .xs-fifths.major-in-the-middle > {x-minor}
+    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+
+  .xs-sixths > {x-cell}
+    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+
+  .xs-sevenths > {x-minor}
+    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+
+  .xs-sevenths > {x-major}
+    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+
+  .xs-sevenths.true > {x-minor}
+    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+
+  .xs-sevenths.true > {x-major}
+    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+
+  .xs-sevenths > {x-cell}
+    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+
+
+.vertical-center
+  align-items: center
+gutter
+.clear-wrap
+  margin: 40px 0
+
+.wrap
+  margin: 15px 0
+  padding: 15px
+
+.border-wrap
+  margin: 15px 0
+  padding: 15px
+  border: 1px solid inherit
+
+.rack
+  display: flex
+  flex-flow: row wrap
+.rack > div,
+.rack > span,
+.rack > a
+  display: block
+  flex-grow: 1
+  flex-shrink: 0
+  text-align: center
+.rack.compress > div,
+.rack.compress > span,
+.rack.compress > a
+  flex-grow: 0
+.rack.compress > div,
+.rack.compress > span,
+.rack.compress > a
+  padding-left: 10px
+  padding-right: 10px
+.rack.compress > div:first-child,
+.rack.compress > span:first-child,
+.rack.compress > a:first-child
+  padding-left: 0
+.rack.compress > div:last-child,
+.rack.compress > span:last-child,
+.rack.compress > a:last-child
+  padding-right: 0
+.with-dividers div,
+.with-dividers span,
+.with-dividers a
+  border-right-width: 1px
+  border-right-style: solid
+  border-right-color: inherit
+.with-dividers div:last-child,
+.with-dividers div:last-child,
+.with-dividers a:last-child
+  border-right: none
