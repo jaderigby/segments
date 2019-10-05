@@ -12,18 +12,7 @@
     "grunt-contrib-stylus": "^1.2.0",
     "grunt-contrib-watch": "^1.0.1",
     "grunt-exec": "^3.0.0",
-    "load-grunt-tasks": "^3.5.0",
-    "lost": "^8.2.1",
-    "nib": "^1.1.0",
-    "poststylus": "^1.0.0",
-    "rupture": "^0.6.1",
-    "grunt-contrib-cssmin": "^0.14.0"
+    "load-grunt-tasks": "^3.5.0"
   },
-  "dependencies": {
-    "express": "3.0.0alpha4",
-    "grunt-cli": "^1.2.0",
-    "opn": "^4.0.2",
-    "pug": "^2.0.3",
-    "sendevent": "^1.0.4"
-  }
+  "dependencies": {}
 }

@@ -1,11 +1,5 @@
 'use strict';
 
-	var poststylus = function() {
-		return require('poststylus')(['lost'])
-	};
-
-var enviro = "test";
-
 	module.exports = function(grunt) {
 
 		grunt.initConfig({
@@ -15,11 +9,6 @@ var enviro = "test";
 				dev: {
 					options: {
 						compress: false,
-						use: [
-							require('nib'),
-							require('rupture'),
-							poststylus
-						]
 					},
 					files: {
 						'css/segments.lib.css': 'stylus/segments.lib.styl',
@@ -29,11 +18,6 @@ var enviro = "test";
 				dist: {
 					options: {
 						compress: true,
-						use: [
-							require('nib'),
-							require('rupture'),
-							poststylus
-						]
 					},
 					files: {
 						'css/segments.lib.min.css': 'stylus/segments.lib.styl',
