@@ -110,6 +110,54 @@ Web components style:
 </segment-elem>
 ```
 
+## Prime Time! ##
+
+Now, what if your layout doesn't quite fit a "thirds", "fifths", or "sevenths" layout? A common occurrence such as this could be for a forum or comments layout, where you have a small avatar on the left and content on the right.  Not a problem!  You can use something called "prime segments".  Observe:
+
+```
+<div class="prime-segment">
+  <div class="minor">
+    <img src="avatar" />
+  </div>
+  <div class="major">
+    <p>Some example content</p>
+  </div>
+</div>
+```
+
+Web components style:
+
+```
+<prime-segment>
+  <x-minor>
+    <img src="avatar" />
+  </x-minor>
+  <x-major>
+    <p>Some example content</p>
+  </x-major>
+</prime-segment>
+```
+
+Prime segments, like any other, inherit the default 15px gutter between the two elements. If more is needed, simply declare a new rule and add additional margin or padding to either the minor or major element. For example:
+
+```
+.prime-segment > .minor,
+prime-segment > x-minor {
+  margin-right: 30px;
+}
+
+...
+
+<div class="prime-segment">
+  <div class="minor">
+    <img src="avatar" />
+  </div>
+  <div class="major">
+    <p>Some example content</p>
+  </div>
+</div>
+```
+
 ## Web Components ##
 
 Here's a full list of web components:
