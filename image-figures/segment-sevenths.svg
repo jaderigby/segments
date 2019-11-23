@@ -20,7 +20,7 @@
      transform="matrix(1.3933543,0,0,1.3933543,815.01955,-124.65018)"
      style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"><g
        id="g4"
-       transform="matrix(0.71537943,0,0,0.06956544,-622.79074,189.77186)"
+       transform="matrix(0.71537943,0,0,0.06956544,-622.79074,200.48508)"
        style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"><rect
          id="rect6"
          style="fill:#69bac9"
@@ -29,7 +29,7 @@
          y="534.828"
          x="15.309" /></g><g
        id="g8"
-       transform="matrix(0.79196655,0,0,0.66784306,-810.48844,152.90184)"
+       transform="matrix(0.79196655,0,0,0.66784306,-810.48844,163.61506)"
        style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"><rect
          id="rect10"
          style="fill:#e4e4e4"
@@ -38,7 +38,7 @@
          y="114.228"
          x="594.729" /></g><g
        id="g12"
-       transform="matrix(0.71537943,0,0,0.06956544,-622.79074,620.2015)"
+       transform="matrix(0.71537943,0,0,0.06956544,-622.79074,630.91472)"
        style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"><rect
          id="rect14"
          style="fill:#69bac9"
@@ -47,7 +47,7 @@
          y="534.828"
          x="15.309" /></g><g
        id="g20"
-       transform="matrix(0.92397174,0,0,0.51755824,-729.37124,215.84706)"
+       transform="matrix(0.92397174,0,0,0.51755824,-729.37124,226.56028)"
        style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"><rect
          id="rect22"
          style="fill:#a5a5a5"
@@ -56,7 +56,7 @@
          y="164.327"
          x="471.681" /></g><g
        id="g24"
-       transform="matrix(1.2319623,0,0,0.51755824,-271.78267,214.05355)"
+       transform="matrix(1.2319623,0,0,0.51755824,-271.78267,224.76677)"
        style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"><rect
          id="rect26"
          style="fill:#a5a5a5"
@@ -70,5 +70,5 @@
          id="text26"
          style="font-size:68px;font-family:ArialMT, Arial, sans-serif"
          y="203.60425"
-         x="312.44336">.sevenths</text>
+         x="248.0957">.sevenths</text>
 </g></g></svg>
