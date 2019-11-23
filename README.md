@@ -63,6 +63,11 @@ From there, you may decide that you would rather give the image more space, mayb
 
 ![](/image-figures/segment_diagram-sevenths.svg)
 
+You will notice that fifths and sevenths are slightly off.  This is for two reasons:
+
+1. To balance the steps from thirds to fifths to sevenths.
+2. This allows fifths to set squarly on the golden ratio.
+
 ## I Need Columns, Brah! ##
 
 Oh, but I hear you saying to yourself, "But what about just plain ol' columns?!"  Ease up thunder, I gotcha covered.  In addition to thirds, fifths, and sevenths, there is "half", "fourths", and "sixths".  Any of the classes can be broken down into equal columns by using "cells" instead of "major/minor" as the children, like so:
