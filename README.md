@@ -57,6 +57,20 @@ Web components style:
 
 From there, you may decide that you would rather give the image more space, maybe making the image portion 2/5 that of the content.  For this, your class would be "fifths".  The next down is "sevenths".  Fifths is the closest to the golden ratio, FYI.  Below is a diagram of the three classes (thirds, fifths, sevenths):
 
+#### Thirds ####
+
+![](image-figures/segment-thirds.svg)
+
+#### Fifths ####
+
+![](image-figures/segment-fifths.svg)
+
+#### Sevenths ####
+
+![](image-figures/segment-sevenths.svg)
+
+## I Need Columns, Brah! ##
+
 Oh, but I hear you saying to yourself, "But what about just plain ol' columns?!"  Ease up thunder, I gotcha covered.  In addition to thirds, fifths, and sevenths, there is "half", "fourths", and "sixths".  Any of the classes can be broken down into equal columns by using "cells" instead of "major/minor" as the children, like so:
 
 ```
