@@ -12,7 +12,8 @@
     "grunt-contrib-stylus": "^1.2.0",
     "grunt-contrib-watch": "^1.0.1",
     "grunt-exec": "^3.0.0",
-    "load-grunt-tasks": "^3.5.0"
+    "load-grunt-tasks": "^3.5.0",
+    "diff": ">=3.5.0"
   },
   "dependencies": {}
 }
