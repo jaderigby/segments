@@ -1,22 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 2732 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-    <g transform="matrix(0.996777,0,0,0.0969293,-52.7486,225.42)">
-        <rect x="15.309" y="534.828" width="2778.44" height="31.775" style="fill:rgb(105,186,201);"/>
-    </g>
-    <g transform="matrix(1.10349,0,0,0.930542,-314.278,174.047)">
-        <rect x="594.729" y="114.228" width="1855.93" height="640.572" style="fill:rgb(228,228,228);"/>
-    </g>
-    <g transform="matrix(0.996777,0,0,0.0969293,-52.7486,825.161)">
-        <rect x="15.309" y="534.828" width="2778.44" height="31.775" style="fill:rgb(105,186,201);"/>
-    </g>
-    <g transform="matrix(2.48714,0,0,2.48714,312.794,-203.206)">
-        <text x="276.155px" y="174.076px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:68px;">.sevenths</text>
-    </g>
-    <g transform="matrix(1.28742,0,0,0.721142,-201.253,261.752)">
-        <rect x="471.681" y="164.327" width="629.164" height="552.941" style="fill:rgb(165,165,165);"/>
-    </g>
-    <g transform="matrix(1.71656,0,0,0.721142,436.33,259.253)">
-        <rect x="471.681" y="164.327" width="629.164" height="552.941" style="fill:rgb(165,165,165);"/>
-    </g>
-</svg>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg2"
+   style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
+   xml:space="preserve"
+   version="1.1"
+   viewBox="0 0 2732 900"
+   height="100%"
+   width="100%"><metadata
+     id="metadata32"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs30" /><g
+     id="g24-4"
+     transform="matrix(1.3933543,0,0,1.3933543,815.01955,-124.65018)"
+     style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"><g
+       id="g4"
+       transform="matrix(0.71537943,0,0,0.06956544,-622.79074,189.77186)"
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"><rect
+         id="rect6"
+         style="fill:#69bac9"
+         height="31.775"
+         width="2778.4399"
+         y="534.828"
+         x="15.309" /></g><g
+       id="g8"
+       transform="matrix(0.79196655,0,0,0.66784306,-810.48844,152.90184)"
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"><rect
+         id="rect10"
+         style="fill:#e4e4e4"
+         height="640.57202"
+         width="1855.9301"
+         y="114.228"
+         x="594.729" /></g><g
+       id="g12"
+       transform="matrix(0.71537943,0,0,0.06956544,-622.79074,620.2015)"
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"><rect
+         id="rect14"
+         style="fill:#69bac9"
+         height="31.775"
+         width="2778.4399"
+         y="534.828"
+         x="15.309" /></g><g
+       id="g20"
+       transform="matrix(0.92397174,0,0,0.51755824,-729.37124,215.84706)"
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"><rect
+         id="rect22"
+         style="fill:#a5a5a5"
+         height="552.94098"
+         width="629.164"
+         y="164.327"
+         x="471.681" /></g><g
+       id="g24"
+       transform="matrix(1.2319623,0,0,0.51755824,-271.78267,214.05355)"
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"><rect
+         id="rect26"
+         style="fill:#a5a5a5"
+         height="552.94098"
+         width="629.164"
+         y="164.327"
+         x="471.681" /></g><g
+       id="g24-4-2"
+       transform="translate(2.4965061e-7,0.41521925)"
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"><text
+         id="text26"
+         style="font-size:68px;font-family:ArialMT, Arial, sans-serif"
+         y="203.60425"
+         x="312.44336">.sevenths</text>
+</g></g></svg>
