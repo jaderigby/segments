@@ -2,11 +2,11 @@
 
 ## A Unique Take On Grids ##
 
-Let's face it: Humans don't pay attention to grids.  So why should our website layouts?  Introducing Segments!
+Let's face it &ndash; humans don't pay attention to grids.  So why should our website layouts?  Introducing Segments!
 
-When we look at a site, we don't typically think "Hey, nice grid!".  We look at the images, the text next to them, the way that sections are grouped in relationship to each other, etc.  In essence, our brains parse the site as portions, not as elements that should follow a strict grid.  In fact for designers, where grids may be helpful at times, they can be very restrictive and force a designer to make unnecessary compromises against their good design sense. In other words, forcing them to abandon their well crafted design for the sake of fitting some contrived 12-grid layout system.
+When we look at a site, we don't typically think "Hey, nice grid!"  We look at the images, the text next to them, the way that sections are grouped in relationship to each other, etc.  In essence, our brains parse the site as portions, not as elements that should follow a strict grid.  In fact for designers, where grids may be helpful at times, they can be very restrictive and force a designer to make unnecessary compromises against their good design sense. In other words, forcing them to abandon their well crafted design for the sake of fitting some contrived 12-grid layout system.
 
-"So what are segments?", you ask.  I'm glad you asked!  A segment is a way of breaking a design down into familiar portions, rather than following some crazy grid.  For example, let's say you have an image on the left with a title and text on the right, a very common layout pattern.  Usually the image is given a percentage of the space smaller than the text is, such as 1/3 for the image to 2/3 for the text side.  Segments allows you to do just that: You describe the space in terms of "thirds", and it does the rest.  In fact, as you decrease screen width, it adapts quite nicely: There is no fixed widths.  It's all about portions, baby!
+"So what are segments," you ask?  I'm glad you asked!  A segment is a way of breaking a design down into familiar portions, rather than following some crazy grid.  For example, let's say you have an image on the left with a title and text on the right, a very common layout pattern.  Usually the image is given a percentage of the space smaller than the text is, such as 1/3 for the image to 2/3 for the text side.  Segments allows you to do just that: You describe the space in terms of "thirds", and it does the rest.  In fact, as you decrease screen width, it adapts quite nicely: There is no fixed widths.  It's all about portions, baby!
 
 ## It All Starts With Panels ##
 
