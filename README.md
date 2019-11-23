@@ -70,7 +70,11 @@ You will notice that fifths and sevenths are slightly off.  This is for two reas
 
 If you would like to keep fifths and sevenths as true portions, say, for example so that columns and portions line up, simply add the class of "true" with the "fifths" or "sevenths" class.  For example:
 
+![](/image-figures/segment_diagram-thirds.svg)
+
 ![](/image-figures/segment_diagram-true-fifths.svg)
+
+![](/image-figures/segment_diagram-true-sevenths.svg)
 
 ## I Need Columns, Brah! ##
 
