@@ -57,11 +57,7 @@ Web components style:
 
 From there, you may decide that you would rather give the image more space, maybe making the image portion 2/5 that of the content.  For this, your class would be "fifths".  The next down is "sevenths".  Fifths is the closest to the golden ratio, FYI.  Below is a diagram of the three classes (thirds, fifths, sevenths):
 
-![](/image-figures/segment-thirds.svg)
 
-![](/image-figures/segment-fifths.svg)
-
-![](/image-figures/segment-sevenths.svg)
 
 ## I Need Columns, Brah! ##
 
