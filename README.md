@@ -59,9 +59,9 @@ From there, you may decide that you would rather give the image more space, mayb
 
 ![](/image-figures/segment_diagram-thirds.svg)
 
-![](/image-figures/segment_diagram-thirds.svg)
+![](/image-figures/segment_diagram-fifths.svg)
 
-![](/image-figures/segment_diagram-thirds.svg)
+![](/image-figures/segment_diagram-sevenths.svg)
 
 ## I Need Columns, Brah! ##
 
