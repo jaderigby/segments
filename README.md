@@ -65,8 +65,12 @@ From there, you may decide that you would rather give the image more space, mayb
 
 You will notice that fifths and sevenths are slightly off.  This is for two reasons:
 
-1. To balance the steps from thirds to fifths to sevenths.
+1. To balance the steps from thirds, to fifths, to sevenths.
 2. This allows fifths to set squarly on the golden ratio.
+
+If you would like to keep fifths and sevenths as true portions, say, for example so that columns and portions line up, simply add the class of "true" with the "fifths" or "sevenths" class.  For example:
+
+![](/image-figures/segment_diagram-true-fifths.svg)
 
 ## I Need Columns, Brah! ##
 
