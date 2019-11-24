@@ -16,7 +16,7 @@
    id="svg4811"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="layout-example-12grid-0.0.5.svg"
+   sodipodi:docname="layout-example-0.0.4.svg"
    style="enable-background:new">
   <defs
      id="defs4813">
@@ -91,7 +91,7 @@
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="Chrome"
-     style="display:inline"
+     style="display:none"
      transform="translate(0,-53.149609)">
     <rect
        id="rect6"
@@ -112,7 +112,7 @@
      inkscape:groupmode="layer"
      id="layer11"
      inkscape:label="Site Width"
-     style="display:inline"
+     style="display:none"
      transform="translate(0,-70.866142)">
     <rect
        id="rect10"
@@ -334,7 +334,7 @@
      inkscape:groupmode="layer"
      id="layer15"
      inkscape:label="12-Grid Tiles"
-     style="display:inline">
+     style="display:none">
     <rect
        id="rect18-6"
        style="clip-rule:evenodd;display:inline;opacity:0.6;fill:#aca7b7;fill-opacity:1;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996;enable-background:new"
@@ -436,7 +436,7 @@
      inkscape:groupmode="layer"
      id="layer14"
      inkscape:label="12-grid Label"
-     style="display:inline">
+     style="display:none">
     <text
        id="text26-2"
        style="font-size:44.06693268px;font-family:ArialMT, Arial, sans-serif;clip-rule:evenodd;display:inline;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996;enable-background:new"
