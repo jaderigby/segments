@@ -27,9 +27,9 @@ Much better!  With segments, layout is designed more how humans think of layout:
 - a minor section, such as 1/3 of the size
 - a major section, such as 2/3 of the size
 
-This isn't to say that you don't have some compromises with segments, as well.  What you DO get is a system that is intented to provide pleasant design relationships right from the start, rather than attempting to match "the grid".  These relationships of major/minor help you get work done, rather than pin you down.
+This isn't to say that you don't have some compromises with segments, as well.  What you DO get is a system that is intented to provide pleasant design relationships right from the start, rather than rigidly matching "the grid".  These relationships of major/minor help you get work done, rather than pin you down.
 
-To emphasize the point further, referring back to the original layout above, this follows a portion 0f fifths that matches the golden ratio of design.
+To emphasize this point further, the example above is closer to a portion of fifths &ndash; which is a match for the golden ratio of design!
 
 ## We Don't Need No Stinking Grids &ndash; Let's Use Segments! ##
 
