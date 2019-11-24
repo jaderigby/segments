@@ -56,9 +56,9 @@ Then from there, we simply declare the two children classes:
 </div>
 ```
 
-The "minor" class is, of course, the small container, and the "major" class is the large one.  So for "thirds", the "minor" container is 1/3 the total size, and the "major" one is 2/3 the total size.  Note that the default gutter is a static 15px, and is figured into these equations.
+The "minor" class is, of course, the small container, and the "major" class is the large one.  So for "thirds", the "minor" container is 1/3 the total size, and the "major" container is 2/3.  Note that the default gutter is a static 15px, and is figured into this equations.
 
-What's great about this is that when you decide to adjust the portions, say from "thirds" to "fifths", you only have to change one value, and not two like you do with a grid systems. For example:
+What's great about this is that when you decide to adjust the portions, say from "thirds" to "fifths", you only have to change one value, and not two like you do with popular grid-based systems. For example:
 
 ```
 <div class="segment thirds">
@@ -76,7 +76,7 @@ What's great about this is that when you decide to adjust the portions, say from
 </div>
 ```
 
-To accomplish something similar with a popular grid-based system, you would have to do something like:
+To accomplish something similar with a grid-based system, you would have to do something like:
 
 ```
 <div class="row">
