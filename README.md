@@ -327,7 +327,7 @@ To bring a minor/major to full width, use "stack".
 
 ## Wait A Minute, What About Columns?! ##
 
-Columns are easy with Segments!  Just replace "minor" and "major" with "cell", making sure that the count of "cells" is accurate.
+Columns are easy with Segments!  Just replace the "minor" and "major" children with "cell", making sure that the count of "cells" is appropriate, such as three cell children for "thirds", five for "fifths", and so on.
 
 ### Three Columns ###
 
@@ -383,13 +383,13 @@ Segments supports up to seven columns total:
 - Fourths
 - Fifths
 - Sixths
-- sevenths
+- Sevenths
 
-If you need more, you can refer to the Segments file "stylus/segments.styl", follow the pattern and extend it.  Refer to end of the readme for instructions on how to compile.
+You'll notice that "fourths" and "sixths" have been added to round things out.  If you need more, you can refer to the Segments file "stylus/segments.styl", follow the pattern and extend it.  Refer to end of the readme for instructions on how to compile.
 
 ## Custom Whitespace ##
 
-The panel web component includes "whitespace" attribute.  This allows you to adjust a panel's whitespace inline.  This can be beneficial when certain panels needed adjusted when doing a stacked layout. For example:
+The panel web component includes a "whitespace" attribute.  This allows you to adjust a panel's whitespace inline.  This can be beneficial when certain panels needed adjusted when doing a stacked layout. For example:
 
 ```
 <panel-wrapper id="hero">
