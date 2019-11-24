@@ -14,6 +14,14 @@ Converted to segments, this would be:
 
 ![](/image-figures/layout-example-with-tiles.svg)
 
+If we were to look at the same example with a 12-grid layout, it would looks something like:
+
+![](/image-figures/layout-example-with-tiles.svg)
+
+You can see how with a grid system we would have to make some compromises or write some additional css in order to accommodate the design.
+
+With segments, it's quite easy.  Not only that, but it scales quite elegantly as the screen width shrinks, because it is percentages and not following 12 sections of a grid.
+
 ## It All Starts With Panels ##
 
 The first element that you need is called a "panel".  This is the container for your segments.  It is similar to how many libraries use a "container".  What makes it unique, though, is the fact that it facilitates some modern web design paradigms. "Huh"?  
