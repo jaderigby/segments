@@ -435,6 +435,28 @@ With Web Components:
   <x-minor></x-minor>
   <x-major></x-major>
 </prime-segment>
+```
+
+So, for the example above, it might look something like this:
+
+```
+<prime-segment>
+  <x-minor>
+    <img src="avatar" />
+  </x-minor>
+  <x-major>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p>
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Velor du salia sor aute vehentor!
+    </p>
+  </x-major>
+</prime-segment>
+```
 
 ### Changing Default Values ###
 
