@@ -60,10 +60,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="775.4398"
+     inkscape:cx="257.23155"
      inkscape:cy="323.83251"
      inkscape:document-units="px"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="layer9"
      showgrid="false"
      fit-margin-top="10"
      fit-margin-bottom="10"
@@ -84,7 +84,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -204,23 +204,85 @@
            height="246.47722"
            x="392.94934"
            y="212.23" /></flowRegion><flowPara
-         id="flowPara4564"></flowPara></flowRoot>    <flowRoot
+         id="flowPara4564" /></flowRoot>    <text
        xml:space="preserve"
-       id="flowRoot4568"
-       style="font-style:normal;font-weight:normal;font-size:22.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="translate(0,53.149609)"><flowRegion
-         id="flowRegion4570"><rect
-           id="rect4572"
-           width="967.72607"
-           height="299.00513"
-           x="400.02039"
-           y="135.4584"
-           style="font-size:22.5px;fill:#333333" /></flowRegion><flowPara
-         id="flowPara4574">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </flowPara><flowPara
-         id="flowPara4576"></flowPara><flowPara
-         id="flowPara4578">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</flowPara><flowPara
-         id="flowPara4580" /><flowPara
-         id="flowPara4582">Velor du salia sor aute vehentor!</flowPara></flowRoot>  </g>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:125%;font-family:ArialMT, Arial, sans-serif;-inkscape-font-specification:'ArialMT, Arial, sans-serif, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#333333;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="400.01953"
+       y="210.75031"
+       id="text5381"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="400.01953"
+         y="210.75031"
+         id="tspan5383"><tspan
+           x="400.01953"
+           y="210.75031"
+           id="tspan5385">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="400.01953"
+         y="238.87531"
+         id="tspan5387"><tspan
+           x="400.01953"
+           y="238.87531"
+           id="tspan5389">labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="400.01953"
+         y="267.00031"
+         id="tspan5391"><tspan
+           x="400.01953"
+           y="267.00031"
+           id="tspan5393">laboris nisi ut aliquip ex ea commodo consequat. </tspan><tspan
+           dx="0"
+           x="891.54785"
+           y="267.00031"
+           id="tspan5395" /></tspan><tspan
+         sodipodi:role="line"
+         x="400.01953"
+         y="295.12531"
+         id="tspan5397"><tspan
+           x="400.01953"
+           y="295.12531"
+           id="tspan5399" /></tspan><tspan
+         sodipodi:role="line"
+         x="400.01953"
+         y="323.25031"
+         id="tspan5401"><tspan
+           x="400.01953"
+           y="323.25031"
+           id="tspan5403">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="400.01953"
+         y="351.37531"
+         id="tspan5405"><tspan
+           x="400.01953"
+           y="351.37531"
+           id="tspan5407">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="400.01953"
+         y="379.50031"
+         id="tspan5409"><tspan
+           x="400.01953"
+           y="379.50031"
+           id="tspan5411">est laborum.</tspan><tspan
+           dx="0"
+           x="523.76953"
+           y="379.50031"
+           id="tspan5413" /></tspan><tspan
+         sodipodi:role="line"
+         x="400.01953"
+         y="407.62531"
+         id="tspan5415"><tspan
+           x="400.01953"
+           y="407.62531"
+           id="tspan5417" /></tspan><tspan
+         sodipodi:role="line"
+         x="400.01953"
+         y="435.75031"
+         id="tspan5419"><tspan
+           x="400.01953"
+           y="435.75031"
+           id="tspan5421">Velor du salia sor aute vehentor!</tspan></tspan></text>
+  </g>
   <g
      inkscape:label="Minor Tile"
      inkscape:groupmode="layer"
