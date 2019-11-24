@@ -70,7 +70,7 @@ If you would like to keep fifths and sevenths as true portions, say, for example
 
 And here's how true elements compare:
 
-![](/image-figures/segment_diagram-true_comparison-0.0.6.svg)
+![](/image-figures/segment_diagram-true_comparison-0.0.7.svg)
 
 ## I Need Columns, Brah! ##
 
