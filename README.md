@@ -24,16 +24,16 @@ Now let's try it with segments:
 
 Much better!  With segments, layout is designed more how humans think of layout:
 
-- a minor section, such as 1/3 of the size
-- a major section, such as 2/3 of the size
+- a minor section, such as 1/3
+- a major section, such as 2/3
 
 This isn't to say that you don't have some compromises with segments, as well.  What you DO get is a system that is intented to provide pleasant design relationships right from the start, rather than rigidly matching "the grid".  These relationships of major/minor help you get work done, rather than pin you down.
 
-To emphasize this point further, the example above is closer to a portion of fifths &ndash; which is a match for the golden ratio of design!
+To emphasize this point further, the example above is really a portion of fifths &ndash; which is a match for the golden ratio of design!
 
 ## We Don't Need No Stinking Grids &ndash; Let's Use Segments! ##
 
-Segments come in four flavors: half (1/2, 1/2), thirds (1/3, 2/3), fifths or "Golden Ratio" (2/5, 3/5), and sevenths (3/7, 4/7).  See below:
+Segments come in four flavors: half (1/2, 1/2), thirds (1/3, 2/3), fifths (2/5, 3/5), and sevenths (3/7, 4/7).  See below:
 
 ![](/image-figures/segment_diagram-comparison-0.0.4.svg)
 
