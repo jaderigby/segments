@@ -382,7 +382,7 @@ With Web Components:
 
 ### It Goes Up To Seven ###
 
-Segments supports up to seven columns total:
+The Segments Library supports up to seven columns total:
 
 - Half
 - Thirds
@@ -392,28 +392,6 @@ Segments supports up to seven columns total:
 - Sevenths
 
 You'll notice that "fourths" and "sixths" have been added to round things out.  If you need more, you can refer to the Segments file "stylus/segments.styl", follow the pattern and extend it.  Refer to end of the readme for instructions on how to compile.
-
-## Custom Whitespace ##
-
-The panel web component includes a "whitespace" attribute.  This allows you to adjust a panel's whitespace inline.  This can be beneficial when certain panels needed adjusted when doing a stacked layout. For example:
-
-```
-<panel-wrapper id="hero">
-  <panel-inner>
-
-  </panel-inner>
-</panel-wrapper>
-<panel-wrapper id="tagline">
-  <panel-inner whitespace="35">
-
-  </panel-inner>
-</panel-wrapper>
-
-...
-
-```
-
-Under normal circumstances, mixing style with markup should be avoided.  But due to the nature of panels &ndash; especially acting as a divider or section grouper &ndash; it makes sense.  Whichever way you prefer, classes-only or the whitespace attribute, just stay consistent with all your panels.  Personally, I find the convenience of the whitespace feature beneficial, but choose whichever one works best for you.
 
 ## Prime Segments ##
 
@@ -463,6 +441,28 @@ So, for the example above, it might look something like this:
   </x-major>
 </prime-segment>
 ```
+
+## Custom Whitespace ##
+
+The panel web component includes a "whitespace" attribute.  This allows you to adjust a panel's whitespace inline.  This can be beneficial when certain panels needed adjusted when doing a stacked layout. For example:
+
+```
+<panel-wrapper id="hero">
+  <panel-inner>
+
+  </panel-inner>
+</panel-wrapper>
+<panel-wrapper id="tagline">
+  <panel-inner whitespace="35">
+
+  </panel-inner>
+</panel-wrapper>
+
+...
+
+```
+
+Under normal circumstances, mixing style with markup should be avoided.  But due to the nature of panels &ndash; especially acting as a divider or section grouper &ndash; it makes sense.  Whichever way you prefer, classes-only or the whitespace attribute, just stay consistent with all your panels.  Personally, I find the convenience of the whitespace feature beneficial, but choose whichever one works best for you.
 
 ## Changing Default Values ##
 
