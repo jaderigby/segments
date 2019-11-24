@@ -154,7 +154,7 @@ And you're set!
 
 ## Wait A Minute, What About Columns?! ##
 
-Columns are easy with Segments!  Just replace the "minor" and "major" children with "cell" children. Just make sure that you have the right number of children, such as three cells for "thirds", five for "fifths", and so on.
+Columns are easy with Segments, too!  Just replace the "minor" and "major" children with "cell" children. Just make sure that you have the right number of children, such as three for "thirds", five for "fifths", and so on.
 
 ### Three Columns ###
 
@@ -216,7 +216,7 @@ You'll notice that "fourths" and "sixths" have been added to round things out.  
 
 ## Panels, Baby! ##
 
-Another feature to the Segments library comes in the form of "Panels".  
+Another feature of the Segments library comes in the form of "Panels".  
 
 "What are panels," you ask?  Glad you asked!  
 
@@ -337,6 +337,55 @@ With Web Components:
 
 Panels add some whitespace, as well, in the form of top and bottom margins. The default space is 60px.
 
+## Prime Segments ##
+
+What happens when standard segments don't quite fit?  A "prime" example would be a comment section or a message thread in a forum.  Something like this:
+
+![](/image-figures/forum-example.svg)
+
+Then you can use something called a "prime segment".  A prime segment has the left/right relationship of regular segments with the standard gutter applied.  But the minor/major relationship is driven by whatever's in the minor wrapper as a static size.  For example, if you have an avatar image that is 45px in width, then the major container will be the full length of the parent container, minus 45px and the gutter width. Like this:
+
+![](/image-figures/forum-example-with-tiles.svg)
+
+And here's how to use them:
+
+```
+<div class="prime-segment">
+  <div class="minor"></div>
+  <div class="major"></div>
+</div>
+```
+
+With Web Components:
+
+```
+<prime-segment>
+  <x-minor></x-minor>
+  <x-major></x-major>
+</prime-segment>
+```
+
+So, for the example above, it might look something like this:
+
+```
+<prime-segment>
+  <x-minor>
+    <img src="avatar" />
+  </x-minor>
+  <x-major>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+    <p>
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Velor du salia sor aute vehentor!
+    </p>
+  </x-major>
+</prime-segment>
+```
+
 ## "I Needs Me Some Breakpoints, Brah!" ##
 
 Remember how I told you that the parent element does all the work?  This becomes even more elegant when breakpoints are introduced.  Segments provide the following breakpoints:
@@ -394,55 +443,6 @@ To bring a minor/major to full width, use "stack".
 - tablet-stack
 - sm-stack
 - xs-stack
-
-## Prime Segments ##
-
-What happens when standard segments don't quite fit?  A "prime" example would be a comment section or a message thread in a forum.  Something like this:
-
-![](/image-figures/forum-example.svg)
-
-Then you can use something called a "prime segment".  A prime segment has the left/right relationship of regular segments with the standard gutter applied.  But the minor/major relationship is driven by whatever's in the minor wrapper as a static size.  For example, if you have an avatar image that is 45px in width, then the major container will be the full length of the parent container, minus 45px and the gutter width. Like this:
-
-![](/image-figures/forum-example-with-tiles.svg)
-
-And here's how to use them:
-
-```
-<div class="prime-segment">
-  <div class="minor"></div>
-  <div class="major"></div>
-</div>
-```
-
-With Web Components:
-
-```
-<prime-segment>
-  <x-minor></x-minor>
-  <x-major></x-major>
-</prime-segment>
-```
-
-So, for the example above, it might look something like this:
-
-```
-<prime-segment>
-  <x-minor>
-    <img src="avatar" />
-  </x-minor>
-  <x-major>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <p>
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <p>
-      Velor du salia sor aute vehentor!
-    </p>
-  </x-major>
-</prime-segment>
-```
 
 ## Custom Whitespace ##
 
