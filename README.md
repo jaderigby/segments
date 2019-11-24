@@ -8,11 +8,11 @@ When we look at a site, we don't typically think "Hey, nice grid!"  We look at t
 
 "So what are segments," you ask?  I'm glad you asked!  A segment is a way of breaking a design down into familiar portions, rather than following some crazy grid.  For example, let's say you have an image on the left with a title and text on the right, a very common layout pattern.  Usually the image is given a percentage of the space smaller than the text is, such as 1/3 for the image to 2/3 for the text side.  Segments allows you to do just that: You describe the space in terms of "thirds", and it does the rest.  In fact, as you decrease screen width, it adapts quite nicely: There is no fixed widths.  It's all about portions, baby!
 
-![](/image-figures/layout-example.svg)
+![](/image-figures/layout-example-0.0.2.svg)
 
 Converted to segments, this would be:
 
-![](/image-figures/layout-example-with-tiles.svg)
+![](/image-figures/layout-example-with-tiles-0.0.2.svg)
 
 If we were to look at the same example with a 12-grid layout, it would looks something like:
 
