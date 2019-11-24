@@ -33,7 +33,7 @@ To emphasize this point further, the example above is really a portion of fifths
 
 ## We Don't Need No Stinking Grids &ndash; Let's Use Segments! ##
 
-Segments come in four flavors: half (1/2, 1/2), thirds (1/3, 2/3), fifths (2/5, 3/5), and sevenths (3/7, 4/7).  See below:
+Segments come in four flavors: __half__ (1/2, 1/2), __thirds__ (1/3, 2/3), __fifths__ (2/5, 3/5), and __sevenths__ (3/7, 4/7).  See below:
 
 ![](/image-figures/segment_diagram-comparison-0.0.4.svg)
 
@@ -45,7 +45,7 @@ These can be written like so:
 </div>
 ```
 
-This is the first element. It contains the "segment" class to get us started.  Then, "thirds" to declare which of the three flavors we are going to use.  Easy peazy!
+This is the first element. It contains the "segment" class to get us started.  Then, "thirds" to declare which of the four segment flavors we are going to use.  Easy peazy!
 
 Then from there, we simply declare the two children classes:
 
