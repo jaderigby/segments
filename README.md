@@ -22,14 +22,14 @@ Now let's try it with segments:
 
 ![](/image-figures/layout-example-with-tiles-0.0.5.svg)
 
-Much better!  With segments, layout is designed more how humans think of layout:
+Much better!  With segments, layout is designed more how humans think:
 
 - a minor section, such as 1/3
 - a major section, such as 2/3
 
-This isn't to say that you don't have some compromises with segments, as well.  What you DO get is a system that is intented to provide pleasant design relationships right from the start, rather than rigidly matching "the grid".  These relationships of major/minor help you get work done, rather than pin you down.
+This isn't to say that you don't have some compromises with segments, as well.  But what you DO get is a system that provides pleasant design relationships right out the gate, rather than rigidly attempting to match "the grid".  These relationships of major/minor help you get work done, instead of pinning you down and locking you in.
 
-To emphasize this point further, the example above is really a portion of fifths &ndash; which is a match for the golden ratio of design!
+Stated in other terms, the example above is using a portion of fifths &ndash; which is a match for the golden ratio of design!  Try _that_ with a grid!
 
 ## We Don't Need No Stinking Grids &ndash; Let's Use Segments! ##
 
