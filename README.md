@@ -16,7 +16,7 @@ Converted to segments, this would be:
 
 If we were to look at the same example with a 12-grid layout, it would looks something like:
 
-![](/image-figures/layout-example-12grid.svg)
+![](/image-figures/layout-example-12grid-0.0.2.svg)
 
 You can see how with a grid system we would have to make some compromises or write some additional css in order to accommodate the design.
 
