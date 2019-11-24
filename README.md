@@ -47,7 +47,7 @@ These can be written like so:
 
 This is the first element. It contains the "segment" class to get us started.  Then, "thirds" to declare which of the four segment flavors we are going to use.  Easy peazy!
 
-From there, we simply declare the two children classes:
+The only thing left is adding the children:
 
 ```
 <div class="segment thirds">
@@ -94,7 +94,9 @@ To accomplish something similar with a grid-based system, you would have to do s
 </div>
 ```
 
-With segments, it's the parent wrapper that does all the work.  The children don't have to do anything but be children. Neato!
+With segments, it's the parent wrapper that does all the work.  The children don't have to do anything but be children.
+
+Neato!
 
 Not only that, but you usually need another wrapper in order to control the proper left and right margins to start:
 
