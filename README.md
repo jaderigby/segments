@@ -94,7 +94,7 @@ To accomplish something similar with a grid-based system, you would have to do s
 </div>
 ```
 
-With segments, it's the parent wrapper that does all the work.  The children don't have to do anything but be children. Neat!
+With segments, it's the parent wrapper that does all the work.  The children don't have to do anything but be children. Neato!
 
 Not only that, but you usually need another wrapper in order to control the proper left and right margins to start:
 
@@ -120,7 +120,9 @@ To make segments even awesomer, yes "awesomer", a web component library has been
 </segment-elem>
 ```
 
-If you notice, we drop the "segment" class in favor of a named tag, and just declare the "thirds" part.  Then, since this is web components, the children have their own tags, as well.  (Note: The reason each element has a beginning and an ending name portion (such as the "x" on "minor" and "major") seperated by a hyphen is because of the way that the web component spec was written.  Just know that it is on purpose.)
+If you notice, we drop the "segment" class in favor of a named tag, and just declare the "thirds" part.  Then, since this is web components, the children have their own tags, as well.  
+
+(_Note: The reason each element has a beginning and an ending name portion (such as the "x" on "minor" and "major") seperated by a hyphen is because of the way that the web component spec was written.  Just know that it is on purpose._)
 
 Here's a list of the web component tags available to you:
 
@@ -150,7 +152,11 @@ And you're set!
 
 ## Panels, Baby! ##
 
-Another feature to the Segments library comes in the form of "Panels".  "What are panels," you ask?  Glad you asked!  Panels are a way to provide some whitespace between sections.  But they serve a much bigger purpose, as well:  They are the building blocks for a webpage, and they are stackable!  
+Another feature to the Segments library comes in the form of "Panels".  
+
+"What are panels," you ask?  Glad you asked!  
+
+Panels are a way to provide some whitespace between sections.  But they serve a much bigger purpose, as well:  They are the building blocks for a webpage, and they are stackable!  
 
 Take the following:
 
