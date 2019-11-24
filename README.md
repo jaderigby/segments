@@ -4,7 +4,7 @@
 
 Let's face it &ndash; humans don't pay attention to grids.  So why should our website layouts?  Introducing Segments!
 
-When we look at a site, we don't typically think "Hey, nice grid!"  We look at the relationship between images and text, the visual groupings which help us make sense of the content.  In fact, if a site is laid out with too pronounced a grid, it can be distracting and stiff.  As humans, we care more about design harmony than following some stale and contrived 12-column grid layout system.
+When we look at a site, we don't typically think "Hey, nice grid!"  We look at the relationship between images and text, the visual groupings which help us make sense of the content.  In fact, if a site is laid out with too pronounced a grid, it can be distracting and stiff.  As humans, we care more about design harmony than following some stale or contrived 12-column grid system.
 
 Take the following example:
 
