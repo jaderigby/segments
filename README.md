@@ -12,7 +12,7 @@ When we look at a site, we don't typically think "Hey, nice grid!"  We look at t
 
 Converted to segments, this would be:
 
-![](/image-figures/layout-example-with-tiles-0.0.2.svg)
+![](/image-figures/layout-example-with-tiles-0.0.3.svg)
 
 If we were to look at the same example with a 12-grid layout, it would looks something like:
 
