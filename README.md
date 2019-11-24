@@ -10,13 +10,13 @@ Take the following example:
 
 ![](/image-figures/layout-example-0.0.4.svg)
 
-This is a common layout motif for sites.  We have an icon, graph or image on one side, in the smaller &ndash; or "minor" &ndash; portion.  And then the title and content, maybe even a button, in the larger &ndash; or "major" &ndash; portion.  
+This is a common layout motif for sites.  We have an image on one side, in a small "minor" portion.  And then some content &ndash; maybe a title, some text, perhaps a button, in a larger "major" portion.  
 
 Ok, so let's try that with a 12-column grid:
 
 ![](/image-figures/layout-example-12grid-0.0.5.svg)
 
-You can see how we would need to decide what to do with the gap on the right, for the image.  Maybe we extend it larger to fit the space.  Or maybe we write more rules to override the default size, spacing, and etc.  Also, the text on the right would have to be modified, as well, as it is 5px off.
+You can see how we would need to decide what to do with the gap on the right, for the image.  Maybe we extend it larger to fit the space.  Or maybe we write more rules to override the default size, spacing, and etc.  Also, the text on the right would have to be modified, as well, as it is nearly 5px off.
 
 Now let's try it with segments:
 
