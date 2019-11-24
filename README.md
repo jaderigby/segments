@@ -47,7 +47,7 @@ These can be written like so:
 
 This is the first element. It contains the "segment" class to get us started.  Then, "thirds" to declare which of the four segment flavors we are going to use.  Easy peazy!
 
-The only thing left is adding the children:
+The only thing left to do is add the children:
 
 ```
 <div class="segment thirds">
@@ -56,7 +56,7 @@ The only thing left is adding the children:
 </div>
 ```
 
-The "minor" class is, of course, the small container, and the "major" class is the large one.  So for "thirds", the "minor" container is 1/3 the total size, and the "major" container is 2/3.  Note that the default gutter is a static 15px, and is figured into this already.
+The "minor" class is, of course, the small container, and the "major" class is the large one.  So for "thirds", the "minor" container is 1/3 the total size, and the "major" container is 2/3.  Note that the default gutter is a static 15px, and is figured into this.
 
 What's great about this is that when you decide to adjust the portions, say from "thirds" to "fifths", you only have to change one value, and not two like you do with popular grid-based systems. For example:
 
@@ -94,7 +94,7 @@ To accomplish something similar with a grid-based system, you would have to do s
 </div>
 ```
 
-With segments, it's the parent wrapper that does all the work.  The children don't have to do anything but be children.
+With Segments, it's the parent wrapper that does all the work.  The children don't have to do anything but be children.
 
 Neato!
 
@@ -151,6 +151,68 @@ segments.lib.js
 ```
 
 And you're set!
+
+## Wait A Minute, What About Columns?! ##
+
+Columns are easy with Segments!  Just replace the "minor" and "major" children with "cell" children. Just make sure that you have the right number of children, such as three cells for "thirds", five for "fifths", and so on.
+
+### Three Columns ###
+
+```
+<div class="segment thirds">
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+</div>
+```
+
+With Web Components:
+
+```
+<segment-elem class="thirds">
+  <x-cell></x-cell>
+  <x-cell></x-cell>
+  <x-cell></x-cell>
+</segment-elem>
+
+```
+
+### Five Columns ###
+
+```
+<div class="segment fifths">
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+  <div class="cell"></div>
+</div>
+```
+
+With Web Components:
+
+```
+<segment-elem class="fifths">
+  <x-cell></x-cell>
+  <x-cell></x-cell>
+  <x-cell></x-cell>
+  <x-cell></x-cell>
+  <x-cell></x-cell>
+</segment-elem>
+```
+
+### It Goes Up To Seven ###
+
+The Segments Library supports up to seven columns total:
+
+- Half
+- Thirds
+- Fourths
+- Fifths
+- Sixths
+- Sevenths
+
+You'll notice that "fourths" and "sixths" have been added to round things out.  If you need more, you can refer to the Segments file "stylus/segments.styl", follow the pattern and extend it.  Refer to end of the readme for instructions on how to compile.
 
 ## Panels, Baby! ##
 
@@ -332,68 +394,6 @@ To bring a minor/major to full width, use "stack".
 - tablet-stack
 - sm-stack
 - xs-stack
-
-## Wait A Minute, What About Columns?! ##
-
-Columns are easy with Segments!  Just replace the "minor" and "major" children with "cell", making sure that the count of "cells" is appropriate, such as three cell children for "thirds", five for "fifths", and so on.
-
-### Three Columns ###
-
-```
-<div class="segment thirds">
-  <div class="cell"></div>
-  <div class="cell"></div>
-  <div class="cell"></div>
-</div>
-```
-
-With Web Components:
-
-```
-<segment-elem class="thirds">
-  <x-cell></x-cell>
-  <x-cell></x-cell>
-  <x-cell></x-cell>
-</segment-elem>
-
-```
-
-### Five Columns ###
-
-```
-<div class="segment fifths">
-  <div class="cell"></div>
-  <div class="cell"></div>
-  <div class="cell"></div>
-  <div class="cell"></div>
-  <div class="cell"></div>
-</div>
-```
-
-With Web Components:
-
-```
-<segment-elem class="fifths">
-  <x-cell></x-cell>
-  <x-cell></x-cell>
-  <x-cell></x-cell>
-  <x-cell></x-cell>
-  <x-cell></x-cell>
-</segment-elem>
-```
-
-### It Goes Up To Seven ###
-
-The Segments Library supports up to seven columns total:
-
-- Half
-- Thirds
-- Fourths
-- Fifths
-- Sixths
-- Sevenths
-
-You'll notice that "fourths" and "sixths" have been added to round things out.  If you need more, you can refer to the Segments file "stylus/segments.styl", follow the pattern and extend it.  Refer to end of the readme for instructions on how to compile.
 
 ## Prime Segments ##
 
