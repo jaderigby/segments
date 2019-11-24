@@ -464,6 +464,34 @@ The panel web component includes a "whitespace" attribute.  This allows you to a
 
 Under normal circumstances, mixing style with markup should be avoided.  But due to the nature of panels &ndash; especially acting as a divider or section grouper &ndash; it makes sense.  Whichever way you prefer, classes-only or the whitespace attribute, just stay consistent with all your panels.  Personally, I find the convenience of the whitespace feature beneficial, but choose whichever one works best for you.
 
+## Atom Snippets ##
+
+"Ooh, you know what would be really cool? If there was a Segments library for Atom!"
+
+There is!  If any of you are using the popular Atom Text Editor, the Segments repo comes with a snippets.cson file which gives you a bunch of Segments snippets. Just be aware: these are using the web components flavor of Segments.
+
+Observe:
+
+```
+panel
+thirds
+```
+
+Like other Atom snippets, when you hit tab those two elements above actually create the following:
+
+```
+<panel-wrapper>
+  <panel-inner>
+    <segment-elem class="thirds">
+      <x-minor></x-minor>
+      <x-major></x-major>
+    </segment-elem>
+  </panel-inner>
+</panel-wrapper>
+```
+
+Amazing, huh!  You can save tons of time knocking out site layouts with Segments and the provided snippets.
+
 ## Changing Default Values ##
 
 Instructions on how to change default values is coming soon.  In the meantime, if you've worked with Grunt and NodeJS, then you can check out the projects Grunt file for configuration and commands, and then all the default values are found at the top of the "stylus/segments.styl" file.  Once you make your change, you can run `grunt create` to compile.
