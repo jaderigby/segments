@@ -409,6 +409,33 @@ The panel web component includes "whitespace" attribute.  This allows you to adj
 
 Under normal circumstances, mixing style with markup should be avoided.  But due to the nature of panels &ndash; especially acting as a divider or section grouper &ndash; it makes sense.  Whichever way you prefer, classes-only or the whitespace attribute, just stay consistent with all your panels.  Personally, I find the convenience of the whitespace feature beneficial, but choose whichever one works best for you.
 
+## Prime Segments ##
+
+What happens when standard segments don't quite fit?  A "prime" example would be a comment section or a message thread in a forum.  Something like this:
+
+![](/image-figures/forum-example.svg)
+
+Then you can use something called a "prime segment".  A prime segment has the left/right relationship of regular segments with the standard gutter applied.  But the minor/major relationship is driven by whatever's in the minor wrapper as a static size.  For example, if you have an avatar image that is 45px in width, then the major container will be the full length of the parent container, minus 45px and the gutter width. Like this:
+
+![](/image-figures/forum-example-with-tiles.svg)
+
+And here's how to use them:
+
+```
+<div class="prime-segment">
+  <div class="minor"></div>
+  <div class="major"></div>
+</div>
+```
+
+With Web Components:
+
+```
+<prime-segment>
+  <x-minor></x-minor>
+  <x-major></x-major>
+</prime-segment>
+
 ### Changing Default Values ###
 
 Instructions on how to change default values is coming soon.  In the meantime, if you've worked with Grunt and NodeJS, then you can check out the projects Grunt file for configuration and commands, and then all the default values are found at the top of the "stylus/segments.styl" file.  Once you make your change, you can run `grunt create` to compile.
