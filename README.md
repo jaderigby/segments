@@ -47,7 +47,7 @@ These can be written like so:
 
 This is the first element. It contains the "segment" class to get us started.  Then, "thirds" to declare which of the four segment flavors we are going to use.  Easy peazy!
 
-Then from there, we simply declare the two children classes:
+From there, we simply declare the two children classes:
 
 ```
 <div class="segment thirds">
@@ -56,7 +56,7 @@ Then from there, we simply declare the two children classes:
 </div>
 ```
 
-The "minor" class is, of course, the small container, and the "major" class is the large one.  So for "thirds", the "minor" container is 1/3 the total size, and the "major" container is 2/3.  Note that the default gutter is a static 15px, and is figured into this equations.
+The "minor" class is, of course, the small container, and the "major" class is the large one.  So for "thirds", the "minor" container is 1/3 the total size, and the "major" container is 2/3.  Note that the default gutter is a static 15px, and is figured into this already.
 
 What's great about this is that when you decide to adjust the portions, say from "thirds" to "fifths", you only have to change one value, and not two like you do with popular grid-based systems. For example:
 
@@ -111,7 +111,7 @@ Later on, you will be introduced to a Segments wrapper called "panels", but they
 
 ## Web Components ##
 
-To make segments even awesomer, yes "awesomer", a web component library has been included.  These web component elements can be written like so:
+To make Segments even awesomer, yes "awesomer", a web component library has been included.  These web component elements can be written like so:
 
 ```
 <segment-elem class="thirds">
@@ -120,11 +120,11 @@ To make segments even awesomer, yes "awesomer", a web component library has been
 </segment-elem>
 ```
 
-If you notice, we drop the "segment" class in favor of a named tag, and just declare the "thirds" part.  Then, since this is web components, the children have their own tags, as well.  
+If you notice, we drop the "segment" class in favor of a named tag, and just declare the "thirds" class.  Then, the children have their own tags, as well.  
 
-(_Note: The reason each element has a beginning and an ending name portion (such as the "x" on "minor" and "major") seperated by a hyphen is because of the way that the web component spec was written.  Just know that it is on purpose._)
+(_Note: The reason each element has a beginning and an ending name portion (such as the "x" on "minor" and "major") separated by a hyphen is because of the way that the web component spec was written.  Just know that it is on purpose._)
 
-Here's a list of the web component tags available to you:
+Here's a list of the available web component tags:
 
 - panel-wrapper
 - panel-inner
@@ -132,7 +132,7 @@ Here's a list of the web component tags available to you:
 - x-minor
 - x-major
 - x-cell
-- prime-segment
+- prime-segment (more on prime segments within the "Prime Segments" section: They're cool!)
 
 ### Add Web Components To Your Project ###
 
@@ -219,7 +219,7 @@ You will notice that panels have two parts:
 
 "So what's so great about this," you ask?  Well first off, panels default to a width of 1200px, and are centered (Later, when we get into breakpoints, we'll talk about the importance of this value more).
 
-Next, because of this wrapper/panel relationship, a background color can be added to the wrapper and viola!  You can extend a colored section all the way across.  This can be very useful for other benefits, such as background images or paralax images, as well.
+Next, because of this wrapper/panel relationship, a background color can be added to the wrapper and viola!  You can extend a colored section all the way across.  This can be very useful for other benefits, such as background images or parallax effects, as well.
 
 You can use just one panel to wrap your entire site if it suits you, or you can stack them on top of each other as you go, such as:
 
@@ -271,11 +271,11 @@ With Web Components:
 </html>
 ```
 
-Panels add some whitespace, as well, in the form of top and bottom margins. The default is 60px.
+Panels add some whitespace, as well, in the form of top and bottom margins. The default space is 60px.
 
 ## "I Needs Me Some Breakpoints, Brah!" ##
 
-Remember how I told you that the parent element does all the work?  This becomes even more elegant when breakpoints are introduced.  Segments provides the following breakpoints:
+Remember how I told you that the parent element does all the work?  This becomes even more elegant when breakpoints are introduced.  Segments provide the following breakpoints:
 
 - Full size, or "default"
 - Large (lg)
@@ -298,7 +298,7 @@ And here's how you use them:
 </div>
 ```
 
-Web components style:
+With Web Components:
 
 ```
 <segment-elem class="thirds lg-fifths tablet-stack">
