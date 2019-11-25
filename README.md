@@ -403,8 +403,6 @@ And the code for it looks like this:
 
 ```
 
-Major-in-the-middle is a special feature specific to fourths. Support for fifths has been added, as well, for the sake of greater flexibility and responsive design.
-
 With Web Components:
 
 ```
@@ -414,6 +412,10 @@ With Web Components:
   <x-minor></x-minor>
 </segment-elem>
 ```
+
+Major-in-the-middle is a great feature for things like headers and similarly related layouts.  With major-in-the-middle you can have a main menu icon on the left, logo in the center, and admin login on the right, or something similar.  It could also be used for creating video viewer with thumbnails on the left, main video player in the center, and secondary controls on the right.
+
+Major-in-the-middle is a special feature specific to fourths. Support for fifths has been added, as well, for the sake of greater flexibility and responsive design.
 
 ## "I Needs Me Some Breakpoints, Brah!" ##
 
