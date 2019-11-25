@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1600.0157"
+   height="266.65463"
+   viewBox="0 0 1600.0156 266.65464"
+   id="svg5899"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="fourths-major-in-the-middle.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="852"
+     id="namedview96"
+     showgrid="false"
+     fit-margin-top="10"
+     fit-margin-bottom="10"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     inkscape:zoom="0.498125"
+     inkscape:cx="800.01578"
+     inkscape:cy="-196.8454"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg5899" />
+  <defs
+     id="defs5901" />
+  <metadata
+     id="metadata5904">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     x="-6.1035156e-05"
+     y="254.65463"
+     width="1600"
+     height="2.0000002"
+     style="clip-rule:evenodd;fill:#c3e4f2;fill-opacity:1;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
+     id="rect14" />
+  <rect
+     x="0.015722964"
+     y="10"
+     width="1600"
+     height="2.0000002"
+     style="clip-rule:evenodd;fill:#c3e4f2;fill-opacity:1;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
+     id="rect6" />
+  <rect
+     x="200.01572"
+     y="12.000053"
+     width="1200"
+     height="242.65685"
+     style="clip-rule:evenodd;fill:#e4e4e4;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
+     id="rect10" />
+  <text
+     x="577.75183"
+     y="85.892517"
+     style="font-size:36.22892761px;font-family:ArialMT, Arial, sans-serif;clip-rule:evenodd;display:inline;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
+     id="text26-4-8">.fourths.major-in-the-middle</text>
+  <rect
+     x="200.01569"
+     y="110.59207"
+     width="1196.3834"
+     height="83.79493"
+     style="clip-rule:evenodd;fill:#97cde8;fill-opacity:1;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
+     id="rect18-7" />
+  <rect
+     x="200.01575"
+     y="110.59209"
+     width="292"
+     height="83.79493"
+     style="clip-rule:evenodd;fill:#aca7b7;fill-opacity:1;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
+     id="rect18" />
+  <rect
+     x="507.01572"
+     y="110.38701"
+     width="584"
+     height="83.79493"
+     style="clip-rule:evenodd;fill:#719aae;fill-opacity:1;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
+     id="rect18-1" />
+  <rect
+     x="1106.0157"
+     y="110.59209"
+     width="292"
+     height="83.79493"
+     style="clip-rule:evenodd;fill:#aca7b7;fill-opacity:1;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41420996"
+     id="rect18-4" />
+</svg>

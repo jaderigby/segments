@@ -386,6 +386,35 @@ So, for the example above, it might look something like this:
 </prime-segment>
 ```
 
+## Major In The Middle ##
+
+There is one more layout feature up Segments' sleeve: It's called "major in the middle". It's a way of creating small sections on the left and right with a larger portion in the middle, like so:
+
+![](/image-figures/fourths-major-in-the-middle.svg)
+
+And the code for it looks like this:
+
+```
+<div class="segment fourths major-in-the-middle">
+  <div class="minor"></div>
+  <div class="major"></div>
+  <div class="minor"></div>
+</div>
+
+```
+
+Major-in-the-middle is a special feature specific to fourths. Support for fifths has been added, as well, for the sake of greater flexibility and responsive design.
+
+With Web Components:
+
+```
+<segment-elem class="fourths major-in-the-middle">
+  <x-minor></x-minor>
+  <x-major></x-major>
+  <x-minor></x-minor>
+</segment-elem>
+```
+
 ## "I Needs Me Some Breakpoints, Brah!" ##
 
 Remember how I told you that the parent element does all the work?  This becomes even more elegant when breakpoints are introduced.  Segments provide the following breakpoints:
