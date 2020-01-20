@@ -1025,11 +1025,12 @@ gutter,
 .wrap {
   margin: 15px 0;
   padding: 15px;
+  background-color: #e4e4e4;
 }
 .border-wrap {
   margin: 15px 0;
   padding: 15px;
-  border: 1px solid inherit;
+  border: 1px solid #e4e4e4;
 }
 .rack {
   display: flex;
