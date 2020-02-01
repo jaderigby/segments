@@ -1044,7 +1044,8 @@ gutter,
 }
 .rack > div,
 .rack > span,
-.rack > a {
+.rack > a,
+.rack > i {
   display: block;
   flex-grow: 1;
   flex-shrink: 0;
@@ -1052,33 +1053,35 @@ gutter,
 }
 .rack.compress > div,
 .rack.compress > span,
-.rack.compress > a {
+.rack.compress > a,
+.rack.compress > i {
   flex-grow: 0;
-}
-.rack.compress > div,
-.rack.compress > span,
-.rack.compress > a {
   padding-left: 10px;
   padding-right: 10px;
 }
 .rack.compress > div:first-child,
 .rack.compress > span:first-child,
-.rack.compress > a:first-child {
+.rack.compress > a:first-child,
+.rack.compress > i:first-child {
   padding-left: 0;
 }
 .rack.compress > div:last-child,
 .rack.compress > span:last-child,
-.rack.compress > a:last-child {
+.rack.compress > a:last-child,
+.rack.compress > i:last-child {
   padding-right: 0;
 }
 .with-dividers div,
 .with-dividers span,
-.with-dividers a {
+.with-dividers a,
+.with-dividers i {
   border-right-width: 1px;
   border-right-style: solid;
   border-right-color: inherit;
 }
 .with-dividers div:last-child,
-.with-dividers a:last-child {
+.with-dividers span:last-child,
+.with-dividers a:last-child,
+.with-dividers i:last-child {
   border-right: none;
 }
