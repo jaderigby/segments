@@ -1036,6 +1036,12 @@ gutter,
   display: flex;
   flex-flow: row wrap;
 }
+.rack.right {
+  justify-content: flex-end;
+}
+.rack.center {
+  justify-content: center;
+}
 .rack > div,
 .rack > span,
 .rack > a {
