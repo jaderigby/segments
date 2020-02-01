@@ -56,8 +56,8 @@ x-cell {
 .sevenths > x-minor:nth-child(1n),
 .sevenths > x-major:nth-child(1n),
 .sevenths > x-cell:nth-child(1n),
-prime-segment > aside:nth-child(1n),
-prime-segment > article:nth-child(1n) {
+prime-segment > x-minor:nth-child(1n),
+prime-segment > x-major:nth-child(1n) {
   margin-right: 15px;
   margin-left: 0;
 }
@@ -84,8 +84,8 @@ prime-segment > article:nth-child(1n) {
 .sevenths > x-minor:last-child,
 .sevenths > x-major:last-child,
 .sevenths > .cell:last-child,
-prime-segment > aside:last-child,
-prime-segment > article:last-child {
+prime-segment > x-minor:last-child,
+prime-segment > x-major:last-child {
   margin-right: 0;
 }
 .stack > x-minor:nth-child(1n),
@@ -111,8 +111,8 @@ prime-segment > article:last-child {
 .sevenths > x-minor:nth-child(7n),
 .sevenths > x-major:nth-child(7n),
 .sevenths > x-cell:nth-child(7n),
-prime-segment > aside:nth-child(2n),
-prime-segment > article:nth-child(2n) {
+prime-segment > x-minor:nth-child(2n),
+prime-segment > x-major:nth-child(2n) {
   margin-right: 0;
   margin-left: auto;
 }
