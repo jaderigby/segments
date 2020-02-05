@@ -497,7 +497,7 @@ The panel web component includes a "whitespace" attribute.  This allows you to a
 
 Under normal circumstances, mixing style with markup should be avoided.  But due to the nature of panels &ndash; especially acting as a divider or section grouper &ndash; it makes sense.  Whichever way you prefer, classes-only or the whitespace attribute, just stay consistent with all your panels.  Personally, I find the convenience of the whitespace feature beneficial, but choose whichever one works best for you.
 
-## Some Perks ##
+## Some Additional Perks ##
 
 In addition to general segments behavior, the Segments library also offers you a few more features, or "perks".  This includes:
 
@@ -534,6 +534,8 @@ Border wrap is similar, only it adds a border instead of a background, like so:
 ![](/image-figures/border-wrap-example.svg)
 
 Clear wrap is a little different: It adds top and bottom padding only.  The "clear-wrap" gives you a convenient way to seperate items with some whitespace, without compromising the left and right alignment.
+
+### Racks ###
 
 Now, for the rack!  The "rack" class helps you lay out items side-by-side in a convenient way.  For example, what if you want links at the bottom of your footer with them layed out right next to each other horizontally:
 
