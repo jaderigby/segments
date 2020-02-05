@@ -504,6 +504,8 @@ In addition to general segments behavior, the Segments library also offers you a
 - wrap [clear-wrap, border-wrap, wrap]
 - rack
 
+### Wraps ###
+
 Let's break these guys down: First, wrap.  The "wrap" class adds a background color, and padding all around an element.  It is a block element that can be used as a wrapper.  For example, below we have three sections.  The middle section is using the "wrap" class:
 
 ![](/image-figures/wrap-example.svg)
