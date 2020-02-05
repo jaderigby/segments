@@ -539,7 +539,11 @@ Clear wrap is a little different: It adds top and bottom padding only.  The "cle
 
 ### Racks ###
 
-Now, for the rack!  The "rack" class helps you lay out items side-by-side in a convenient way.  For example, what if you want links at the bottom of your footer with them layed out right next to each other horizontally:
+
+
+Suppose you want a collection of social medial icons, how would you do that? Simple: Just rack 'em up!  The "rack" class helps you lay out items side-by-side without needing a bunch of column markup.  For example, what if you want links at the bottom of your footer layed out horizontally, like so:
+
+Link 1 | Link 2 | Link 3
 
 Racks work on the following tags:
 
@@ -555,14 +559,22 @@ The "rack" class comes with a few of it's own qualifier classes, as well:
 - center
 - right
 
-The "rack" class's default behavior is to extend the items to fill up the remaining space of the parent. But what if you want to keep things contained? Easy &ndash; you can use the "compress" class to do just that: Compress the items closer together with some static spacing in between.
+The "rack" class's default behavior is to extend the items to fill up the parent. But what if you want to keep things more compressed? No problem &ndash; use the "compress" class.
 
-If you want to divide the items from each other, you can use the "with-dividers" class.
+And, if you want to visually divide the items from each other, you can use the "with-dividers" class.
 
 When in "compress" mode, you can also assign the grouping to the right-hand side or center it by using the "center" and "right" classes respectively:
 
 ```
 <div class="rack compress with-dividers center">
+...
+</div>
+```
+
+... or:
+
+```
+<div class="rack compress with-dividers right">
 ...
 </div>
 ```
