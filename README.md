@@ -579,7 +579,7 @@ When in "compress" mode, you can also assign the grouping to the right-hand side
 </div>
 ```
 
-![](/image-figures/rack-footer-align-right.svg)
+![](/image-figures/rack-footer-align-right-example.svg)
 
 ## Atom Snippets ##
 
