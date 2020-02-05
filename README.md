@@ -515,7 +515,7 @@ Notice how the second object has a background, as well as padding all around the
 ```
 # CSS
 
-.blue {
+.wrap.blue {
   background-color: #c7e8f5;
 }
 
