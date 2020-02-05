@@ -497,6 +497,17 @@ The panel web component includes a "whitespace" attribute.  This allows you to a
 
 Under normal circumstances, mixing style with markup should be avoided.  But due to the nature of panels &ndash; especially acting as a divider or section grouper &ndash; it makes sense.  Whichever way you prefer, classes-only or the whitespace attribute, just stay consistent with all your panels.  Personally, I find the convenience of the whitespace feature beneficial, but choose whichever one works best for you.
 
+## Some Perks ##
+
+In addition to general segments behavior, the Segments library also offers you a few more features, or "perks".  This includes:
+
+- wrap [clear-wrap, border-wrap, wrap]
+- rack
+
+Let's break these guys down: First, wrap.  The "wrap" class adds a background color, and padding all around an element.  It is a block element that can be used as a wrapper.  For example, below we have three sections.  The middle section is using the "wrap" class:
+
+![](/image-figures/wrap-example.svg)
+
 ## Atom Snippets ##
 
 "Ooh, you know what would be really cool? If there was a Segments library for Atom!"
