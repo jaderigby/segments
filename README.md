@@ -541,7 +541,14 @@ Clear wrap is a little different: It adds top and bottom padding only.  The "cle
 
 Now, for the rack!  The "rack" class helps you lay out items side-by-side in a convenient way.  For example, what if you want links at the bottom of your footer with them layed out right next to each other horizontally:
 
-The "rack" class comes with a few of it's own qualifier classes:
+A "rack" wrapper works with the following tags:
+
+- div
+- span
+- "a" tag
+- "i" tag
+
+The "rack" class comes with a few of it's own qualifier classes, as well:
 
 - compress
 - with-dividers
