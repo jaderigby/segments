@@ -539,11 +539,9 @@ Clear wrap is a little different: It adds top and bottom padding only.  The "cle
 
 ### Racks ###
 
-
-
 Suppose you want a collection of social medial icons, how would you do that? Simple: Just rack 'em up!  The "rack" class helps you lay out items side-by-side without needing a bunch of column markup.  For example, what if you want links at the bottom of your footer layed out horizontally, like so:
 
-Link 1 | Link 2 | Link 3
+![](/image-figures/rack-footer-example.svg)
 
 Racks work on the following tags:
 
@@ -561,7 +559,9 @@ The "rack" class comes with a few of it's own qualifier classes, as well:
 
 The "rack" class's default behavior is to extend the items to fill up the parent. But what if you want to keep things more compressed? No problem &ndash; use the "compress" class.
 
-And, if you want to visually divide the items from each other, you can use the "with-dividers" class.
+And, if you want to visually divide the items from each other, you can use the "with-dividers" class:
+
+![](/image-figures/rack-footer-with-dividers-example.svg)
 
 When in "compress" mode, you can also assign the grouping to the right-hand side or center it by using the "center" and "right" classes respectively:
 
@@ -578,6 +578,8 @@ When in "compress" mode, you can also assign the grouping to the right-hand side
 ...
 </div>
 ```
+
+![](/image-figures/rack-footer-align-right.svg)
 
 ## Atom Snippets ##
 
