@@ -508,6 +508,54 @@ Let's break these guys down: First, wrap.  The "wrap" class adds a background co
 
 ![](/image-figures/wrap-example.svg)
 
+Notice how the second object has a background, as well as padding all around the content.  You can change the color of a wrap by adding your own additional class with a background color property.  For example:
+
+```
+# CSS
+
+.blue {
+  background-color: #c7e8f5;
+}
+
+
+# HTML
+
+<div class="wrap blue">
+  ...
+</div>
+```
+
+... which results in:
+
+![](/image-figures/wrap-with-color-example.svg)
+
+Border wrap is similar, only it adds a border instead of a background, like so:
+
+![](/image-figures/border-wrap-example.svg)
+
+Clear wrap is a little different: It adds top and bottom padding only.  The "clear-wrap" gives you a convenient way to seperate items with some whitespace, without compromising the left and right alignment.
+
+Now, for the rack!  The "rack" class helps you lay out items side-by-side in a convenient way.  For example, what if you want links at the bottom of your footer with them layed out right next to each other horizontally:
+
+The "rack" class comes with a few of it's own qualifier classes:
+
+- compress
+- with-dividers
+- center
+- right
+
+The "rack" class's default behavior is to extend the items to fill up the remaining space of the parent. But what if you want to keep things contained? Easy &ndash; you can use the "compress" class to do just that: Compress the items closer together with some static spacing in between.
+
+If you want to divide the items from each other, you can use the "with-dividers" class.
+
+When in "compress" mode, you can also assign the grouping to the right-hand side or center it by using the "center" and "right" classes respectively:
+
+```
+<div class="rack compress with-dividers center">
+...
+</div>
+```
+
 ## Atom Snippets ##
 
 "Ooh, you know what would be really cool? If there was a Segments library for Atom!"
