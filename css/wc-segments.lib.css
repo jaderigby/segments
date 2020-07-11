@@ -23,6 +23,7 @@ prime-segment > x-minor {
 }
 prime-segment > x-major {
   flex-grow: 1;
+  flex-basis: 0;
 }
 x-minor,
 x-major,
