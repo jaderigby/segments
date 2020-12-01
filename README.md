@@ -612,3 +612,5 @@ Amazing, huh!  You can save tons of time knocking out site layouts with Segments
 ## Changing Default Values ##
 
 Instructions on how to change default values is coming soon.  In the meantime, if you've worked with Grunt and NodeJS, then you can check out the projects Grunt file for configuration and commands, and then all the default values are found at the top of the "stylus/segments.styl" file.  Once you make your change, you can run `grunt create` to compile.
+
+## Testing ##
