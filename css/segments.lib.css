@@ -1033,6 +1033,18 @@ gutter,
   padding: 15px;
   border: 1px solid #e4e4e4;
 }
+.top-whitespace {
+  margin-top: 60px !important;
+}
+.bottom-whitespace {
+  margin-top: 60px !important;
+}
+.no-top {
+  margin-top: 0 !important;
+}
+.no-bottom {
+  margin-bottom: 0 !important;
+}
 .rack {
   display: flex;
   flex-flow: row wrap;
