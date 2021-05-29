@@ -5,7 +5,6 @@ class panelInner extends HTMLElement {
   connectedCallback() {
     if (this.hasAttribute('whitespace')) {
       var VAL = this.getAttribute('whitespace');
-      // console.log(this.children[0]);
       this.style.paddingTop = VAL + "px";
       this.style.paddingBottom = VAL + "px";
     }
@@ -14,7 +13,10 @@ class panelInner extends HTMLElement {
 window.customElements.define('panel-inner', panelInner);
 
 class segmentElem extends HTMLElement {}
-window.customElements.define('segment-elem', segmentElem);
+window.customElements.define('x-seg', segmentElem);
+
+class primeSegment extends HTMLElement {}
+window.customElements.define('x-prime', primeSegment);
 
 class segMajor extends HTMLElement {}
 window.customElements.define('x-major', segMajor);
