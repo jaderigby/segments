@@ -10,18 +10,18 @@ panel-wrapper panel-inner {
   padding: 60px 0;
   width: 1200px;
 }
-segment-elem {
+x-seg {
   display: flex;
   flex-flow: row wrap;
 }
-prime-segment {
+x-prime {
   display: flex;
   flex-flow: row nowrap;
 }
-prime-segment > x-minor {
+x-prime > x-minor {
   flex-shrink: 0;
 }
-prime-segment > x-major {
+x-prime > x-major {
   flex-grow: 1;
   flex-basis: 0;
 }
@@ -57,8 +57,8 @@ x-cell {
 .sevenths > x-minor:nth-child(1n),
 .sevenths > x-major:nth-child(1n),
 .sevenths > x-cell:nth-child(1n),
-prime-segment > x-minor:nth-child(1n),
-prime-segment > x-major:nth-child(1n) {
+x-prime > x-minor:nth-child(1n),
+x-prime > x-major:nth-child(1n) {
   margin-right: 15px;
   margin-left: 0;
 }
@@ -85,8 +85,8 @@ prime-segment > x-major:nth-child(1n) {
 .sevenths > x-minor:last-child,
 .sevenths > x-major:last-child,
 .sevenths > .cell:last-child,
-prime-segment > x-minor:last-child,
-prime-segment > x-major:last-child {
+x-prime > x-minor:last-child,
+x-prime > x-major:last-child {
   margin-right: 0;
 }
 .stack > x-minor:nth-child(1n),
@@ -112,8 +112,8 @@ prime-segment > x-major:last-child {
 .sevenths > x-minor:nth-child(7n),
 .sevenths > x-major:nth-child(7n),
 .sevenths > x-cell:nth-child(7n),
-prime-segment > x-minor:nth-child(2n),
-prime-segment > x-major:nth-child(2n) {
+x-prime > x-minor:nth-child(2n),
+x-prime > x-major:nth-child(2n) {
   margin-right: 0;
   margin-left: auto;
 }

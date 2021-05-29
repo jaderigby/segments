@@ -116,10 +116,10 @@ Later on, you will be introduced to a Segments wrapper called "panels", but they
 To make Segments even awesomer, yes "awesomer", a web component library has been included.  These web component elements can be written like so:
 
 ```
-<segment-elem class="thirds">
+<x-seg class="thirds">
   <x-minor></x-minor>
   <x-major></x-major>
-</segment-elem>
+</x-seg>
 ```
 
 If you notice, we drop the "segment" class in favor of a named tag, and just declare the "thirds" class.  Then, the children have their own tags, as well.  
@@ -130,7 +130,7 @@ Here's a list of the available web component tags:
 
 - panel-wrapper
 - panel-inner
-- segment-elem
+- x-seg
 - x-minor
 - x-major
 - x-cell
@@ -169,11 +169,11 @@ Columns are easy with Segments, too!  Just replace the "minor" and "major" child
 With Web Components:
 
 ```
-<segment-elem class="thirds">
+<x-seg class="thirds">
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
-</segment-elem>
+</x-seg>
 
 ```
 
@@ -192,13 +192,13 @@ With Web Components:
 With Web Components:
 
 ```
-<segment-elem class="fifths">
+<x-seg class="fifths">
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
-</segment-elem>
+</x-seg>
 ```
 
 ### It Goes Up To Seven ###
@@ -406,11 +406,11 @@ And the code for it looks like this:
 With Web Components:
 
 ```
-<segment-elem class="fourths major-in-the-middle">
+<x-seg class="fourths major-in-the-middle">
   <x-minor></x-minor>
   <x-major></x-major>
   <x-minor></x-minor>
-</segment-elem>
+</x-seg>
 ```
 
 Major-in-the-middle is a great feature for things like headers and similarly related layouts.  With major-in-the-middle you can have a main menu icon on the left, logo in the center, and admin login on the right, or something similar.  It could also be used for creating video viewer with thumbnails on the left, main video player in the center, and secondary controls on the right.
@@ -445,15 +445,15 @@ And here's how you use them:
 With Web Components:
 
 ```
-<segment-elem class="thirds lg-fifths tablet-stack">
+<x-seg class="thirds lg-fifths tablet-stack">
   <x-minor></x-minor>
   <x-major></x-major>
-</segment-elem>
+</x-seg>
 
-<segment-elem class="fifths lg-thirds md-half tablet-stack">
+<x-seg class="fifths lg-thirds md-half tablet-stack">
   <x-minor></x-minor>
   <x-major></x-major>
-</segment-elem>
+</x-seg>
 ```
 
 The default, or full size, is 1200px &ndash; but it can be changed in the "segments.styl" file, contained within this repo's "stylus" folder, if needed.
@@ -599,10 +599,10 @@ Like other Atom snippets, when you hit tab those two elements above actually cre
 ```
 <panel-wrapper>
   <panel-inner>
-    <segment-elem class="thirds">
+    <x-seg class="thirds">
       <x-minor></x-minor>
       <x-major></x-major>
-    </segment-elem>
+    </x-seg>
   </panel-inner>
 </panel-wrapper>
 ```
