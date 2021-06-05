@@ -116,10 +116,10 @@ Later on, you will be introduced to a Segments wrapper called "panels", but they
 To make Segments even awesomer, yes "awesomer", a web component library has been included.  These web component elements can be written like so:
 
 ```
-<x-seg class="thirds">
+<x-segment class="thirds">
   <x-minor></x-minor>
   <x-major></x-major>
-</x-seg>
+</x-segment>
 ```
 
 If you notice, we drop the "segment" class in favor of a named tag, and just declare the "thirds" class.  Then, the children have their own tags, as well.  
@@ -130,11 +130,11 @@ Here's a list of the available web component tags:
 
 - panel-wrapper
 - panel-inner
-- x-seg
+- x-segment
 - x-minor
 - x-major
 - x-cell
-- prime-segment (more on prime segments within the "Prime Segments" section: They're cool!)
+- x-prime (more on prime segments within the "Prime Segments" section: They're cool!)
 
 ### Add Web Components To Your Project ###
 
@@ -169,11 +169,11 @@ Columns are easy with Segments, too!  Just replace the "minor" and "major" child
 With Web Components:
 
 ```
-<x-seg class="thirds">
+<x-segment class="thirds">
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
-</x-seg>
+</x-segment>
 
 ```
 
@@ -192,13 +192,13 @@ With Web Components:
 With Web Components:
 
 ```
-<x-seg class="fifths">
+<x-segment class="fifths">
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
-</x-seg>
+</x-segment>
 ```
 
 ### It Goes Up To Seven ###
@@ -359,16 +359,16 @@ And here's how to use them:
 With Web Components:
 
 ```
-<prime-segment>
+<x-prime>
   <x-minor></x-minor>
   <x-major></x-major>
-</prime-segment>
+</x-prime>
 ```
 
 So, for the example above, it might look something like this:
 
 ```
-<prime-segment>
+<x-prime>
   <x-minor>
     <img src="avatar" />
   </x-minor>
@@ -383,7 +383,7 @@ So, for the example above, it might look something like this:
       Velor du salia sor aute vehentor!
     </p>
   </x-major>
-</prime-segment>
+</x-prime>
 ```
 
 ## Major In The Middle ##
@@ -406,11 +406,11 @@ And the code for it looks like this:
 With Web Components:
 
 ```
-<x-seg class="fourths major-in-the-middle">
+<x-segment class="fourths major-in-the-middle">
   <x-minor></x-minor>
   <x-major></x-major>
   <x-minor></x-minor>
-</x-seg>
+</x-segment>
 ```
 
 Major-in-the-middle is a great feature for things like headers and similarly related layouts.  With major-in-the-middle you can have a main menu icon on the left, logo in the center, and admin login on the right, or something similar.  It could also be used for creating video viewer with thumbnails on the left, main video player in the center, and secondary controls on the right.
@@ -445,15 +445,15 @@ And here's how you use them:
 With Web Components:
 
 ```
-<x-seg class="thirds lg-fifths tablet-stack">
+<x-segment class="thirds lg-fifths tablet-stack">
   <x-minor></x-minor>
   <x-major></x-major>
-</x-seg>
+</x-segment>
 
-<x-seg class="fifths lg-thirds md-half tablet-stack">
+<x-segment class="fifths lg-thirds md-half tablet-stack">
   <x-minor></x-minor>
   <x-major></x-major>
-</x-seg>
+</x-segment>
 ```
 
 The default, or full size, is 1200px &ndash; but it can be changed in the "segments.styl" file, contained within this repo's "stylus" folder, if needed.
@@ -599,10 +599,10 @@ Like other Atom snippets, when you hit tab those two elements above actually cre
 ```
 <panel-wrapper>
   <panel-inner>
-    <x-seg class="thirds">
+    <x-segment class="thirds">
       <x-minor></x-minor>
       <x-major></x-major>
-    </x-seg>
+    </x-segment>
   </panel-inner>
 </panel-wrapper>
 ```

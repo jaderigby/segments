@@ -10,7 +10,7 @@ panel-wrapper panel-inner {
   padding: 60px 0;
   width: 1200px;
 }
-x-seg {
+x-segment {
   display: flex;
   flex-flow: row wrap;
 }
