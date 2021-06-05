@@ -14,35 +14,35 @@ window.customElements.define('panel-inner', panelInner);
 
 class segmentElem extends HTMLElement {
   connectedCallback() {
-    if (this.hasAttribute('cat')) {
-      var CAT = this.getAttribute('cat');
+    if (this.hasAttribute('seg')) {
+      var SEG = this.getAttribute('seg');
       var self = this;
-      var classCat = '';
-      switch(CAT) {
+      var classSeg = '';
+      switch(SEG) {
         case '2':
-          classCat = 'half';
+          classSeg = 'half';
           break;
         case '3':
-          classCat = 'thirds';
+          classSeg = 'thirds';
           break;
         case '4':
-          classCat = 'fourths';
+          classSeg = 'fourths';
           break;
         case '5':
-          classCat = 'fifths';
+          classSeg = 'fifths';
           break;
         case '6':
-          classCat = 'sixths';
+          classSeg = 'sixths';
           break;
         case '7':
-          classCat = 'sevenths';
+          classSeg = 'sevenths';
           break;
         case '8':
-          classCat = 'eighths';
+          classSeg = 'eighths';
           break;
       }
-      if (classCat) {
-        self.classList.add(classCat);
+      if (classSeg) {
+        self.classList.add(classSeg);
       }
     }
   }
