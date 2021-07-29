@@ -134,7 +134,7 @@ Here's a list of the available web component tags:
 - x-minor
 - x-major
 - x-cell
-- x-prime (more on prime segments within the "Prime Segments" section: They're cool!)
+- prime-segment (more on prime segments within the "Prime Segments" section: They're cool!)
 
 ### Add Web Components To Your Project ###
 
@@ -359,16 +359,16 @@ And here's how to use them:
 With Web Components:
 
 ```
-<x-prime>
+<prime-segment>
   <x-minor></x-minor>
   <x-major></x-major>
-</x-prime>
+</prime-segment>
 ```
 
 So, for the example above, it might look something like this:
 
 ```
-<x-prime>
+<prime-segment>
   <x-minor>
     <img src="avatar" />
   </x-minor>
@@ -383,39 +383,8 @@ So, for the example above, it might look something like this:
       Velor du salia sor aute vehentor!
     </p>
   </x-major>
-</x-prime>
+</prime-segment>
 ```
-
-## Major In The Middle ##
-
-There is one more layout feature up Segments' sleeve: It's called "major in the middle". It's a way of creating small sections on the left and right with a larger portion in the middle, like so:
-
-![](/image-figures/fourths-major-in-the-middle.svg)
-
-And the code for it looks like this:
-
-```
-<div class="segment fourths major-in-the-middle">
-  <div class="minor"></div>
-  <div class="major"></div>
-  <div class="minor"></div>
-</div>
-
-```
-
-With Web Components:
-
-```
-<x-segment class="fourths major-in-the-middle">
-  <x-minor></x-minor>
-  <x-major></x-major>
-  <x-minor></x-minor>
-</x-segment>
-```
-
-Major-in-the-middle is a great feature for things like headers and similarly related layouts.  With major-in-the-middle you can have a main menu icon on the left, logo in the center, and admin login on the right, or something similar.  It could also be used for creating video viewer with thumbnails on the left, main video player in the center, and secondary controls on the right.
-
-Major-in-the-middle is a special feature specific to fourths. Support for fifths has been added, as well, for the sake of greater flexibility and responsive design.
 
 ## "I Needs Me Some Breakpoints, Brah!" ##
 
@@ -506,7 +475,7 @@ In addition to general segments behavior, the Segments library also offers you a
 
 ### Wraps ###
 
-Let's break these guys down: First, wrap.  The "wrap" class adds a background color, and padding all around an element.  It is a block element that can be used as a wrapper.  For example, below we have three sections.  The middle section is using the "wrap" class:
+Let's break these guys down: First, wrap:  The "wrap" class adds a background color, and padding all around an element.  It is a block element that can be used as a wrapper.  For example, below we have three sections.  The middle section is using the "wrap" class:
 
 ![](/image-figures/wrap-example.svg)
 
@@ -546,27 +515,27 @@ Suppose you want a collection of social medial icons, how would you do that? Sim
 Racks work on the following tags:
 
 - div
-- span
 - "a" tag
 - "i" tag
 
 The "rack" class comes with a few of it's own qualifier classes, as well:
 
-- compress
+- extend
 - with-dividers
+- no-gap
 - center
 - right
 
-The "rack" class's default behavior is to extend the items to fill up the parent. But what if you want to keep things more compressed? No problem &ndash; use the "compress" class.
+The "rack" class's default behavior is to compress together.  You can apply the "extend" class in order to cause the items to fill up the parent.
 
 And, if you want to visually divide the items from each other, you can use the "with-dividers" class:
 
 ![](/image-figures/rack-footer-with-dividers-example.svg)
 
-When in "compress" mode, you can also assign the grouping to the right-hand side or center it by using the "center" and "right" classes respectively:
+When in "default" mode, you can also assign the grouping to the right-hand side or center it by using the "center" and "right" classes respectively:
 
 ```
-<div class="rack compress with-dividers center">
+<div class="rack with-dividers center">
 ...
 </div>
 ```
@@ -574,7 +543,7 @@ When in "compress" mode, you can also assign the grouping to the right-hand side
 ... or:
 
 ```
-<div class="rack compress with-dividers right">
+<div class="rack with-dividers right">
 ...
 </div>
 ```
