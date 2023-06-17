@@ -42,7 +42,7 @@ class segmentElem extends HTMLElement {
     if (this.hasAttribute('of')) {
       const SEG = this.getAttribute('of');
       const self = this;
-      const classSeg = '';
+      let classSeg = '';
       switch(SEG) {
         case '2':
           classSeg = 'half';
