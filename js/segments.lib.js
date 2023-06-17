@@ -4,20 +4,45 @@ window.customElements.define('panel-wrapper', panelWrapper);
 class panelInner extends HTMLElement {
   connectedCallback() {
     if (this.hasAttribute('space')) {
-      var VAL = this.getAttribute('space');
-      this.style.paddingTop = VAL + "px";
-      this.style.paddingBottom = VAL + "px";
+      const VAL = this.getAttribute('space');
+      const valList = VAL.split(',');
+      if (valList.length > 1) {
+        this.style.paddingTop = valList[0] + "px";
+        this.style.paddingBottom = valList[1] + "px";
+      }
+      else {
+        this.style.paddingTop = VAL + "px";
+        this.style.paddingBottom = VAL + "px";
+      }
     }
   }
 }
 window.customElements.define('panel-inner', panelInner);
 
+class clearWrap extends HTMLElement {
+  connectedCallback() {
+    if (this.hasAttribute('space')) {
+      const VAL = this.getAttribute('space');
+      const valList = VAL.split(',');
+      if (valList.length > 1) {
+        this.style.paddingTop = valList[0] + "px";
+        this.style.paddingBottom = valList[1] + "px";
+      }
+      else {
+        this.style.paddingTop = VAL + "px";
+        this.style.paddingBottom = VAL + "px";
+      }
+    }
+  }
+}
+window.customElements.define('clear-wrap', clearWrap);
+
 class segmentElem extends HTMLElement {
   connectedCallback() {
     if (this.hasAttribute('of')) {
-      var SEG = this.getAttribute('of');
-      var self = this;
-      var classSeg = '';
+      const SEG = this.getAttribute('of');
+      const self = this;
+      const classSeg = '';
       switch(SEG) {
         case '2':
           classSeg = 'half';
@@ -38,6 +63,9 @@ class segmentElem extends HTMLElement {
           classSeg = 'sevenths';
           break;
         case '8':
+          classSeg = 'eighths';
+          break;
+        default:
           classSeg = 'eighths';
           break;
       }
