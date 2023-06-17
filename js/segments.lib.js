@@ -14,8 +14,8 @@ window.customElements.define('panel-inner', panelInner);
 
 class segmentElem extends HTMLElement {
   connectedCallback() {
-    if (this.hasAttribute('type')) {
-      var SEG = this.getAttribute('type');
+    if (this.hasAttribute('of')) {
+      var SEG = this.getAttribute('of');
       var self = this;
       var classSeg = '';
       switch(SEG) {
