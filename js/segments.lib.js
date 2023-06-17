@@ -37,6 +37,42 @@ class clearWrap extends HTMLElement {
 }
 window.customElements.define('clear-wrap', clearWrap);
 
+class colorWrap extends HTMLElement {
+  connectedCallback() {
+    if (this.hasAttribute('space')) {
+      const VAL = this.getAttribute('space');
+      const valList = VAL.split(',');
+      if (valList.length > 1) {
+        this.style.paddingTop = valList[0] + "px";
+        this.style.paddingBottom = valList[1] + "px";
+      }
+      else {
+        this.style.paddingTop = VAL + "px";
+        this.style.paddingBottom = VAL + "px";
+      }
+    }
+  }
+}
+window.customElements.define('x-wrap', colorWrap);
+
+class borderWrap extends HTMLElement {
+  connectedCallback() {
+    if (this.hasAttribute('space')) {
+      const VAL = this.getAttribute('space');
+      const valList = VAL.split(',');
+      if (valList.length > 1) {
+        this.style.paddingTop = valList[0] + "px";
+        this.style.paddingBottom = valList[1] + "px";
+      }
+      else {
+        this.style.paddingTop = VAL + "px";
+        this.style.paddingBottom = VAL + "px";
+      }
+    }
+  }
+}
+window.customElements.define('border-wrap', borderWrap);
+
 class segmentElem extends HTMLElement {
   connectedCallback() {
     if (this.hasAttribute('of')) {
