@@ -3,8 +3,8 @@ window.customElements.define('panel-wrapper', panelWrapper);
 
 class panelInner extends HTMLElement {
   connectedCallback() {
-    if (this.hasAttribute('whitespace')) {
-      var VAL = this.getAttribute('whitespace');
+    if (this.hasAttribute('space')) {
+      var VAL = this.getAttribute('space');
       this.style.paddingTop = VAL + "px";
       this.style.paddingBottom = VAL + "px";
     }
@@ -14,8 +14,8 @@ window.customElements.define('panel-inner', panelInner);
 
 class segmentElem extends HTMLElement {
   connectedCallback() {
-    if (this.hasAttribute('seg')) {
-      var SEG = this.getAttribute('seg');
+    if (this.hasAttribute('type')) {
+      var SEG = this.getAttribute('type');
       var self = this;
       var classSeg = '';
       switch(SEG) {
@@ -47,10 +47,10 @@ class segmentElem extends HTMLElement {
     }
   }
 }
-window.customElements.define('x-segment', segmentElem);
+window.customElements.define('x-seg', segmentElem);
 
 class primeSegment extends HTMLElement {}
-window.customElements.define('x-prime', primeSegment);
+window.customElements.define('prime-seg', primeSegment);
 
 class segMajor extends HTMLElement {}
 window.customElements.define('x-major', segMajor);
