@@ -1,6 +1,8 @@
 panel-wrapper,
 panel-inner,
 clear-wrap,
+x-wrap,
+border-wrap,
 x-minor,
 x-major,
 x-cell {
@@ -13,7 +15,7 @@ panel-wrapper panel-inner {
 }
 x-seg {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row "x-wrap";
 }
 prime-seg {
   display: flex;
@@ -954,34 +956,26 @@ prime-seg > x-major:nth-child(2n) {
 .vertical-center {
   align-items: center;
 }
-.clear-wrap {
+clear-wrap {
   margin: 40px 0;
 }
-.wrap {
+x-wrap {
   padding: 15px;
   background-color: #e4e4e4;
 }
-.border-wrap {
+border-wrap {
   padding: 15px;
   border: 1px solid #e4e4e4;
 }
-.wrap,
-.border-wrap {
+border-wrap {
   margin: 15px 0;
 }
-.wrap.inner,
-.border-wrap.inner {
+border-wrap.inner {
   margin: 0;
-}
-.top-whitespace {
-  margin-top: 60px !important;
-}
-.bottom-whitespace {
-  margin-bottom: 60px !important;
 }
 .rack {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row "x-wrap";
 }
 .rack.right {
   justify-content: flex-end;

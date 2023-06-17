@@ -1,6 +1,8 @@
 .panel-wrapper,
 .panel-inner,
 .clear-wrap,
+.wrap,
+.border-wrap,
 .minor,
 .major,
 .cell {
@@ -13,7 +15,7 @@
 }
 .segment {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row ".wrap";
 }
 .prime-segment {
   display: flex;
@@ -965,23 +967,15 @@
   padding: 15px;
   border: 1px solid #e4e4e4;
 }
-.wrap,
 .border-wrap {
   margin: 15px 0;
 }
-.wrap.inner,
 .border-wrap.inner {
   margin: 0;
 }
-.top-whitespace {
-  margin-top: 60px !important;
-}
-.bottom-whitespace {
-  margin-bottom: 60px !important;
-}
 .rack {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row ".wrap";
 }
 .rack.right {
   justify-content: flex-end;

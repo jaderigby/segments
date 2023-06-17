@@ -20,6 +20,8 @@ if classes
   x-cell = ".cell"
   prime-segment = ".prime-segment"
   clear-wrap = ".clear-wrap"
+  wrap = ".wrap"
+  border-wrap = ".border-wrap"
 
 else
   panel-wrapper = "panel-wrapper"
@@ -30,10 +32,14 @@ else
   x-cell = "x-cell"
   prime-segment = "prime-seg"
   clear-wrap = "clear-wrap"
+  wrap = "x-wrap"
+  border-wrap = "border-wrap"
 
 {panel-wrapper},
 {panel-inner},
 {clear-wrap},
+{wrap},
+{border-wrap},
 {x-minor},
 {x-major},
 {x-cell}
@@ -993,28 +999,22 @@ else
 .vertical-center
   align-items: center
 
-.clear-wrap
+{clear-wrap}
   margin: 40px 0
 
-.wrap
+{wrap}
   padding: 15px
   background-color: #e4e4e4
 
-.border-wrap
+{border-wrap}
   padding: 15px
   border: 1px solid #e4e4e4
 
-.wrap
-.border-wrap
+{wrap}
+{border-wrap}
   margin: 15px 0
   &.inner
     margin: 0
-
-.top-whitespace
-  margin-top: 60px !important
-
-.bottom-whitespace
-  margin-bottom: 60px !important
 
 .rack
   display: flex
