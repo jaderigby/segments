@@ -15,7 +15,7 @@ panel-wrapper panel-inner {
 }
 x-seg {
   display: flex;
-  flex-flow: row "x-wrap";
+  flex-flow: row wrap;
 }
 prime-seg {
   display: flex;
@@ -975,7 +975,7 @@ border-wrap.inner {
 }
 .rack {
   display: flex;
-  flex-flow: row "x-wrap";
+  flex-flow: row wrap;
 }
 .rack.right {
   justify-content: flex-end;

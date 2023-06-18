@@ -56,7 +56,7 @@ The only thing left to do is add the children:
 </div>
 ```
 
-The "minor" class is, of course, the small container, and the "major" class is the large one.  So for "thirds", the "minor" container is 1/3 the total size, and the "major" container is 2/3.  Note that the default gutter is a static 15px, and is figured into this.
+The "minor" class is, of course, the small container, and the "major" class is the large one.  So for "thirds", the "minor" container is 1/3 the total size, and the "major" container is 2/3 the total size.  Note that the default gutter is a static 15px, and is figured into this.
 
 What's great about this is that when you decide to adjust the portions, say from "thirds" to "fifths", you only have to change one value, and not two like you do with popular grid-based systems. For example:
 
@@ -76,7 +76,7 @@ What's great about this is that when you decide to adjust the portions, say from
 </div>
 ```
 
-To accomplish something similar with a grid-based system, you would have to do something like:
+To accomplish something similar with a grid-based system, if you had something like:
 
 ```
 <div class="row">
@@ -85,7 +85,7 @@ To accomplish something similar with a grid-based system, you would have to do s
 </div>
 ```
 
-... becomes:
+... which would then become becomes:
 
 ```
 <div class="row">
@@ -116,10 +116,10 @@ Later on, you will be introduced to a Segments wrapper called "panels", but they
 To make Segments even awesomer, yes "awesomer", a web component library has been included.  These web component elements can be written like so:
 
 ```
-<x-segment class="thirds">
+<x-seg class="thirds">
   <x-minor></x-minor>
   <x-major></x-major>
-</x-segment>
+</x-seg>
 ```
 
 If you notice, we drop the "segment" class in favor of a named tag, and just declare the "thirds" class.  Then, the children have their own tags, as well.  
@@ -130,11 +130,27 @@ Here's a list of the available web component tags:
 
 - panel-wrapper
 - panel-inner
-- x-segment
+- x-seg
 - x-minor
 - x-major
 - x-cell
-- prime-segment (more on prime segments within the "Prime Segments" section: They're cool!)
+- prime-seg (more on prime segments within the "Prime Segments" section: They're cool!)
+
+### UPDATE: ##$
+
+Web component segments has a new feature: You can now add the attribute "of" to a web component tag, and pass in a numerical value.  This will tell it which class to apply, such as "3" to apply the class of "thirds". For responsive, just add as a regular class to the tag.  So for example:
+
+```
+<x-seg of="3">
+```
+
+The above results in a tag of `<x-seg class="thirds">`.  And for responsive:
+
+```
+<x-seg of="3" class="break md-stack">
+```
+
+This above creates a tag that defaults to "thirds" for anything above "medium" screen sizes, and from medium down stacks them instead.
 
 ### Add Web Components To Your Project ###
 
@@ -169,11 +185,11 @@ Columns are easy with Segments, too!  Just replace the "minor" and "major" child
 With Web Components:
 
 ```
-<x-segment class="thirds">
+<x-seg class="thirds">
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
-</x-segment>
+</x-seg>
 
 ```
 
@@ -192,13 +208,13 @@ With Web Components:
 With Web Components:
 
 ```
-<x-segment class="fifths">
+<x-seg class="fifths">
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
-</x-segment>
+</x-seg>
 ```
 
 ### It Goes Up To Seven ###
@@ -253,7 +269,7 @@ Using segments, this would look like:
   <head></head>
   <body>
     <div class="panel-wrapper">
-      <div class="panel">
+      <div class="panel-inner">
 
       </div>
     </div>
@@ -350,7 +366,7 @@ Then you can use something called a "prime segment".  A prime segment has the le
 And here's how to use them:
 
 ```
-<div class="prime-segment">
+<div class="prime-seg">
   <div class="minor"></div>
   <div class="major"></div>
 </div>
@@ -359,16 +375,16 @@ And here's how to use them:
 With Web Components:
 
 ```
-<prime-segment>
+<prime-seg>
   <x-minor></x-minor>
   <x-major></x-major>
-</prime-segment>
+</prime-seg>
 ```
 
 So, for the example above, it might look something like this:
 
 ```
-<prime-segment>
+<prime-seg>
   <x-minor>
     <img src="avatar" />
   </x-minor>
@@ -383,7 +399,7 @@ So, for the example above, it might look something like this:
       Velor du salia sor aute vehentor!
     </p>
   </x-major>
-</prime-segment>
+</prime-seg>
 ```
 
 ## "I Needs Me Some Breakpoints, Brah!" ##
@@ -400,7 +416,7 @@ Remember how I told you that the parent element does all the work?  This becomes
 And here's how you use them:
 
 ```
-<div class="segment thirds lg-fifths tablet-stack">
+<div class="seg thirds lg-fifths tablet-stack">
   <div class="minor"></div>
   <div class="major"></div>
 </div>
@@ -414,15 +430,15 @@ And here's how you use them:
 With Web Components:
 
 ```
-<x-segment class="thirds lg-fifths tablet-stack">
+<x-seg class="thirds lg-fifths tablet-stack">
   <x-minor></x-minor>
   <x-major></x-major>
-</x-segment>
+</x-seg>
 
-<x-segment class="fifths lg-thirds md-half tablet-stack">
+<x-seg class="fifths lg-thirds md-half tablet-stack">
   <x-minor></x-minor>
   <x-major></x-major>
-</x-segment>
+</x-seg>
 ```
 
 The default, or full size, is 1200px &ndash; but it can be changed in the "segments.styl" file, contained within this repo's "stylus" folder, if needed.
@@ -568,10 +584,10 @@ Like other Atom snippets, when you hit tab those two elements above actually cre
 ```
 <panel-wrapper>
   <panel-inner>
-    <x-segment class="thirds">
+    <x-seg class="thirds">
       <x-minor></x-minor>
       <x-major></x-major>
-    </x-segment>
+    </x-seg>
   </panel-inner>
 </panel-wrapper>
 ```

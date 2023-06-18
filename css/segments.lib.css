@@ -15,7 +15,7 @@
 }
 .segment {
   display: flex;
-  flex-flow: row ".wrap";
+  flex-flow: row wrap;
 }
 .prime-segment {
   display: flex;
@@ -975,7 +975,7 @@
 }
 .rack {
   display: flex;
-  flex-flow: row ".wrap";
+  flex-flow: row wrap;
 }
 .rack.right {
   justify-content: flex-end;
