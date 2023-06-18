@@ -566,11 +566,11 @@ When in "default" mode, you can also assign the grouping to the right-hand side 
 
 ![](/image-figures/rack-footer-align-right-example.svg)
 
-## Atom Snippets ##
+## Atom &amp; VS Code Snippets ##
 
-"Ooh, you know what would be really cool? If there was a Segments library for Atom!"
+"Ooh, you know what would be really cool? If there was a Segments library for Atom &amp; VS Code!"
 
-There is!  If any of you are using the popular Atom Text Editor, the Segments repo comes with a snippets.cson file which gives you a bunch of Segments snippets. Just be aware: these are using the web components flavor of Segments.
+There is!  If any of you are using the popular Atom Text Editor or Visual Studio Code, the Segments repo comes with a snippets.cson and segments.code-snippets file which gives you a bunch of Segments snippets. Just be aware: these are using the web components flavor of Segments.
 
 Observe:
 
@@ -579,12 +579,12 @@ panel
 thirds
 ```
 
-Like other Atom snippets, when you hit tab those two elements above actually create the following:
+Like other Atom &amp; VS Code snippets, when you hit tab those two elements above actually create the following:
 
 ```
 <panel-wrapper>
   <panel-inner>
-    <x-seg class="thirds">
+    <x-seg of="3">
       <x-minor></x-minor>
       <x-major></x-major>
     </x-seg>
