@@ -17,7 +17,15 @@ class panelInner extends HTMLElement {
     }
   }
 }
-window.customElements.define('panel-inner', panelInner);
+window.customElements.define('x-panel', panelInner);
+
+class PanelComplete extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = '<panel-inner>' + this.innerHTML + '</panel-inner>';
+  }
+}
+
+window.customElements.define('x-panel', PanelComplete);
 
 class clearWrap extends HTMLElement {
   connectedCallback() {
