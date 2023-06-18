@@ -1,7 +1,7 @@
-class panelWrapper extends HTMLElement {}
-window.customElements.define('panel-wrapper', panelWrapper);
+class PanelWrapper extends HTMLElement {}
+window.customElements.define('panel-wrapper', PanelWrapper);
 
-class panelInner extends HTMLElement {
+class PanelInner extends HTMLElement {
   connectedCallback() {
     if (this.hasAttribute('space')) {
       const VAL = this.getAttribute('space');
@@ -17,11 +17,12 @@ class panelInner extends HTMLElement {
     }
   }
 }
-window.customElements.define('x-panel', panelInner);
+window.customElements.define('panel-inner', PanelInner);
 
-class PanelComplete extends HTMLElement {
+class PanelComplete extends PanelWrapper {
   connectedCallback() {
-    this.innerHTML = '<panel-inner>' + this.innerHTML + '</panel-inner>';
+    const prepped = this.innerHTML;
+    this.innerHTML = `<panel-inner>${prepped}</panel-inner>`;
   }
 }
 

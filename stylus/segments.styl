@@ -13,6 +13,7 @@ xs = 420px
 
 if classes
   panel-wrapper = ".panel-wrapper"
+  x-panel = false
   panel-inner = ".panel-inner"
   segment-elem = ".segment"
   x-minor = ".minor"
@@ -23,8 +24,9 @@ if classes
   x-wrap = ".wrap"
   border-wrap = ".border-wrap"
 
-else
+if wc
   panel-wrapper = "panel-wrapper"
+  x-panel = "x-panel"
   panel-inner = "panel-inner"
   segment-elem = "x-seg"
   x-minor = "x-minor"
@@ -35,20 +37,39 @@ else
   x-wrap = "x-wrap"
   border-wrap = "border-wrap"
 
-{panel-wrapper},
-{panel-inner},
-{clear-wrap},
-{x-wrap},
-{border-wrap},
-{x-minor},
-{x-major},
-{x-cell}
-  display: block
+if classes
+  {panel-wrapper},
+  {panel-inner},
+  {clear-wrap},
+  {x-wrap},
+  {border-wrap},
+  {x-minor},
+  {x-major},
+  {x-cell}
+    display: block
+if wc
+  {panel-wrapper},
+  {panel-inner},
+  {x-panel},
+  {clear-wrap},
+  {x-wrap},
+  {border-wrap},
+  {x-minor},
+  {x-major},
+  {x-cell}
+    display: block
 
-{panel-wrapper} {panel-inner}
-  margin: 0 auto
-  padding: panel_whitespace 0
-  width: full_size
+if classes
+  {panel-wrapper} {panel-inner}
+    margin: 0 auto
+    padding: panel_whitespace 0
+    width: full_size
+if wc
+  {panel-wrapper} {panel-inner}
+  {x-panel} {panel-inner}
+    margin: 0 auto
+    padding: panel_whitespace 0
+    width: full_size
 
 {segment-elem}
   display: flex
@@ -244,21 +265,39 @@ else
 
 @media only screen and (max-width: full_site_spread)
 
-  {panel-wrapper} {panel-inner}
-    padding: panel_whitespace 25px
-    width: calc(100% - 50px)
+  if classes
+    {panel-wrapper} {panel-inner}
+      padding: panel_whitespace 25px
+      width: calc(100% - 50px)
+  if wc
+    {panel-wrapper} {panel-inner}
+    {x-panel} {panel-inner}
+      padding: panel_whitespace 25px
+      width: calc(100% - 50px)
 
 @media only screen and (max-width: tablet)
 
-  {panel-wrapper} {panel-inner}
-    padding: panel_whitespace 15px
-    width: calc(100% - 30px)
+  if classes
+    {panel-wrapper} {panel-inner}
+      padding: panel_whitespace 15px
+      width: calc(100% - 30px)
+  if wc
+    {panel-wrapper} {panel-inner}
+    {x-panel} {panel-inner}
+      padding: panel_whitespace 15px
+      width: calc(100% - 30px)
 
 @media only screen and (max-width: sm)
 
-  {panel-wrapper} {panel-inner}
-    padding: panel_whitespace 10px
-    width: calc(100% - 20px)
+  if classes
+    {panel-wrapper} {panel-inner}
+      padding: panel_whitespace 10px
+      width: calc(100% - 20px)
+  if wc
+    {panel-wrapper} {panel-inner}
+    {x-panel} {panel-inner}
+      padding: panel_whitespace 10px
+      width: calc(100% - 20px)
 
 
 @media only screen and (max-width: lg)

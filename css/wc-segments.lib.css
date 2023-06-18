@@ -1,5 +1,6 @@
 panel-wrapper,
 panel-inner,
+x-panel,
 clear-wrap,
 x-wrap,
 border-wrap,
@@ -8,7 +9,8 @@ x-major,
 x-cell {
   display: block;
 }
-panel-wrapper panel-inner {
+panel-wrapper panel-inner,
+x-panel panel-inner {
   margin: 0 auto;
   padding: 60px 0;
   width: 1200px;
@@ -206,19 +208,22 @@ prime-seg > x-major:nth-child(2n) {
   width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
 }
 @media only screen and (max-width: calc(1200px + 50px)) {
-  panel-wrapper panel-inner {
+  panel-wrapper panel-inner,
+  x-panel panel-inner {
     padding: 60px 25px;
     width: calc(100% - 50px);
   }
 }
 @media only screen and (max-width: 768px) {
-  panel-wrapper panel-inner {
+  panel-wrapper panel-inner,
+  x-panel panel-inner {
     padding: 60px 15px;
     width: calc(100% - 30px);
   }
 }
 @media only screen and (max-width: 640px) {
-  panel-wrapper panel-inner {
+  panel-wrapper panel-inner,
+  x-panel panel-inner {
     padding: 60px 10px;
     width: calc(100% - 20px);
   }
