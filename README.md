@@ -354,7 +354,17 @@ Panels add some whitespace, as well, in the form of top and bottom margins. The 
 
 ### Update: ###
 
-A new web component has been added for panels.  You can now do `x-panel` instead of `panel-wrapper` and `panel-inner`.  `x-panel` dynamically adds the `panel-inner` for you.  And if you want to use the `space` attribute, you still can!  It will be added to the dynamically generated `panel-inner`.  And anytime you need granular control, or need to add classes to the `panel-inner` component, then just use the `panel-wrapper` and `panel-inner` tags like usual.
+A new web component has been added for panels.  You can now do `x-panel` instead of `panel-wrapper` and `panel-inner`.  `x-panel` dynamically adds the `panel-inner` for you.  And if you want to use the `space` attribute, you still can!  It will be added to the dynamically generated `panel-inner`.  Otherwise, anytime you need granular control, or need to add classes to the `panel-inner` component, then just use the `panel-wrapper` and `panel-inner` tags like usual.
+
+Example:
+
+```
+<x-panel>
+  <x-seg if="2">
+    <x-cell></x-cell>
+  </x-seg>
+</x-panel>
+```
 
 ## Prime Segments ##
 
