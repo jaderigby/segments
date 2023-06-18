@@ -1,135 +1,139 @@
-class PanelWrapper extends HTMLElement {}
-window.customElements.define('panel-wrapper', PanelWrapper);
+document.addEventListener('DOMContentLoaded', () => {
 
-class PanelInner extends HTMLElement {
-  connectedCallback() {
-    if (this.hasAttribute('space')) {
-      const VAL = this.getAttribute('space');
-      const valList = VAL.split(',');
-      if (valList.length > 1) {
-        this.style.paddingTop = valList[0] + "px";
-        this.style.paddingBottom = valList[1] + "px";
-      }
-      else {
-        this.style.paddingTop = VAL + "px";
-        this.style.paddingBottom = VAL + "px";
-      }
-    }
-  }
-}
-window.customElements.define('panel-inner', PanelInner);
+  class PanelWrapper extends HTMLElement {}
+  window.customElements.define('panel-wrapper', PanelWrapper);
 
-class PanelComplete extends PanelWrapper {
-  connectedCallback() {
-    const prepped = this.innerHTML;
-    this.innerHTML = `<panel-inner>${prepped}</panel-inner>`;
-  }
-}
-
-window.customElements.define('x-panel', PanelComplete);
-
-class clearWrap extends HTMLElement {
-  connectedCallback() {
-    if (this.hasAttribute('space')) {
-      const VAL = this.getAttribute('space');
-      const valList = VAL.split(',');
-      if (valList.length > 1) {
-        this.style.paddingTop = valList[0] + "px";
-        this.style.paddingBottom = valList[1] + "px";
-      }
-      else {
-        this.style.paddingTop = VAL + "px";
-        this.style.paddingBottom = VAL + "px";
+  class PanelInner extends HTMLElement {
+    connectedCallback() {
+      if (this.hasAttribute('space')) {
+        const VAL = this.getAttribute('space');
+        const valList = VAL.split(',');
+        if (valList.length > 1) {
+          this.style.paddingTop = valList[0] + "px";
+          this.style.paddingBottom = valList[1] + "px";
+        }
+        else {
+          this.style.paddingTop = VAL + "px";
+          this.style.paddingBottom = VAL + "px";
+        }
       }
     }
   }
-}
-window.customElements.define('clear-wrap', clearWrap);
+  window.customElements.define('panel-inner', PanelInner);
 
-class colorWrap extends HTMLElement {
-  connectedCallback() {
-    if (this.hasAttribute('space')) {
-      const VAL = this.getAttribute('space');
-      const valList = VAL.split(',');
-      if (valList.length > 1) {
-        this.style.paddingTop = valList[0] + "px";
-        this.style.paddingBottom = valList[1] + "px";
-      }
-      else {
-        this.style.paddingTop = VAL + "px";
-        this.style.paddingBottom = VAL + "px";
+  class PanelComplete extends PanelWrapper {
+    connectedCallback() {
+      const prepped = this.innerHTML;
+      this.innerHTML = `<panel-inner>${prepped}</panel-inner>`;
+    }
+  }
+
+  window.customElements.define('x-panel', PanelComplete);
+
+  class clearWrap extends HTMLElement {
+    connectedCallback() {
+      if (this.hasAttribute('space')) {
+        const VAL = this.getAttribute('space');
+        const valList = VAL.split(',');
+        if (valList.length > 1) {
+          this.style.paddingTop = valList[0] + "px";
+          this.style.paddingBottom = valList[1] + "px";
+        }
+        else {
+          this.style.paddingTop = VAL + "px";
+          this.style.paddingBottom = VAL + "px";
+        }
       }
     }
   }
-}
-window.customElements.define('x-wrap', colorWrap);
+  window.customElements.define('clear-wrap', clearWrap);
 
-class borderWrap extends HTMLElement {
-  connectedCallback() {
-    if (this.hasAttribute('space')) {
-      const VAL = this.getAttribute('space');
-      const valList = VAL.split(',');
-      if (valList.length > 1) {
-        this.style.paddingTop = valList[0] + "px";
-        this.style.paddingBottom = valList[1] + "px";
-      }
-      else {
-        this.style.paddingTop = VAL + "px";
-        this.style.paddingBottom = VAL + "px";
-      }
-    }
-  }
-}
-window.customElements.define('border-wrap', borderWrap);
-
-class segmentElem extends HTMLElement {
-  connectedCallback() {
-    if (this.hasAttribute('of')) {
-      const SEG = this.getAttribute('of');
-      const self = this;
-      let classSeg = '';
-      switch(SEG) {
-        case '2':
-          classSeg = 'half';
-          break;
-        case '3':
-          classSeg = 'thirds';
-          break;
-        case '4':
-          classSeg = 'fourths';
-          break;
-        case '5':
-          classSeg = 'fifths';
-          break;
-        case '6':
-          classSeg = 'sixths';
-          break;
-        case '7':
-          classSeg = 'sevenths';
-          break;
-        case '8':
-          classSeg = 'eighths';
-          break;
-        default:
-          classSeg = 'eighths';
-          break;
-      }
-      if (classSeg) {
-        self.classList.add(classSeg);
+  class colorWrap extends HTMLElement {
+    connectedCallback() {
+      if (this.hasAttribute('space')) {
+        const VAL = this.getAttribute('space');
+        const valList = VAL.split(',');
+        if (valList.length > 1) {
+          this.style.paddingTop = valList[0] + "px";
+          this.style.paddingBottom = valList[1] + "px";
+        }
+        else {
+          this.style.paddingTop = VAL + "px";
+          this.style.paddingBottom = VAL + "px";
+        }
       }
     }
   }
-}
-window.customElements.define('x-seg', segmentElem);
+  window.customElements.define('x-wrap', colorWrap);
 
-class primeSegment extends HTMLElement {}
-window.customElements.define('prime-seg', primeSegment);
+  class borderWrap extends HTMLElement {
+    connectedCallback() {
+      if (this.hasAttribute('space')) {
+        const VAL = this.getAttribute('space');
+        const valList = VAL.split(',');
+        if (valList.length > 1) {
+          this.style.paddingTop = valList[0] + "px";
+          this.style.paddingBottom = valList[1] + "px";
+        }
+        else {
+          this.style.paddingTop = VAL + "px";
+          this.style.paddingBottom = VAL + "px";
+        }
+      }
+    }
+  }
+  window.customElements.define('border-wrap', borderWrap);
 
-class segMajor extends HTMLElement {}
-window.customElements.define('x-major', segMajor);
+  class segmentElem extends HTMLElement {
+    connectedCallback() {
+      if (this.hasAttribute('of')) {
+        const SEG = this.getAttribute('of');
+        const self = this;
+        let classSeg = '';
+        switch(SEG) {
+          case '2':
+            classSeg = 'half';
+            break;
+          case '3':
+            classSeg = 'thirds';
+            break;
+          case '4':
+            classSeg = 'fourths';
+            break;
+          case '5':
+            classSeg = 'fifths';
+            break;
+          case '6':
+            classSeg = 'sixths';
+            break;
+          case '7':
+            classSeg = 'sevenths';
+            break;
+          case '8':
+            classSeg = 'eighths';
+            break;
+          default:
+            classSeg = 'eighths';
+            break;
+        }
+        if (classSeg) {
+          self.classList.add(classSeg);
+        }
+      }
+    }
+  }
+  window.customElements.define('x-seg', segmentElem);
 
-class segMinor extends HTMLElement {}
-window.customElements.define('x-minor', segMinor);
+  class primeSegment extends HTMLElement {}
+  window.customElements.define('prime-seg', primeSegment);
 
-class segCell extends HTMLElement {}
-window.customElements.define('x-cell', segCell);
+  class segMajor extends HTMLElement {}
+  window.customElements.define('x-major', segMajor);
+
+  class segMinor extends HTMLElement {}
+  window.customElements.define('x-minor', segMinor);
+
+  class segCell extends HTMLElement {}
+  window.customElements.define('x-cell', segCell);
+
+});
