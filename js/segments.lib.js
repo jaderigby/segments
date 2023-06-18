@@ -23,8 +23,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   class PanelComplete extends PanelWrapper {
     connectedCallback() {
+      const VAL = this.getAttribute('space');
       const prepped = this.innerHTML;
-      this.innerHTML = `<panel-inner>${prepped}</panel-inner>`;
+      const valList = (VAL) ? VAL.split(',') : null;
+      if (VAL) {
+        if (valList.length > 1) {
+          this.innerHTML = `<panel-inner space="${valList[0]},${valList[1]}">${prepped}</panel-inner>`;
+        }
+        else {
+          this.innerHTML = `<panel-inner space="${valList[0]}">${prepped}</panel-inner>`;
+        }
+      }
+      else {
+        this.innerHTML = `<panel-inner>${prepped}</panel-inner>`;
+      }
     }
   }
 
