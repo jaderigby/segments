@@ -461,7 +461,7 @@ To bring a minor/major to full width, use "stack".
 
 ## Custom Whitespace ##
 
-The panel web component includes a "whitespace" attribute.  This allows you to adjust a panel's whitespace inline.  This can be beneficial when certain panels needed adjusted when doing a stacked layout. For example:
+The panel web component includes a "space" attribute.  This allows you to adjust a panel's whitespace inline.  This can be beneficial when certain panels needed adjusted when doing a stacked layout. For example:
 
 ```
 <panel-wrapper id="hero">
@@ -470,7 +470,7 @@ The panel web component includes a "whitespace" attribute.  This allows you to a
   </panel-inner>
 </panel-wrapper>
 <panel-wrapper id="tagline">
-  <panel-inner whitespace="35">
+  <panel-inner space="35">
 
   </panel-inner>
 </panel-wrapper>
