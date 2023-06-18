@@ -136,7 +136,7 @@ Here's a list of the available web component tags:
 - x-cell
 - prime-seg (more on prime segments within the "Prime Segments" section: They're cool!)
 
-### UPDATE: ##$
+### UPDATE: ##
 
 The `x-seg` component has a new feature: You can now add the attribute "of" to it, and pass in a numerical value.  This will tell it which class to apply, such as using the number "3" to apply the class of "thirds".
 ```
