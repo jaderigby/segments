@@ -1,0 +1,210 @@
+{
+	"panels": {
+		"scope": ["html", "vue"],
+		"prefix": "panel",
+		"body": [
+			"<panel-wrapper>",
+			"\t<panel-inner>",
+			"\t\t",
+			"\t</panel-inner>",
+			"</panel-wrapper>"
+		],
+		"description": "segments Panel element"
+	},
+	"prime-segment": {
+		"scope": ["html", "vue"],
+		"prefix": "prime",
+		"body": [
+			"<prime-seg>",
+			"\t<x-minor></x-minor>",
+			"\t<x-major></x-major>",
+			"</prime-seg>"
+		],
+		"description": "segments Panel element"
+	},
+	"half": {
+		"scope": ["html", "vue"],
+		"prefix": "half",
+		"body": [
+			"<x-seg of=\"2\">",
+			"\t<x-cell></x-cell>",
+			"\t<x-cell></x-cell>",
+			"</x-seg>"
+		],
+		"description": "segments Half element"
+	},
+	"thirds": {
+		"scope": ["html", "vue"],
+		"prefix": "thirds",
+		"body": [
+			"<x-seg of=\"3\">",
+			"\t<x-minor></x-minor>",
+			"\t<x-major></x-major>",
+			"</x-seg>"
+		],
+		"description": "segments Thirds element"
+	},
+	"thirds-cell": {
+		"scope": ["html", "vue"],
+		"prefix": "thirds-cell",
+		"body": [
+			"<x-seg of=\"3\">",
+			"\t<x-cell></x-cell>",
+			"\t<x-cell></x-cell>",
+			"\t<x-cell></x-cell>",
+			"</x-seg>"
+		],
+		"description": "segments Thirds Column element"
+	},
+	"fourths": {
+		"scope": ["html", "vue"],
+		"prefix": "fourths",
+		"body": [
+			"<x-seg of=\"4\">",
+			"\t<x-cell></x-cell>",
+			"\t<x-cell></x-cell>",
+			"\t<x-cell></x-cell>",
+			"\t<x-cell></x-cell>",
+			"</x-seg>"
+		],
+		"description": "segments Fourths Column element"
+	},
+	"fifths-cell": {
+		"scope": ["html", "vue"],
+		"prefix": "fifths-cell",
+		"body": [
+			"<x-seg of=\"5\">",
+			"\t<x-minor></x-minor>",
+			"\t<x-major></x-major>",
+			"</x-seg>"
+		],
+		"description": "segments Fifths element"
+	},
+	"clear wrap": {
+		"scope": ["html", "vue"],
+		"prefix": "clear-wrap",
+		"body": [
+			"<clear-wrap>",
+			"\t",
+			"</clear-wrap>"
+		]
+	},
+	"wrap": {
+		"scope": ["html", "vue"],
+		"prefix": "wrap",
+		"body": [
+			"<wrap>",
+			"\t",
+			"</wrap>"
+		]
+	},
+	"border wrap": {
+		"scope": ["html", "vue"],
+		"prefix": "border-wrap",
+		"body": [
+			"<border-wrap>",
+			"\t",
+			"</border-wrap>"
+		]
+	},
+	"html": {
+		"scope": ["html"],
+		"prefix": "border-wrap",
+		"body": [
+			"<!doctype html>",
+			"<html lang=\"en-US\"",
+			"\t<head>",
+			"\t\t<meta charset=\"utf-8\">",
+			"\t</head>",
+			"\t<body>",
+			"\t</body>"
+		]
+	},
+	"panels-pug": {
+		"scope": ["pug"],
+		"prefix": "panelp",
+		"body": [
+			"panel-wrapper",
+			"\tpanel-inner"
+		],
+		"description": "segments Panel element"
+	},
+	"prime-segment-pug": {
+		"scope": ["pug"],
+		"prefix": "primep",
+		"body": [
+			"prime-seg",
+			"\tx-minor"
+		],
+		"description": "segments Panel element"
+	},
+	"half-pug": {
+		"scope": ["pug"],
+		"prefix": "halfp",
+		"body": [
+			"x-seg(of=\"2\")",
+			"\tx-cell"
+		],
+		"description": "segments Half element"
+	},
+	"thirds-pug": {
+		"scope": ["pug"],
+		"prefix": "thirdsp",
+		"body": [
+			"x-seg(of=\"3\")",
+			"\tx-minor"
+		],
+		"description": "segments Thirds element"
+	},
+	"thirds-cell-pug": {
+		"scope": ["pug"],
+		"prefix": "thirds-cellp",
+		"body": [
+			"x-seg(of=\"3\")",
+			"\tx-cell"
+		],
+		"description": "segments Thirds Column element"
+	},
+	"fourths-pug": {
+		"scope": ["pug"],
+		"prefix": "fourthsp",
+		"body": [
+			"x-seg(of=\"4\")",
+			"\tx-cell"
+		],
+		"description": "segments Fourths Column element"
+	},
+	"fifths-cell-pug": {
+		"scope": ["pug"],
+		"prefix": "fifths-cellp",
+		"body": [
+			"x-seg(of=\"5\")",
+			"\tx-minor"
+		],
+		"description": "segments Fifths element"
+	},
+	"clear wrap-pug": {
+		"scope": ["pug"],
+		"prefix": "clear-wrapp",
+		"body": [
+			"clear-wrap",
+			"\t"
+		]
+	},
+	"wrap-pug": {
+		"scope": ["pug"],
+		"prefix": "wrapp",
+		"body": [
+			"wrap",
+			"\t"
+		]
+	},
+	"border-wrap-pug": {
+		"scope": ["pug"],
+		"prefix": "border-wrapp",
+		"body": [
+			"border-wrap",
+			"\t"
+		]
+	}
+}
