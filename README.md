@@ -138,8 +138,7 @@ Here's a list of the available web component tags:
 
 ### UPDATE: ##$
 
-Web component segments has a new feature: You can now add the attribute "of" to a web component tag, and pass in a numerical value.  This will tell it which class to apply, such as "3" to apply the class of "thirds". For responsive, just add as a regular class to the tag.  So for example:
-
+The `x-seg` component has a new feature: You can now add the attribute "of" to it, and pass in a numerical value.  This will tell it which class to apply, such as using the number "3" to apply the class of "thirds".
 ```
 <x-seg of="3">
 ```
@@ -150,7 +149,7 @@ The above results in a tag of `<x-seg class="thirds">`.  And for responsive:
 <x-seg of="3" class="break md-stack">
 ```
 
-This above creates a tag that defaults to "thirds" for anything above "medium" screen sizes, and from medium down stacks them instead.
+The above creates a tag that defaults to "thirds" for anything above "medium" screen sizes, and from medium down stacks them.
 
 ### Add Web Components To Your Project ###
 
