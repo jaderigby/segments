@@ -146,7 +146,7 @@ The `x-seg` component has a new feature: You can now add the attribute "of" to i
 The above results in a tag of `<x-seg class="thirds">`.  And for responsive:
 
 ```
-<x-seg of="3" class="break md-stack">
+<x-seg of="3" class="md-stack">
 ```
 
 The above creates a tag that defaults to "thirds" for anything above "medium" screen sizes, and from medium down stacks them.
