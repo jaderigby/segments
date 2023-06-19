@@ -11,6 +11,15 @@
 		],
 		"description": "segments Panel element"
 	},
+	"xpanel": {
+		"scope": ["html", "vue"],
+		"prefix": "xpanel",
+		"body": [
+			"<x-panel",
+			"</x-panel>"
+		],
+		"description": "segments Panel element"
+	},
 	"prime-segment": {
 		"scope": ["html", "vue"],
 		"prefix": "prime",
