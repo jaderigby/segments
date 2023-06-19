@@ -26,10 +26,10 @@
 		"scope": ["html", "vue"],
 		"prefix": "half",
 		"body": [
-			"<x-seg of=\"2\">",
+			"<x-segment of=\"2\">",
 			"\t<x-cell></x-cell>",
 			"\t<x-cell></x-cell>",
-			"</x-seg>"
+			"</x-segment>"
 		],
 		"description": "segments Half element"
 	},
@@ -37,10 +37,10 @@
 		"scope": ["html", "vue"],
 		"prefix": "thirds",
 		"body": [
-			"<x-seg of=\"3\">",
+			"<x-segment of=\"3\">",
 			"\t<x-minor></x-minor>",
 			"\t<x-major></x-major>",
-			"</x-seg>"
+			"</x-segment>"
 		],
 		"description": "segments Thirds element"
 	},
@@ -48,11 +48,11 @@
 		"scope": ["html", "vue"],
 		"prefix": "thirds-cell",
 		"body": [
-			"<x-seg of=\"3\">",
+			"<x-segment of=\"3\">",
 			"\t<x-cell></x-cell>",
 			"\t<x-cell></x-cell>",
 			"\t<x-cell></x-cell>",
-			"</x-seg>"
+			"</x-segment>"
 		],
 		"description": "segments Thirds Column element"
 	},
@@ -60,12 +60,12 @@
 		"scope": ["html", "vue"],
 		"prefix": "fourths",
 		"body": [
-			"<x-seg of=\"4\">",
+			"<x-segment of=\"4\">",
 			"\t<x-cell></x-cell>",
 			"\t<x-cell></x-cell>",
 			"\t<x-cell></x-cell>",
 			"\t<x-cell></x-cell>",
-			"</x-seg>"
+			"</x-segment>"
 		],
 		"description": "segments Fourths Column element"
 	},
@@ -73,10 +73,10 @@
 		"scope": ["html", "vue"],
 		"prefix": "fifths-cell",
 		"body": [
-			"<x-seg of=\"5\">",
+			"<x-segment of=\"5\">",
 			"\t<x-minor></x-minor>",
 			"\t<x-major></x-major>",
-			"</x-seg>"
+			"</x-segment>"
 		],
 		"description": "segments Fifths element"
 	},
@@ -142,7 +142,7 @@
 		"scope": ["pug"],
 		"prefix": "halfp",
 		"body": [
-			"x-seg(of=\"2\")",
+			"x-segment(of=\"2\")",
 			"\tx-cell"
 		],
 		"description": "segments Half element"
@@ -151,7 +151,7 @@
 		"scope": ["pug"],
 		"prefix": "thirdsp",
 		"body": [
-			"x-seg(of=\"3\")",
+			"x-segment(of=\"3\")",
 			"\tx-minor"
 		],
 		"description": "segments Thirds element"
@@ -160,7 +160,7 @@
 		"scope": ["pug"],
 		"prefix": "thirds-cellp",
 		"body": [
-			"x-seg(of=\"3\")",
+			"x-segment(of=\"3\")",
 			"\tx-cell"
 		],
 		"description": "segments Thirds Column element"
@@ -169,7 +169,7 @@
 		"scope": ["pug"],
 		"prefix": "fourthsp",
 		"body": [
-			"x-seg(of=\"4\")",
+			"x-segment(of=\"4\")",
 			"\tx-cell"
 		],
 		"description": "segments Fourths Column element"
@@ -178,7 +178,7 @@
 		"scope": ["pug"],
 		"prefix": "fifths-cellp",
 		"body": [
-			"x-seg(of=\"5\")",
+			"x-segment(of=\"5\")",
 			"\tx-minor"
 		],
 		"description": "segments Fifths element"

@@ -8,65 +8,65 @@
 </panel-wrapper>"""
   'half':
     'prefix': 'half'
-    'body': """<segment-elem class="half">
+    'body': """<x-segment class="half">
 \t<x-cell>$1</x-cell>
 \t<x-cell>$2</x-cell>
-</segment-elem>"""
+</x-segment>"""
   'thirds':
     'prefix': 'thirds'
-    'body': """<segment-elem class="thirds">
+    'body': """<x-segment class="thirds">
 \t<x-minor>$1</x-minor>
 \t<x-major>$2</x-major>
-</segment-elem>"""
+</x-segment>"""
   'thirds columns':
     'prefix': 'thirds-cell'
-    'body': """<segment-elem class="thirds">
+    'body': """<x-segment class="thirds">
 \t<x-cell>$1</x-cell>
 \t<x-cell>$2</x-cell>
 \t<x-cell>$3</x-cell>
-</segment-elem>"""
+</x-segment>"""
   'fourths':
     'prefix': 'fourths'
-    'body': """<segment-elem class="fourths">
+    'body': """<x-segment class="fourths">
 \t<x-cell>$1</x-cell>
 \t<x-cell>$2</x-cell>
 \t<x-cell>$3</x-cell>
 \t<x-cell>$4</x-cell>
-</segment-elem>"""
+</x-segment>"""
   'fifths':
     'prefix': 'fifths'
-    'body': """<segment-elem class="fifths">
+    'body': """<x-segment class="fifths">
 \t<x-minor>$1</x-minor>
 \t<x-major>$2</x-major>
-</segment-elem>"""
+</x-segment>"""
   'fifths columns':
     'prefix': 'fifths-cell'
-    'body': """<segment-elem class="fifths">
+    'body': """<x-segment class="fifths">
 \t<x-cell>$1</x-cell>
 \t<x-cell>$2</x-cell>
 \t<x-cell>$3</x-cell>
 \t<x-cell>$4</x-cell>
 \t<x-cell>$5</x-cell>
-</segment-elem>"""
+</x-segment>"""
   'sixths':
     'prefix': 'sixths'
-    'body': """<segment-elem class="sixths">
+    'body': """<x-segment class="sixths">
 \t<x-cell>$1</x-cell>
 \t<x-cell>$2</x-cell>
 \t<x-cell>$3</x-cell>
 \t<x-cell>$4</x-cell>
 \t<x-cell>$5</x-cell>
 \t<x-cell>$6</x-cell>
-</segment-elem>"""
+</x-segment>"""
   'sevenths':
     'prefix': 'sevenths'
-    'body': """<segment-elem class="sevenths">
+    'body': """<x-segment class="sevenths">
 \t<x-minor>$1</x-minor>
 \t<x-major>$2</x-major>
-</segment-elem>"""
+</x-segment>"""
   'sevenths columns':
     'prefix': 'sevenths-cell'
-    'body': """<segment-elem class="sevenths">
+    'body': """<x-segment class="sevenths">
 \t<x-cell>$1</x-cell>
 \t<x-cell>$2</x-cell>
 \t<x-cell>$3</x-cell>
@@ -74,4 +74,4 @@
 \t<x-cell>$5</x-cell>
 \t<x-cell>$6</x-cell>
 \t<x-cell>$7</x-cell>
-</segment-elem>"""
+</x-segment>"""
