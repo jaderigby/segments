@@ -17,14 +17,14 @@
   display: flex;
   flex-flow: row wrap;
 }
-.prime-segment {
+.prime-seg {
   display: flex;
   flex-flow: row nowrap;
 }
-.prime-segment > .minor {
+.prime-seg > .minor {
   flex-shrink: 0;
 }
-.prime-segment > .major {
+.prime-seg > .major {
   flex-grow: 1;
   flex-basis: 0;
 }
@@ -60,8 +60,8 @@
 .sevenths > .minor:nth-child(1n),
 .sevenths > .major:nth-child(1n),
 .sevenths > .cell:nth-child(1n),
-.prime-segment > .minor:nth-child(1n),
-.prime-segment > .major:nth-child(1n) {
+.prime-seg > .minor:nth-child(1n),
+.prime-seg > .major:nth-child(1n) {
   margin-right: 15px;
   margin-left: 0;
 }
@@ -88,8 +88,8 @@
 .sevenths > .minor:last-child,
 .sevenths > .major:last-child,
 .sevenths > .cell:last-child,
-.prime-segment > .minor:last-child,
-.prime-segment > .major:last-child {
+.prime-seg > .minor:last-child,
+.prime-seg > .major:last-child {
   margin-right: 0;
 }
 .stack > .minor:nth-child(1n),
@@ -115,8 +115,8 @@
 .sevenths > .minor:nth-child(7n),
 .sevenths > .major:nth-child(7n),
 .sevenths > .cell:nth-child(7n),
-.prime-segment > .minor:nth-child(2n),
-.prime-segment > .major:nth-child(2n) {
+.prime-seg > .minor:nth-child(2n),
+.prime-seg > .major:nth-child(2n) {
   margin-right: 0;
   margin-left: auto;
 }

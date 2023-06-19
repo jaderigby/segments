@@ -116,10 +116,10 @@ Later on, you will be introduced to a Segments wrapper called "panels", but they
 To make Segments even awesomer, yes "awesomer", a web component library has been included.  These web component elements can be written like so:
 
 ```
-<x-seg class="thirds">
+<x-segment class="thirds">
   <x-minor></x-minor>
   <x-major></x-major>
-</x-seg>
+</x-segment>
 ```
 
 If you notice, we drop the "segment" class in favor of a named tag, and just declare the "thirds" class.  Then, the children have their own tags, as well.  
@@ -130,7 +130,7 @@ Here's a list of the available web component tags:
 
 - panel-wrapper
 - panel-inner
-- x-seg
+- x-segment
 - x-minor
 - x-major
 - x-cell
@@ -138,15 +138,15 @@ Here's a list of the available web component tags:
 
 ### UPDATE: ##
 
-The `x-seg` component has a new feature: You can now add the attribute "of" to it, and pass in a numerical value.  This will tell it which class to apply, such as using the number "3" to apply the class of "thirds".
+The `x-segment` component has a new feature: You can now add the attribute "of" to it, and pass in a numerical value.  This will tell it which class to apply, such as using the number "3" to apply the class of "thirds".
 ```
-<x-seg of="3">
+<x-segment of="3">
 ```
 
-The above results in a tag of `<x-seg class="thirds">`.  And for responsive:
+The above results in a tag of `<x-segment class="thirds">`.  And for responsive:
 
 ```
-<x-seg of="3" class="md-stack">
+<x-segment of="3" class="md-stack">
 ```
 
 The above creates a tag that defaults to "thirds" for anything above "medium" screen sizes, and from medium down stacks them.
@@ -184,11 +184,11 @@ Columns are easy with Segments, too!  Just replace the "minor" and "major" child
 With Web Components:
 
 ```
-<x-seg class="thirds">
+<x-segment class="thirds">
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
-</x-seg>
+</x-segment>
 
 ```
 
@@ -207,13 +207,13 @@ With Web Components:
 With Web Components:
 
 ```
-<x-seg class="fifths">
+<x-segment class="fifths">
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
   <x-cell></x-cell>
-</x-seg>
+</x-segment>
 ```
 
 ### It Goes Up To Seven ###
@@ -360,9 +360,9 @@ Example:
 
 ```
 <x-panel>
-  <x-seg if="2">
+  <x-segment if="2">
     <x-cell></x-cell>
-  </x-seg>
+  </x-segment>
 </x-panel>
 ```
 
@@ -443,15 +443,15 @@ And here's how you use them:
 With Web Components:
 
 ```
-<x-seg class="thirds lg-fifths tablet-stack">
+<x-segment class="thirds lg-fifths tablet-stack">
   <x-minor></x-minor>
   <x-major></x-major>
-</x-seg>
+</x-segment>
 
-<x-seg class="fifths lg-thirds md-half tablet-stack">
+<x-segment class="fifths lg-thirds md-half tablet-stack">
   <x-minor></x-minor>
   <x-major></x-major>
-</x-seg>
+</x-segment>
 ```
 
 The default, or full size, is 1200px &ndash; but it can be changed in the "segments.styl" file, contained within this repo's "stylus" folder, if needed.
@@ -597,10 +597,10 @@ Like other Atom &amp; VS Code snippets, when you hit tab those two elements abov
 ```
 <panel-wrapper>
   <panel-inner>
-    <x-seg of="3">
+    <x-segment of="3">
       <x-minor></x-minor>
       <x-major></x-major>
-    </x-seg>
+    </x-segment>
   </panel-inner>
 </panel-wrapper>
 ```

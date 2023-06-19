@@ -136,7 +136,7 @@ class segmentElem extends HTMLElement {
     }
   }
 }
-window.customElements.define('x-seg', segmentElem);
+window.customElements.define('x-segment', segmentElem);
 
 class primeSegment extends HTMLElement {}
 window.customElements.define('prime-seg', primeSegment);
