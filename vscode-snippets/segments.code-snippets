@@ -18,7 +18,7 @@
 			"<x-panel",
 			"</x-panel>"
 		],
-		"description": "segments Panel element"
+		"description": "segments x-Panel element"
 	},
 	"prime-segment": {
 		"scope": ["html", "vue"],
@@ -29,7 +29,7 @@
 			"\t<x-major></x-major>",
 			"</prime-seg>"
 		],
-		"description": "segments Panel element"
+		"description": "segments Prime element"
 	},
 	"half": {
 		"scope": ["html", "vue"],
@@ -143,7 +143,8 @@
 		"prefix": "primep",
 		"body": [
 			"prime-seg",
-			"\tx-minor"
+			"\tx-minor",
+			"\tx-major"
 		],
 		"description": "segments Panel element"
 	},
@@ -152,6 +153,7 @@
 		"prefix": "halfp",
 		"body": [
 			"x-segment(of=\"2\")",
+			"\tx-cell",
 			"\tx-cell"
 		],
 		"description": "segments Half element"
@@ -161,7 +163,8 @@
 		"prefix": "thirdsp",
 		"body": [
 			"x-segment(of=\"3\")",
-			"\tx-minor"
+			"\tx-minor",
+			"\tx-major"
 		],
 		"description": "segments Thirds element"
 	},
@@ -170,6 +173,8 @@
 		"prefix": "thirds-cellp",
 		"body": [
 			"x-segment(of=\"3\")",
+			"\tx-cell",
+			"\tx-cell",
 			"\tx-cell"
 		],
 		"description": "segments Thirds Column element"
@@ -179,18 +184,74 @@
 		"prefix": "fourthsp",
 		"body": [
 			"x-segment(of=\"4\")",
+			"\tx-cell",
+			"\tx-cell",
+			"\tx-cell",
 			"\tx-cell"
 		],
 		"description": "segments Fourths Column element"
+	},
+	"fifths-pug": {
+		"scope": ["pug"],
+		"prefix": "fifthsp",
+		"body": [
+			"x-segment(of=\"5\")",
+			"\tx-minor",
+			"\tx-major"
+		],
+		"description": "segments Fifths element"
 	},
 	"fifths-cell-pug": {
 		"scope": ["pug"],
 		"prefix": "fifths-cellp",
 		"body": [
 			"x-segment(of=\"5\")",
-			"\tx-minor"
+			"\tx-cell",
+			"\tx-cell",
+			"\tx-cell",
+			"\tx-cell",
+			"\tx-cell"
 		],
-		"description": "segments Fifths element"
+		"description": "segments Fifths Column element"
+	},
+	"sixths-pug": {
+		"scope": ["pug"],
+		"prefix": "sixthsp",
+		"body": [
+			"x-segment(of=\"6\")",
+			"\tx-cell",
+			"\tx-cell",
+			"\tx-cell",
+			"\tx-cell",
+			"\tx-cell",
+			"\tx-cell"
+		],
+		"description": "segments Sixths Column element"
+	},
+	"sevenths-pug": {
+		"scope": ["pug"],
+		"prefix": "seventhsp",
+		"body": [
+			"x-segment(of=\"7\")",
+			"\tx-minor",
+			"\tx-major"
+		],
+		"description": "segments Sevenths element"
+	},
+	"sevenths-cell-pug": {
+		"scope": ["pug"],
+		"prefix": "sevenths-cellp",
+		"body": [
+			"x-segment(of=\"7\")",
+			"\tx-cell",
+			"\tx-cell",
+			"\tx-cell",
+			"\tx-cell",
+			"\tx-cell",
+			"\tx-cell",
+			"\tx-cell"
+		],
+		"description": "segments Sevenths Column element"
 	},
 	"clear wrap-pug": {
 		"scope": ["pug"],
