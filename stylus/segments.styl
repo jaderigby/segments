@@ -71,6 +71,9 @@ if wc
     padding: panel_whitespace 0
     width: full_size
 
+:root
+  --gutter: gutter
+
 {segment-elem}
   display: flex
   flex-flow: row wrap
@@ -120,7 +123,7 @@ if wc
 .sevenths > {x-cell}:nth-child(1n),
 {prime-segment} > {x-minor}:nth-child(1n),
 {prime-segment} > {x-major}:nth-child(1n)
-  margin-right: gutter
+  margin-right: var(--gutter)
   margin-left: 0
 
 .stack > {x-minor}:last-child,
@@ -181,87 +184,87 @@ if wc
 .stack > {x-minor},
 .stack > {x-major},
 .stack > {x-cell}
-  flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
 
 .half > {x-minor},
 .half > {x-major},
 .half > {x-cell}
-  flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
 
 .thirds > {x-minor},
 .thirds > {x-cell}
-  flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
 
 .thirds > {x-major}
-  flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
 
 .fourths > {x-cell}
-  flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
 
 .fifths > {x-minor}
-  flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
 
 .fifths > {x-major}
-  flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
 
 .fifths.true > {x-minor}
-  flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
 
 .fifths.true > {x-major}
-  flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
 
 .fifths > {x-cell}
-  flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
 
 .sixths > {x-cell}
-  flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
 
 .sevenths > {x-minor}
-  flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
 
 .sevenths > {x-major}
-  flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
 
 .sevenths.true > {x-minor}
-  flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
 
 .sevenths.true > {x-major}
-  flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
 
 .sevenths > {x-cell}
-  flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
-  max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
-  width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+  flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
+  max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
+  width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
 
 @media only screen and (max-width: full_site_spread)
 
@@ -321,7 +324,7 @@ if wc
   .lg-sevenths > {x-minor}:nth-child(1n),
   .lg-sevenths > {x-major}:nth-child(1n),
   .lg-sevenths > {x-cell}:nth-child(1n)
-    margin-right: gutter
+    margin-right: var(--gutter)
     margin-left: 0
 
   .lg-half > {x-minor}:last-child,
@@ -364,87 +367,87 @@ if wc
   .lg-stack > {x-minor},
   .lg-stack > {x-major},
   .lg-stack > {x-cell}
-    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-half > {x-minor},
   .lg-half > {x-major},
   .lg-half > {x-cell}
-    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-thirds > {x-minor},
   .lg-thirds > {x-cell}
-    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-thirds > {x-major}
-    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-fourths > {x-cell}
-    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-fifths > {x-minor}
-    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-fifths > {x-major}
-    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-fifths.true > {x-minor}
-    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-fifths.true > {x-major}
-    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-fifths > {x-cell}
-    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-sixths > {x-cell}
-    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-sevenths > {x-minor}
-    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-sevenths > {x-major}
-    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-sevenths.true > {x-minor}
-    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-sevenths.true > {x-major}
-    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
 
   .lg-sevenths > {x-cell}
-    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
 
 
 @media only screen and (max-width: md)
@@ -468,7 +471,7 @@ if wc
   .md-sevenths > {x-minor}:nth-child(1n),
   .md-sevenths > {x-major}:nth-child(1n),
   .md-sevenths > {x-cell}:nth-child(1n)
-    margin-right: gutter
+    margin-right: var(--gutter)
     margin-left: 0
 
   .md-half > {x-minor}:last-child,
@@ -511,87 +514,87 @@ if wc
   .md-stack > {x-minor},
   .md-stack > {x-major},
   .md-stack > {x-cell}
-    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-half > {x-minor},
   .md-half > {x-major},
   .md-half > {x-cell}
-    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-thirds > {x-minor},
   .md-thirds > {x-cell}
-    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-thirds > {x-major}
-    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-fourths > {x-cell}
-    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-fifths > {x-minor}
-    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-fifths > {x-major}
-    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-fifths.true > {x-minor}
-    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-fifths.true > {x-major}
-    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-fifths > {x-cell}
-    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-sixths > {x-cell}
-    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-sevenths > {x-minor}
-    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-sevenths > {x-major}
-    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-sevenths.true > {x-minor}
-    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-sevenths.true > {x-major}
-    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
 
   .md-sevenths > {x-cell}
-    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
 
 
 @media only screen and (max-width: tablet)
@@ -615,7 +618,7 @@ if wc
   .tablet-sevenths > {x-minor}:nth-child(1n),
   .tablet-sevenths > {x-major}:nth-child(1n),
   .tablet-sevenths > {x-cell}:nth-child(1n)
-    margin-right: gutter
+    margin-right: var(--gutter)
     margin-left: 0
 
   .tablet-half > {x-minor}:last-child,
@@ -658,87 +661,87 @@ if wc
   .tablet-stack > {x-minor},
   .tablet-stack > {x-major},
   .tablet-stack > {x-cell}
-    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-half > {x-minor},
   .tablet-half > {x-major},
   .tablet-half > {x-cell}
-    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-thirds > {x-minor},
   .tablet-thirds > {x-cell}
-    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-thirds > {x-major}
-    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-fourths > {x-cell}
-    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-fifths > {x-minor}
-    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-fifths > {x-major}
-    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-fifths.true > {x-minor}
-    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-fifths.true > {x-major}
-    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-fifths > {x-cell}
-    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-sixths > {x-cell}
-    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-sevenths > {x-minor}
-    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-sevenths > {x-major}
-    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-sevenths.true > {x-minor}
-    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-sevenths.true > {x-major}
-    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
 
   .tablet-sevenths > {x-cell}
-    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
 
 
 @media screen and (max-width: sm)
@@ -762,7 +765,7 @@ if wc
   .sm-sevenths > {x-minor}:nth-child(1n),
   .sm-sevenths > {x-major}:nth-child(1n),
   .sm-sevenths > {x-cell}:nth-child(1n)
-    margin-right: gutter
+    margin-right: var(--gutter)
     margin-left: 0
 
   .sm-half > {x-minor}:last-child,
@@ -805,87 +808,87 @@ if wc
   .sm-stack > {x-minor},
   .sm-stack > {x-major},
   .sm-stack > {x-cell}
-    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-half > {x-minor},
   .sm-half > {x-major},
   .sm-half > {x-cell}
-    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-thirds > {x-minor},
   .sm-thirds > {x-cell}
-    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-thirds > {x-major}
-    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-fourths > {x-cell}
-    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-fifths > {x-minor}
-    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-fifths > {x-major}
-    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-fifths.true > {x-minor}
-    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-fifths.true > {x-major}
-    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-fifths > {x-cell}
-    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-sixths > {x-cell}
-    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-sevenths > {x-minor}
-    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-sevenths > {x-major}
-    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-sevenths.true > {x-minor}
-    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-sevenths.true > {x-major}
-    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
 
   .sm-sevenths > {x-cell}
-    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
 
 
 @media screen and (max-width: xs)
@@ -909,7 +912,7 @@ if wc
   .xs-sevenths > {x-minor}:nth-child(1n),
   .xs-sevenths > {x-major}:nth-child(1n),
   .xs-sevenths > {x-cell}:nth-child(1n)
-    margin-right: gutter
+    margin-right: var(--gutter)
     margin-left: 0
 
   .xs-half > {x-minor}:last-child,
@@ -952,87 +955,87 @@ if wc
   .xs-stack > {x-minor},
   .xs-stack > {x-major},
   .xs-stack > {x-cell}
-    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/1 - (%s - %s * 1/1))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-half > {x-minor},
   .xs-half > {x-major},
   .xs-half > {x-cell}
-    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/2 - (%s - %s * 1/2))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-thirds > {x-minor},
   .xs-thirds > {x-cell}
-    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/3 - (%s - %s * 1/3))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-thirds > {x-major}
-    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 2/3 - (%s - %s * 2/3))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-fourths > {x-cell}
-    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/4 - (%s - %s * 1/4))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-fifths > {x-minor}
-    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 5/13 - (%s - %s * 5/13))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-fifths > {x-major}
-    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 8/13 - (%s - %s * 8/13))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-fifths.true > {x-minor}
-    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 2/5 - (%s - %s * 2/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-fifths.true > {x-major}
-    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 3/5 - (%s - %s * 3/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-fifths > {x-cell}
-    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/5 - (%s - %s * 1/5))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-sixths > {x-cell}
-    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/6 - (%s - %s * 1/6))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-sevenths > {x-minor}
-    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 10/23 - (%s - %s * 10/23))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-sevenths > {x-major}
-    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 13/23 - (%s - %s * 13/23))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-sevenths.true > {x-minor}
-    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 3/7 - (%s - %s * 3/7))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-sevenths.true > {x-major}
-    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 4/7 - (%s - %s * 4/7))" % (percentage_calc var(--gutter) var(--gutter))
 
   .xs-sevenths > {x-cell}
-    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
-    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
-    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc gutter gutter)
+    flex-basis: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
+    max-width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
+    width: "calc(%s * 1/7 - (%s - %s * 1/7))" % (percentage_calc var(--gutter) var(--gutter))
 
 
 .vertical-center

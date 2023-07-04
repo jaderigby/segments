@@ -13,6 +13,9 @@
   padding: 60px 0;
   width: 1200px;
 }
+:root {
+  --gutter: 15px;
+}
 .segment {
   display: flex;
   flex-flow: row wrap;
@@ -62,7 +65,7 @@
 .sevenths > .cell:nth-child(1n),
 .prime-seg > .minor:nth-child(1n),
 .prime-seg > .major:nth-child(1n) {
-  margin-right: 15px;
+  margin-right: var(--gutter);
   margin-left: 0;
 }
 .stack > .minor:last-child,
@@ -123,87 +126,87 @@
 .stack > .minor,
 .stack > .major,
 .stack > .cell {
-  flex-basis: calc(99.98% * 1/1 - (15px - 15px * 1/1));
-  max-width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
-  width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+  flex-basis: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
+  max-width: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
+  width: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
 }
 .half > .minor,
 .half > .major,
 .half > .cell {
-  flex-basis: calc(99.98% * 1/2 - (15px - 15px * 1/2));
-  max-width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
-  width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+  flex-basis: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
+  max-width: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
+  width: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
 }
 .thirds > .minor,
 .thirds > .cell {
-  flex-basis: calc(99.98% * 1/3 - (15px - 15px * 1/3));
-  max-width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
-  width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+  flex-basis: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
+  max-width: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
+  width: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
 }
 .thirds > .major {
-  flex-basis: calc(99.98% * 2/3 - (15px - 15px * 2/3));
-  max-width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
-  width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+  flex-basis: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
+  max-width: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
+  width: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
 }
 .fourths > .cell {
-  flex-basis: calc(99.98% * 1/4 - (15px - 15px * 1/4));
-  max-width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
-  width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+  flex-basis: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
+  max-width: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
+  width: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
 }
 .fifths > .minor {
-  flex-basis: calc(99.98% * 5/13 - (15px - 15px * 5/13));
-  max-width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
-  width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+  flex-basis: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
+  max-width: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
+  width: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
 }
 .fifths > .major {
-  flex-basis: calc(99.98% * 8/13 - (15px - 15px * 8/13));
-  max-width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
-  width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+  flex-basis: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
+  max-width: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
+  width: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
 }
 .fifths.true > .minor {
-  flex-basis: calc(99.98% * 2/5 - (15px - 15px * 2/5));
-  max-width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
-  width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+  flex-basis: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
+  max-width: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
+  width: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
 }
 .fifths.true > .major {
-  flex-basis: calc(99.98% * 3/5 - (15px - 15px * 3/5));
-  max-width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
-  width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+  flex-basis: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
+  max-width: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
+  width: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
 }
 .fifths > .cell {
-  flex-basis: calc(99.98% * 1/5 - (15px - 15px * 1/5));
-  max-width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
-  width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+  flex-basis: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
+  max-width: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
+  width: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
 }
 .sixths > .cell {
-  flex-basis: calc(99.98% * 1/6 - (15px - 15px * 1/6));
-  max-width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
-  width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+  flex-basis: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
+  max-width: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
+  width: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
 }
 .sevenths > .minor {
-  flex-basis: calc(99.98% * 10/23 - (15px - 15px * 10/23));
-  max-width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
-  width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+  flex-basis: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
+  max-width: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
+  width: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
 }
 .sevenths > .major {
-  flex-basis: calc(99.98% * 13/23 - (15px - 15px * 13/23));
-  max-width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
-  width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+  flex-basis: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
+  max-width: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
+  width: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
 }
 .sevenths.true > .minor {
-  flex-basis: calc(99.98% * 3/7 - (15px - 15px * 3/7));
-  max-width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
-  width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+  flex-basis: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
+  max-width: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
+  width: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
 }
 .sevenths.true > .major {
-  flex-basis: calc(99.98% * 4/7 - (15px - 15px * 4/7));
-  max-width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
-  width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+  flex-basis: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
+  max-width: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
+  width: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
 }
 .sevenths > .cell {
-  flex-basis: calc(99.98% * 1/7 - (15px - 15px * 1/7));
-  max-width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
-  width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+  flex-basis: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
+  max-width: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
+  width: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
 }
 @media only screen and (max-width: calc(1200px + 50px)) {
   .panel-wrapper .panel-inner {
@@ -243,7 +246,7 @@
   .lg-sevenths > .minor:nth-child(1n),
   .lg-sevenths > .major:nth-child(1n),
   .lg-sevenths > .cell:nth-child(1n) {
-    margin-right: 15px;
+    margin-right: var(--gutter);
     margin-left: 0;
   }
   .lg-half > .minor:last-child,
@@ -286,87 +289,87 @@
   .lg-stack > .minor,
   .lg-stack > .major,
   .lg-stack > .cell {
-    flex-basis: calc(99.98% * 1/1 - (15px - 15px * 1/1));
-    max-width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
-    width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    flex-basis: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
+    max-width: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
+    width: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
   }
   .lg-half > .minor,
   .lg-half > .major,
   .lg-half > .cell {
-    flex-basis: calc(99.98% * 1/2 - (15px - 15px * 1/2));
-    max-width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
-    width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    flex-basis: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
+    max-width: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
+    width: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
   }
   .lg-thirds > .minor,
   .lg-thirds > .cell {
-    flex-basis: calc(99.98% * 1/3 - (15px - 15px * 1/3));
-    max-width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
-    width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    flex-basis: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
+    max-width: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
+    width: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
   }
   .lg-thirds > .major {
-    flex-basis: calc(99.98% * 2/3 - (15px - 15px * 2/3));
-    max-width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
-    width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    flex-basis: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
+    max-width: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
+    width: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
   }
   .lg-fourths > .cell {
-    flex-basis: calc(99.98% * 1/4 - (15px - 15px * 1/4));
-    max-width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
-    width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    flex-basis: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
+    max-width: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
+    width: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
   }
   .lg-fifths > .minor {
-    flex-basis: calc(99.98% * 5/13 - (15px - 15px * 5/13));
-    max-width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
-    width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    flex-basis: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
+    max-width: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
+    width: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
   }
   .lg-fifths > .major {
-    flex-basis: calc(99.98% * 8/13 - (15px - 15px * 8/13));
-    max-width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
-    width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    flex-basis: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
+    max-width: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
+    width: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
   }
   .lg-fifths.true > .minor {
-    flex-basis: calc(99.98% * 2/5 - (15px - 15px * 2/5));
-    max-width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
-    width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    flex-basis: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
+    max-width: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
+    width: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
   }
   .lg-fifths.true > .major {
-    flex-basis: calc(99.98% * 3/5 - (15px - 15px * 3/5));
-    max-width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
-    width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    flex-basis: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
+    max-width: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
+    width: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
   }
   .lg-fifths > .cell {
-    flex-basis: calc(99.98% * 1/5 - (15px - 15px * 1/5));
-    max-width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
-    width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    flex-basis: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
+    max-width: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
+    width: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
   }
   .lg-sixths > .cell {
-    flex-basis: calc(99.98% * 1/6 - (15px - 15px * 1/6));
-    max-width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
-    width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    flex-basis: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
+    max-width: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
+    width: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
   }
   .lg-sevenths > .minor {
-    flex-basis: calc(99.98% * 10/23 - (15px - 15px * 10/23));
-    max-width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
-    width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    flex-basis: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
+    max-width: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
+    width: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
   }
   .lg-sevenths > .major {
-    flex-basis: calc(99.98% * 13/23 - (15px - 15px * 13/23));
-    max-width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
-    width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    flex-basis: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
+    max-width: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
+    width: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
   }
   .lg-sevenths.true > .minor {
-    flex-basis: calc(99.98% * 3/7 - (15px - 15px * 3/7));
-    max-width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
-    width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    flex-basis: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
+    max-width: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
+    width: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
   }
   .lg-sevenths.true > .major {
-    flex-basis: calc(99.98% * 4/7 - (15px - 15px * 4/7));
-    max-width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
-    width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    flex-basis: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
+    max-width: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
+    width: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
   }
   .lg-sevenths > .cell {
-    flex-basis: calc(99.98% * 1/7 - (15px - 15px * 1/7));
-    max-width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
-    width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    flex-basis: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
+    max-width: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
+    width: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
   }
 }
 @media only screen and (max-width: 960px) {
@@ -389,7 +392,7 @@
   .md-sevenths > .minor:nth-child(1n),
   .md-sevenths > .major:nth-child(1n),
   .md-sevenths > .cell:nth-child(1n) {
-    margin-right: 15px;
+    margin-right: var(--gutter);
     margin-left: 0;
   }
   .md-half > .minor:last-child,
@@ -432,87 +435,87 @@
   .md-stack > .minor,
   .md-stack > .major,
   .md-stack > .cell {
-    flex-basis: calc(99.98% * 1/1 - (15px - 15px * 1/1));
-    max-width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
-    width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    flex-basis: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
+    max-width: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
+    width: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
   }
   .md-half > .minor,
   .md-half > .major,
   .md-half > .cell {
-    flex-basis: calc(99.98% * 1/2 - (15px - 15px * 1/2));
-    max-width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
-    width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    flex-basis: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
+    max-width: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
+    width: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
   }
   .md-thirds > .minor,
   .md-thirds > .cell {
-    flex-basis: calc(99.98% * 1/3 - (15px - 15px * 1/3));
-    max-width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
-    width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    flex-basis: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
+    max-width: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
+    width: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
   }
   .md-thirds > .major {
-    flex-basis: calc(99.98% * 2/3 - (15px - 15px * 2/3));
-    max-width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
-    width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    flex-basis: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
+    max-width: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
+    width: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
   }
   .md-fourths > .cell {
-    flex-basis: calc(99.98% * 1/4 - (15px - 15px * 1/4));
-    max-width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
-    width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    flex-basis: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
+    max-width: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
+    width: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
   }
   .md-fifths > .minor {
-    flex-basis: calc(99.98% * 5/13 - (15px - 15px * 5/13));
-    max-width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
-    width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    flex-basis: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
+    max-width: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
+    width: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
   }
   .md-fifths > .major {
-    flex-basis: calc(99.98% * 8/13 - (15px - 15px * 8/13));
-    max-width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
-    width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    flex-basis: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
+    max-width: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
+    width: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
   }
   .md-fifths.true > .minor {
-    flex-basis: calc(99.98% * 2/5 - (15px - 15px * 2/5));
-    max-width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
-    width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    flex-basis: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
+    max-width: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
+    width: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
   }
   .md-fifths.true > .major {
-    flex-basis: calc(99.98% * 3/5 - (15px - 15px * 3/5));
-    max-width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
-    width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    flex-basis: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
+    max-width: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
+    width: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
   }
   .md-fifths > .cell {
-    flex-basis: calc(99.98% * 1/5 - (15px - 15px * 1/5));
-    max-width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
-    width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    flex-basis: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
+    max-width: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
+    width: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
   }
   .md-sixths > .cell {
-    flex-basis: calc(99.98% * 1/6 - (15px - 15px * 1/6));
-    max-width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
-    width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    flex-basis: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
+    max-width: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
+    width: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
   }
   .md-sevenths > .minor {
-    flex-basis: calc(99.98% * 10/23 - (15px - 15px * 10/23));
-    max-width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
-    width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    flex-basis: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
+    max-width: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
+    width: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
   }
   .md-sevenths > .major {
-    flex-basis: calc(99.98% * 13/23 - (15px - 15px * 13/23));
-    max-width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
-    width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    flex-basis: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
+    max-width: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
+    width: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
   }
   .md-sevenths.true > .minor {
-    flex-basis: calc(99.98% * 3/7 - (15px - 15px * 3/7));
-    max-width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
-    width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    flex-basis: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
+    max-width: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
+    width: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
   }
   .md-sevenths.true > .major {
-    flex-basis: calc(99.98% * 4/7 - (15px - 15px * 4/7));
-    max-width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
-    width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    flex-basis: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
+    max-width: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
+    width: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
   }
   .md-sevenths > .cell {
-    flex-basis: calc(99.98% * 1/7 - (15px - 15px * 1/7));
-    max-width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
-    width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    flex-basis: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
+    max-width: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
+    width: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
   }
 }
 @media only screen and (max-width: 768px) {
@@ -535,7 +538,7 @@
   .tablet-sevenths > .minor:nth-child(1n),
   .tablet-sevenths > .major:nth-child(1n),
   .tablet-sevenths > .cell:nth-child(1n) {
-    margin-right: 15px;
+    margin-right: var(--gutter);
     margin-left: 0;
   }
   .tablet-half > .minor:last-child,
@@ -578,87 +581,87 @@
   .tablet-stack > .minor,
   .tablet-stack > .major,
   .tablet-stack > .cell {
-    flex-basis: calc(99.98% * 1/1 - (15px - 15px * 1/1));
-    max-width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
-    width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    flex-basis: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
+    max-width: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
+    width: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
   }
   .tablet-half > .minor,
   .tablet-half > .major,
   .tablet-half > .cell {
-    flex-basis: calc(99.98% * 1/2 - (15px - 15px * 1/2));
-    max-width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
-    width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    flex-basis: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
+    max-width: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
+    width: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
   }
   .tablet-thirds > .minor,
   .tablet-thirds > .cell {
-    flex-basis: calc(99.98% * 1/3 - (15px - 15px * 1/3));
-    max-width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
-    width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    flex-basis: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
+    max-width: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
+    width: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
   }
   .tablet-thirds > .major {
-    flex-basis: calc(99.98% * 2/3 - (15px - 15px * 2/3));
-    max-width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
-    width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    flex-basis: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
+    max-width: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
+    width: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
   }
   .tablet-fourths > .cell {
-    flex-basis: calc(99.98% * 1/4 - (15px - 15px * 1/4));
-    max-width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
-    width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    flex-basis: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
+    max-width: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
+    width: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
   }
   .tablet-fifths > .minor {
-    flex-basis: calc(99.98% * 5/13 - (15px - 15px * 5/13));
-    max-width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
-    width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    flex-basis: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
+    max-width: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
+    width: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
   }
   .tablet-fifths > .major {
-    flex-basis: calc(99.98% * 8/13 - (15px - 15px * 8/13));
-    max-width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
-    width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    flex-basis: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
+    max-width: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
+    width: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
   }
   .tablet-fifths.true > .minor {
-    flex-basis: calc(99.98% * 2/5 - (15px - 15px * 2/5));
-    max-width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
-    width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    flex-basis: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
+    max-width: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
+    width: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
   }
   .tablet-fifths.true > .major {
-    flex-basis: calc(99.98% * 3/5 - (15px - 15px * 3/5));
-    max-width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
-    width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    flex-basis: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
+    max-width: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
+    width: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
   }
   .tablet-fifths > .cell {
-    flex-basis: calc(99.98% * 1/5 - (15px - 15px * 1/5));
-    max-width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
-    width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    flex-basis: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
+    max-width: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
+    width: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
   }
   .tablet-sixths > .cell {
-    flex-basis: calc(99.98% * 1/6 - (15px - 15px * 1/6));
-    max-width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
-    width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    flex-basis: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
+    max-width: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
+    width: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
   }
   .tablet-sevenths > .minor {
-    flex-basis: calc(99.98% * 10/23 - (15px - 15px * 10/23));
-    max-width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
-    width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    flex-basis: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
+    max-width: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
+    width: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
   }
   .tablet-sevenths > .major {
-    flex-basis: calc(99.98% * 13/23 - (15px - 15px * 13/23));
-    max-width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
-    width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    flex-basis: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
+    max-width: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
+    width: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
   }
   .tablet-sevenths.true > .minor {
-    flex-basis: calc(99.98% * 3/7 - (15px - 15px * 3/7));
-    max-width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
-    width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    flex-basis: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
+    max-width: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
+    width: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
   }
   .tablet-sevenths.true > .major {
-    flex-basis: calc(99.98% * 4/7 - (15px - 15px * 4/7));
-    max-width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
-    width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    flex-basis: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
+    max-width: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
+    width: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
   }
   .tablet-sevenths > .cell {
-    flex-basis: calc(99.98% * 1/7 - (15px - 15px * 1/7));
-    max-width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
-    width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    flex-basis: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
+    max-width: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
+    width: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
   }
 }
 @media screen and (max-width: 640px) {
@@ -681,7 +684,7 @@
   .sm-sevenths > .minor:nth-child(1n),
   .sm-sevenths > .major:nth-child(1n),
   .sm-sevenths > .cell:nth-child(1n) {
-    margin-right: 15px;
+    margin-right: var(--gutter);
     margin-left: 0;
   }
   .sm-half > .minor:last-child,
@@ -724,87 +727,87 @@
   .sm-stack > .minor,
   .sm-stack > .major,
   .sm-stack > .cell {
-    flex-basis: calc(99.98% * 1/1 - (15px - 15px * 1/1));
-    max-width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
-    width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    flex-basis: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
+    max-width: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
+    width: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
   }
   .sm-half > .minor,
   .sm-half > .major,
   .sm-half > .cell {
-    flex-basis: calc(99.98% * 1/2 - (15px - 15px * 1/2));
-    max-width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
-    width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    flex-basis: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
+    max-width: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
+    width: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
   }
   .sm-thirds > .minor,
   .sm-thirds > .cell {
-    flex-basis: calc(99.98% * 1/3 - (15px - 15px * 1/3));
-    max-width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
-    width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    flex-basis: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
+    max-width: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
+    width: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
   }
   .sm-thirds > .major {
-    flex-basis: calc(99.98% * 2/3 - (15px - 15px * 2/3));
-    max-width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
-    width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    flex-basis: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
+    max-width: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
+    width: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
   }
   .sm-fourths > .cell {
-    flex-basis: calc(99.98% * 1/4 - (15px - 15px * 1/4));
-    max-width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
-    width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    flex-basis: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
+    max-width: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
+    width: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
   }
   .sm-fifths > .minor {
-    flex-basis: calc(99.98% * 5/13 - (15px - 15px * 5/13));
-    max-width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
-    width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    flex-basis: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
+    max-width: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
+    width: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
   }
   .sm-fifths > .major {
-    flex-basis: calc(99.98% * 8/13 - (15px - 15px * 8/13));
-    max-width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
-    width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    flex-basis: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
+    max-width: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
+    width: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
   }
   .sm-fifths.true > .minor {
-    flex-basis: calc(99.98% * 2/5 - (15px - 15px * 2/5));
-    max-width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
-    width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    flex-basis: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
+    max-width: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
+    width: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
   }
   .sm-fifths.true > .major {
-    flex-basis: calc(99.98% * 3/5 - (15px - 15px * 3/5));
-    max-width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
-    width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    flex-basis: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
+    max-width: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
+    width: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
   }
   .sm-fifths > .cell {
-    flex-basis: calc(99.98% * 1/5 - (15px - 15px * 1/5));
-    max-width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
-    width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    flex-basis: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
+    max-width: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
+    width: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
   }
   .sm-sixths > .cell {
-    flex-basis: calc(99.98% * 1/6 - (15px - 15px * 1/6));
-    max-width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
-    width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    flex-basis: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
+    max-width: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
+    width: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
   }
   .sm-sevenths > .minor {
-    flex-basis: calc(99.98% * 10/23 - (15px - 15px * 10/23));
-    max-width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
-    width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    flex-basis: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
+    max-width: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
+    width: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
   }
   .sm-sevenths > .major {
-    flex-basis: calc(99.98% * 13/23 - (15px - 15px * 13/23));
-    max-width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
-    width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    flex-basis: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
+    max-width: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
+    width: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
   }
   .sm-sevenths.true > .minor {
-    flex-basis: calc(99.98% * 3/7 - (15px - 15px * 3/7));
-    max-width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
-    width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    flex-basis: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
+    max-width: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
+    width: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
   }
   .sm-sevenths.true > .major {
-    flex-basis: calc(99.98% * 4/7 - (15px - 15px * 4/7));
-    max-width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
-    width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    flex-basis: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
+    max-width: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
+    width: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
   }
   .sm-sevenths > .cell {
-    flex-basis: calc(99.98% * 1/7 - (15px - 15px * 1/7));
-    max-width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
-    width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    flex-basis: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
+    max-width: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
+    width: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
   }
 }
 @media screen and (max-width: 420px) {
@@ -827,7 +830,7 @@
   .xs-sevenths > .minor:nth-child(1n),
   .xs-sevenths > .major:nth-child(1n),
   .xs-sevenths > .cell:nth-child(1n) {
-    margin-right: 15px;
+    margin-right: var(--gutter);
     margin-left: 0;
   }
   .xs-half > .minor:last-child,
@@ -870,87 +873,87 @@
   .xs-stack > .minor,
   .xs-stack > .major,
   .xs-stack > .cell {
-    flex-basis: calc(99.98% * 1/1 - (15px - 15px * 1/1));
-    max-width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
-    width: calc(99.98% * 1/1 - (15px - 15px * 1/1));
+    flex-basis: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
+    max-width: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
+    width: calc(99.98% * 1/1 - (var(--gutter) - var(--gutter) * 1/1));
   }
   .xs-half > .minor,
   .xs-half > .major,
   .xs-half > .cell {
-    flex-basis: calc(99.98% * 1/2 - (15px - 15px * 1/2));
-    max-width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
-    width: calc(99.98% * 1/2 - (15px - 15px * 1/2));
+    flex-basis: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
+    max-width: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
+    width: calc(99.98% * 1/2 - (var(--gutter) - var(--gutter) * 1/2));
   }
   .xs-thirds > .minor,
   .xs-thirds > .cell {
-    flex-basis: calc(99.98% * 1/3 - (15px - 15px * 1/3));
-    max-width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
-    width: calc(99.98% * 1/3 - (15px - 15px * 1/3));
+    flex-basis: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
+    max-width: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
+    width: calc(99.98% * 1/3 - (var(--gutter) - var(--gutter) * 1/3));
   }
   .xs-thirds > .major {
-    flex-basis: calc(99.98% * 2/3 - (15px - 15px * 2/3));
-    max-width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
-    width: calc(99.98% * 2/3 - (15px - 15px * 2/3));
+    flex-basis: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
+    max-width: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
+    width: calc(99.98% * 2/3 - (var(--gutter) - var(--gutter) * 2/3));
   }
   .xs-fourths > .cell {
-    flex-basis: calc(99.98% * 1/4 - (15px - 15px * 1/4));
-    max-width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
-    width: calc(99.98% * 1/4 - (15px - 15px * 1/4));
+    flex-basis: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
+    max-width: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
+    width: calc(99.98% * 1/4 - (var(--gutter) - var(--gutter) * 1/4));
   }
   .xs-fifths > .minor {
-    flex-basis: calc(99.98% * 5/13 - (15px - 15px * 5/13));
-    max-width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
-    width: calc(99.98% * 5/13 - (15px - 15px * 5/13));
+    flex-basis: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
+    max-width: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
+    width: calc(99.98% * 5/13 - (var(--gutter) - var(--gutter) * 5/13));
   }
   .xs-fifths > .major {
-    flex-basis: calc(99.98% * 8/13 - (15px - 15px * 8/13));
-    max-width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
-    width: calc(99.98% * 8/13 - (15px - 15px * 8/13));
+    flex-basis: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
+    max-width: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
+    width: calc(99.98% * 8/13 - (var(--gutter) - var(--gutter) * 8/13));
   }
   .xs-fifths.true > .minor {
-    flex-basis: calc(99.98% * 2/5 - (15px - 15px * 2/5));
-    max-width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
-    width: calc(99.98% * 2/5 - (15px - 15px * 2/5));
+    flex-basis: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
+    max-width: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
+    width: calc(99.98% * 2/5 - (var(--gutter) - var(--gutter) * 2/5));
   }
   .xs-fifths.true > .major {
-    flex-basis: calc(99.98% * 3/5 - (15px - 15px * 3/5));
-    max-width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
-    width: calc(99.98% * 3/5 - (15px - 15px * 3/5));
+    flex-basis: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
+    max-width: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
+    width: calc(99.98% * 3/5 - (var(--gutter) - var(--gutter) * 3/5));
   }
   .xs-fifths > .cell {
-    flex-basis: calc(99.98% * 1/5 - (15px - 15px * 1/5));
-    max-width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
-    width: calc(99.98% * 1/5 - (15px - 15px * 1/5));
+    flex-basis: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
+    max-width: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
+    width: calc(99.98% * 1/5 - (var(--gutter) - var(--gutter) * 1/5));
   }
   .xs-sixths > .cell {
-    flex-basis: calc(99.98% * 1/6 - (15px - 15px * 1/6));
-    max-width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
-    width: calc(99.98% * 1/6 - (15px - 15px * 1/6));
+    flex-basis: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
+    max-width: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
+    width: calc(99.98% * 1/6 - (var(--gutter) - var(--gutter) * 1/6));
   }
   .xs-sevenths > .minor {
-    flex-basis: calc(99.98% * 10/23 - (15px - 15px * 10/23));
-    max-width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
-    width: calc(99.98% * 10/23 - (15px - 15px * 10/23));
+    flex-basis: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
+    max-width: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
+    width: calc(99.98% * 10/23 - (var(--gutter) - var(--gutter) * 10/23));
   }
   .xs-sevenths > .major {
-    flex-basis: calc(99.98% * 13/23 - (15px - 15px * 13/23));
-    max-width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
-    width: calc(99.98% * 13/23 - (15px - 15px * 13/23));
+    flex-basis: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
+    max-width: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
+    width: calc(99.98% * 13/23 - (var(--gutter) - var(--gutter) * 13/23));
   }
   .xs-sevenths.true > .minor {
-    flex-basis: calc(99.98% * 3/7 - (15px - 15px * 3/7));
-    max-width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
-    width: calc(99.98% * 3/7 - (15px - 15px * 3/7));
+    flex-basis: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
+    max-width: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
+    width: calc(99.98% * 3/7 - (var(--gutter) - var(--gutter) * 3/7));
   }
   .xs-sevenths.true > .major {
-    flex-basis: calc(99.98% * 4/7 - (15px - 15px * 4/7));
-    max-width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
-    width: calc(99.98% * 4/7 - (15px - 15px * 4/7));
+    flex-basis: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
+    max-width: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
+    width: calc(99.98% * 4/7 - (var(--gutter) - var(--gutter) * 4/7));
   }
   .xs-sevenths > .cell {
-    flex-basis: calc(99.98% * 1/7 - (15px - 15px * 1/7));
-    max-width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
-    width: calc(99.98% * 1/7 - (15px - 15px * 1/7));
+    flex-basis: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
+    max-width: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
+    width: calc(99.98% * 1/7 - (var(--gutter) - var(--gutter) * 1/7));
   }
 }
 .vertical-center {
